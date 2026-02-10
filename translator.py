@@ -10,7 +10,8 @@ import re
 import json
 import time
 from pathlib import Path
-from googletrans import Translator
+from google.cloud import translate_v3 as translate
+from dotenv import load_dotenv
 
 
 class DocumentTranslator:
@@ -20,11 +21,23 @@ class DocumentTranslator:
     TARGET_DIR = "docs/ja"
     METADATA_FILE = "metadata.json"
     TRANSLATED_METADATA_FILE = "translated_metadata.json"
+    DEFAULT_LOCATION = "global"
     
     def __init__(self):
         """Initialize the translator."""
-        self.translator = Translator()
+        load_dotenv()
+        self.project_id = os.getenv("GOOGLE_CLOUD_PROJECT")
+        self.location = os.getenv("GOOGLE_CLOUD_LOCATION", self.DEFAULT_LOCATION)
+        self._validate_cloud_settings()
+        self.client = translate.TranslationServiceClient()
         self.translated_metadata = {}
+
+    def _validate_cloud_settings(self):
+        """Validate required Google Cloud settings."""
+        if not self.project_id:
+            raise ValueError(
+                "Missing GOOGLE_CLOUD_PROJECT. Set the env var or add it to a .env file."
+            )
         
     def load_metadata(self):
         """Load metadata from JSON file."""
@@ -35,7 +48,7 @@ class DocumentTranslator:
         return {}
     
     def translate_text(self, text, src='en', dest='ja'):
-        """Translate text using Google Translate."""
+        """Translate text using Google Cloud Translation API."""
         if not text or not text.strip():
             return text
         
@@ -46,16 +59,30 @@ class DocumentTranslator:
                 chunks = [text[i:i+max_length] for i in range(0, len(text), max_length)]
                 translated_chunks = []
                 for chunk in chunks:
-                    result = self.translator.translate(chunk, src=src, dest=dest)
-                    translated_chunks.append(result.text)
-                    time.sleep(0.5)  # Rate limiting
+                    translated_chunks.append(self._translate_chunk(chunk, src, dest))
+                    time.sleep(0.2)  # Rate limiting
                 return ''.join(translated_chunks)
             else:
-                result = self.translator.translate(text, src=src, dest=dest)
-                return result.text
+                return self._translate_chunk(text, src, dest)
         except Exception as e:
             print(f"Translation error: {e}")
             return text
+
+    def _translate_chunk(self, text, src, dest):
+        """Translate a single chunk via Cloud Translation API."""
+        parent = f"projects/{self.project_id}/locations/{self.location}"
+        response = self.client.translate_text(
+            request={
+                "parent": parent,
+                "contents": [text],
+                "mime_type": "text/plain",
+                "source_language_code": src,
+                "target_language_code": dest,
+            }
+        )
+        if not response.translations:
+            return text
+        return response.translations[0].translated_text
     
     def translate_markdown_file(self, source_path, target_path):
         """Translate a Markdown file from English to Japanese."""

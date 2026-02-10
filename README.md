@@ -10,7 +10,7 @@ WooCommerceの公式ドキュメントを日本語に翻訳するプロジェク
 
 - **自動スクレイピング**: WooCommerce公式ドキュメントから階層構造を保持してコンテンツを取得
 - **階層的保存**: ページの階層構造をディレクトリ構造として保存
-- **自動翻訳**: Google Translateを使用して英語から日本語へ自動翻訳
+- **自動翻訳**: Google Cloud Translation APIを使用して英語から日本語へ自動翻訳
 - **週次更新**: GitHub Actionsで毎週自動的に更新をチェック
 - **自動PR作成**: 更新があった場合、自動的にプルリクエストを作成
 
@@ -48,6 +48,38 @@ cd how2wc-jp
 # 依存関係をインストール
 pip install -r requirements.txt
 ```
+
+### Google Cloud Translation API の設定
+
+このプロジェクトは Cloud Translation API (v3) を使用します。サービスアカウント認証を前提としています。
+
+1. Google Cloud プロジェクトを作成
+2. Cloud Translation API を有効化
+3. サービスアカウントを作成し、JSONキーをダウンロード
+4. 環境変数を設定
+
+```bash
+# サービスアカウントキーのパス
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account.json"
+
+# Google Cloud プロジェクトID
+export GOOGLE_CLOUD_PROJECT="your-gcp-project-id"
+
+# 任意: 既定は global
+export GOOGLE_CLOUD_LOCATION="global"
+```
+
+`.env` を使う場合は、同じ内容をプロジェクト直下の `.env` に記載できます。
+
+`.env.example` を参考にして作成できます。
+
+### GitHub Actions のシークレット設定
+
+Actions で自動翻訳を実行する場合、以下のシークレットを設定してください。
+
+- `GCP_SA_KEY`: サービスアカウントJSONの内容（そのまま貼り付け）
+- `GOOGLE_CLOUD_PROJECT`: Google Cloud のプロジェクトID
+- `GOOGLE_CLOUD_LOCATION`: 任意（未設定なら `global` を使用）
 
 ## 使用方法
 
@@ -100,7 +132,7 @@ WooCommerce公式ドキュメントをスクレイピングし、Markdown形式�
 
 英語のMarkdownファイルを日本語に翻訳します。
 
-- Google Translateを使用
+- Google Cloud Translation APIを使用
 - Markdown構造を保持
 - コードブロック、リンク、画像は翻訳せずに保持
 - フロントマターのタイトルも翻訳
