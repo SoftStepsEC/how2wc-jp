@@ -45,6 +45,9 @@ how2wc-jp/
 git clone https://github.com/SoftStepsEC/how2wc-jp.git
 cd how2wc-jp
 
+# pip が使えなかった場合はpip環境を作成し試験環境に移行(.venv)
+source .venv/bin/activate
+
 # 依存関係をインストール
 pip install -r requirements.txt
 ```
@@ -103,6 +106,25 @@ python translator.py
 # 更新チェックのみ
 python update_checker.py
 ```
+
+### テスト用スクレイピング
+
+特定のページのみをスクレイピングしてテストする:
+
+```bash
+# 特定のページを1ページのみスクレイピング
+python scraper.py --url "https://woocommerce.com/documentation/woocommerce/getting-started/" --max-pages 1
+
+# 特定のカテゴリから最大10ページをスクレイピング
+python scraper.py --url "https://woocommerce.com/documentation/woocommerce/products/" --max-pages 10
+
+# 全ページをスクレイピング（デフォルト）
+python scraper.py
+```
+
+**オプション:**
+- `--url`: スクレイピング開始URL（省略時は全ドキュメント）
+- `--max-pages`: スクレイピングするページ数の上限（テスト用）
 
 ### 自動更新
 
