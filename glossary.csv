@@ -1,0 +1,1168 @@
+Term,Description,ja
+WooCommerce,Platform name,WooCommerce
+Checkout,Payment process page,購入手続き
+Cart,Shopping cart,買い物カゴ
+Order,Purchase record,注文
+Product,Item for sale,商品
+Shop,Front end store view,ショップ
+Store,The entire online business,ストア
+Theme,Design template,テーマ
+Plugin,Extension software,プラグイン
+Extension,Add-on software,拡張機能
+Gateway,Payment processor connector,決済代行会社
+Shipping,Delivery method,配送
+Tax,Government levy,税
+Coupon,Discount code,クーポン
+Refund,Money back,払い戻し
+Subscription,Recurring payment,定期購入
+Inventory,Stock count,在庫
+SKU,Stock Keeping Unit,SKU
+Dashboard,Admin panel main screen,ダッシュボード
+Widget,Sidebar component,ウィジェット
+Shortcode,WordPress code snippet,ショートコード
+Attribute,Product property like size/color,属性
+Variation,Specific option of a variable product,バリエーション
+Variable Product,Product with options,バリエーションのある商品
+Simple Product,Product without options,単一商品
+Grouped Product,Collection of products,グループ化された商品
+Virtual Product,Non-physical product,バーチャル商品
+Downloadable Product,File based product,ダウンロード商品
+Up-sells,Recommended higher value products,アップセル
+Cross-sells,Recommended related products,クロスセル
+Hook,Code insertion point,フック
+Filter,Data modification point,フィルター
+Action,Event trigger point,アクション
+Metadata,Additional data,メタデータ
+Taxonomy,Grouping mechanism,タクソノミー
+Category,Broad grouping,カテゴリー
+Tag,Specific descriptor,タグ
+Slug,URL friendly name,スラッグ
+Endpoint,URL suffix for specific page,エンドポイント
+Webhooks,Automated messages sent from apps,Webフック
+API,Application Programming Interface,API
+REST API,Representational State Transfer API,REST API
+Store API,Store Application Programming Interface,Store API
+Keys,Access credentials,キー
+Token,Access string,トークン
+SSL,Secure Sockets Layer,SSL
+HTTPS,Secure Hypertext Transfer Protocol,HTTPS
+Domain,Website address,ドメイン
+Hosting,Server service,ホスティング
+Migrate,Move data,移行
+Import,Bring data in,インポート
+Export,Send data out,エクスポート
+Backup,Save copy of data,バックアップ
+Restore,Bring back data from backup,復元
+Update,Newer version,更新
+Upgrade,Move to higher plan/version,アップグレード
+Downgrade,Move to lower plan/version,ダウングレード
+Status,Current state,ステータス
+Report,Data summary,レポート
+Analytics,Data analysis,分析
+Customer,Buyer,顧客
+Account,User profile,アカウント
+Guest,Unregistered user,ゲスト
+Role,User permission level,権限グループ
+Capability,Specific permission,権限
+Administrator,Site manager,管理者
+Shop Manager,Store operator,ショップマネージャー
+Editor,Content manager,編集者
+Author,Content writer,投稿者
+Contributor,Content submitter,寄稿者
+Subscriber,Content reader,購読者
+Privacy Policy,Data handling statement,プライバシーポリシー
+Terms and Conditions,Usage rules,利用規約
+GDPR,General Data Protection Regulation,GDPR
+SCA,Strong Customer Authentication,SCA
+PSD2,Payment Services Directive 2,PSD2
+CVV,Card Verification Value,CVV
+CVC,Card Verification Code,CVC
+CSC,Card Security Code,CSC
+AVS,Address Verification System,AVS
+3D Secure,3-domain structure security,3Dセキュア
+PCI-DSS,Payment Card Industry Data Security Standard,PCI-DSS
+Chargeback,Disputed charge return,チャージバック
+Dispute,Payment disagreement,異議申し立て
+Void,Cancel authorization,無効化
+Capture,Collect authorized funds,実売上
+Authorize,Hold funds,オーソリ
+Settlement,Fund transfer,決済完了
+Currency,Monetary unit,通貨
+Exchange Rate,Currency conversion value,為替レート
+Multi-currency,Supporting multiple moneys,多通貨
+Zone,Geographical area,ゾーン
+Region,Area within country,地域
+State,Province or territory,州/県
+Province,State or territory,都道府県
+Zip Code,Postal code,郵便番号
+Postal Code,Zip code,郵便番号
+Address,Location details,住所
+Billing Address,Payment address,請求先住所
+Shipping Address,Delivery address,配送先住所
+Local Pickup,Collect at store,店頭受取
+Flat Rate,Fixed price shipping,定額送料
+Free Shipping,Costless delivery,送料無料
+Table Rate,Complex shipping rules,テーブルレート
+Live Rates,Real-time carrier prices,リアルタイム送料
+Carrier,Delivery company,配送業者
+Tracking,Package monitoring,追跡
+Label,Shipping sticker,ラベル
+Note,Order comment,メモ
+Notification,Alert message,通知
+Email,Electronic mail,メール
+Template,Layout pattern,テンプレート
+Header,Top section,ヘッダー
+Footer,Bottom section,フッター
+Sidebar,Side column,サイドバー
+Menu,Navigation list,メニュー
+Breadcrumb,Path navigation,パンくずリスト
+Pagination,Page numbering,ページネーション
+Responsive,Mobile friendly,レスポンシブ
+Mobile,Phone/Tablet,モバイル
+Desktop,PC/Mac,デスクトップ
+Browser,Web viewer,ブラウザ
+Cache,Temporary storage,キャッシュ
+Performance,Speed/Functionality,パフォーマンス
+Optimization,Improvement,最適化
+SEO,Search Engine Optimization,SEO
+Conversion,Sales/Goal achievement,コンバージョン
+Traffic,Visitors,トラフィック
+Funnel,Sales path,ファネル
+Landing Page,Entry page,ランディングページ
+CTA,Call to Action,CTA
+Banner,Display ad/image,バナー
+Slider,Rotating images,スライダー
+Carousel,Product rotator,カルーセル
+Grid,Table layout,グリッド
+List,Linear layout,リスト
+Modal,Popup window,モーダル
+Popup,Overlay window,ポップアップ
+Tooltip,Hover info,ツールチップ
+Icon,Symbol image,アイコン
+Avatar,User image,アバター
+Thumbnail,Small image,サムネイル
+Featured Image,Main post image,アイキャッチ画像
+Gallery,Image collection,ギャラリー
+Media,Images/Video/Audio,メディア
+Library,Media collection,ライブラリ
+File,Data document,ファイル
+Folder,File container,フォルダ
+Directory,File path,ディレクトリ
+Path,File location,パス
+URL,Web address,URL
+Link,Hyperlink,リンク
+Anchor,Page jump point,アンカー
+Button,Clickable element,ボタン
+Form,Input area,フォーム
+Field,Input slot,フィールド
+Checkbox,Multiple choice,チェックボックス
+Radio Button,Single choice,ラジオボタン
+Dropdown,Select list,ドロップダウン
+Textarea,Paragraph input,テキストエリア
+Input,Data entry,入力
+Label,Input name,ラベル
+Placeholder,Hint text,プレースホルダー
+Validation,Check input correctness,検証
+Error,Mistake/Problem,エラー
+Warning,Caution,警告
+Success,Completion,成功
+Message,Communication,メッセージ
+Alert,Notification,アラート
+Notice,Info box,通知
+Debug,Troubleshoot,デバッグ
+Log,Record of events,ログ
+Console,Developer tool,コンソール
+Database,Data storage,データベース
+Query,Database request,クエリ
+Table,Database structure,テーブル
+Row,Database entry,行
+Column,Database field,列
+Index,Database sort key,インデックス
+Prefix,Table name start,接頭辞
+wp-config.php,WordPress config file,wp-config.php
+htaccess,Server config file,.htaccess
+robots.txt,Crawler config file,robots.txt
+sitemap.xml,Site structure file,サイトマップ
+RSS,Feed format,RSS
+Atom,Feed format,Atom
+JSON,Data format,JSON
+XML,Data format,XML
+CSV,Comma Separated Values,CSV
+HTML,HyperText Markup Language,HTML
+CSS,Cascading Style Sheets,CSS
+JavaScript,Scripting language,JavaScript
+PHP,Server side language,PHP
+SQL,Database language,SQL
+Git,Version control,Git
+GitHub,Code hosting,GitHub
+Repository,Code container,リポジトリ
+Branch,Code version line,ブランチ
+Commit,Code save,コミット
+Push,Upload code,プッシュ
+Pull,Download code,プル
+Merge,Combine code,マージ
+Conflict,Code clash,コンフリクト
+Issue,Problem report,課題
+PR,Pull Request,PR
+Patch,Fix code,パッチ
+Release,Version launch,リリース
+Version,Software iteration,バージョン
+Change Log,History of changes,変更履歴
+Documentation,Manual/Guide,ドキュメント
+Support,Help service,サポート
+Ticket,Support request,チケット
+Forum,Discussion board,フォーラム
+Community,User group,コミュニティ
+Marketplace,Plugin/Theme store,マーケットプレイス
+Vendor,Seller,ベンダー
+Affiliate,Referral partner,アフィリエイト
+Commission,Referral fee,手数料
+Payout,Payment to vendor/affiliate,支払い
+Wallett,Digital money holder,ウォレット
+Credit,Store money,クレジット
+Point,Loyalty unit,ポイント
+Reward,Bonus,報酬
+Gift Card,Prepaid card,ギフトカード
+Voucher,Redeemable paper,バウチャー
+Promo,Promotion,プロモーション
+Campaign,Marketing drive,キャンペーン
+A/B Testing,Split testing,A/Bテスト
+Segment,User group slice,セグメント
+Target,Audience goal,ターゲット
+Niche,Specialized market,ニッチ
+Vertical,Industry sector,バーティカル
+B2B,Business to Business,B2B
+B2C,Business to Consumer,B2C
+D2C,Direct to Consumer,D2C
+Omnichannel,Unified sales channels,オムニチャネル
+POS,Point of Sale,POS (実店舗決済)
+Integration,Connection,連携
+Sync,Synchronization,同期
+Automation,Self-acting process,自動化
+Workflow,Process sequence,ワークフロー
+Task,Job item,タスク
+Schedule,Time plan,スケジュール
+Cron,Timed job,Cron
+Job,Task execution,ジョブ
+Queue,Line of tasks,キュー
+Batch,Group of tasks,バッチ
+Limit,Constraint,制限
+Quota,Allowance,割り当て
+Tier,Level/Rank,階層
+Plan,Subscription level,プラン
+Feature,Functionality,機能
+Benefit,Advantage,メリット
+Setup,Installation/Config,セットアップ
+Install,Put software on system,インストール
+Activate,Turn on,有効化
+Deactivate,Turn off,無効化
+Delete,Remove,削除
+Uninstall,Remove software,アンインストール
+Settings,Configuration,設定
+Options,Preferences,オプション
+Preferences,User choices,設定
+Profile,User details,プロフィール
+Password,Access code,パスワード
+Username,Login name,ユーザー名
+Login,Sign in,ログイン
+Logout,Sign out,ログアウト
+Sign In,Login,サインイン
+Sign Up,Register,サインアップ
+Register,Create account,登録
+Reset,Set back to default,リセット
+Recover,Get back,回復
+Verification,Proof of truth,確認
+Authentication,Proof of identity,認証
+Authorization,Permission granting,認可
+Security,Safety,セキュリティ
+Firewall,Network guard,ファイアウォール
+Malware,Bad software,マルウェア
+Virus,Bad code,ウイルス
+Spam,Junk,スパム
+Phishing,Fake login trick,フィッシング
+Hacking,Unauthorized access,ハッキング
+Breach,Data leak,漏洩
+Encryption,Data scrambling,暗号化
+Decryption,Data unscrambling,復号化
+Complaint,User grievance,苦情
+feedback,User opinion,フィードバック
+Review,Product rating,レビュー
+Rating,Score,評価
+Star,Rating symbol,星
+Comment,Discussion post,コメント
+Post,Article/Entry,投稿
+Page,Static content,ページ
+Block,Editor unit,ブロック
+Editor,Content tool,エディター
+Classic Editor,Old content tool,クラシックエディター
+Gutenberg,New block editor,Gutenberg
+Full Site Editing,FSE,フルサイト編集
+FSE,Full Site Editing,FSE
+Headless,Decoupled front end,ヘッドレス
+Stack,Tech combination,スタック
+Environment,System context,環境
+Production,Live site,本番環境
+Staging,Test site,ステージング環境
+Development,Coding site,開発環境
+Local,My computer,ローカル
+Remote,Server,リモート
+Deploy,Push to live,デプロイ
+Maintenance,Upkeep,メンテナンス
+Downtime,Offline period,ダウンタイム
+Uptime,Online period,稼働時間
+Scalability,Growth handling,スケーラビリティ
+Reliability,Dependability,信頼性
+Availability,Uptime ratio,可用性
+Latency,Delay,レイテンシ
+Speed,Velocity,速度
+Bandwidth,Data capacity,帯域幅
+Storage,Disk space,ストレージ
+Memory,RAM,メモリ
+CPU,Processor,CPU
+Resource,System asset,リソース
+Load,System pressure,負荷
+Stress,High load,ストレス
+Unit Test,Component check,単体テスト
+Integration Test,Connection check,結合テスト
+E2E Test,End to End check,E2Eテスト
+Regression,Bug return,リグレッション
+QA,Quality Assurance,QA
+QC,Quality Control,QC
+UX,User Experience,UX
+UI,User Interface,UI
+Design,Look and feel,デザイン
+Layout,Arrangement,レイアウト
+Style,Visual rule,スタイル
+Color,Hue,色
+Font,Typography,フォント
+Typography,Text style,タイポグラフィ
+Image,Picture,画像
+Video,Moving picture,動画
+Audio,Sound,音声
+Animation,Movement,アニメーション
+Transition,Change effect,トランジション
+Effect,Visual impact,エフェクト
+Filter,Visual mod,フィルター
+Mask,Visual hiding,マスク
+Layer,Visual stack,レイヤー
+Canvas,Drawing area,キャンバス
+Vector,Scalable graphic,ベクター
+Raster,Pixel graphic,ラスター
+Pixel,Dot,ピクセル
+Resolution,Sharpness,解像度
+Density,Pixel bunching,密度
+Retina,High density screen,Retina
+PPI,Pixels Per Inch,PPI
+DPI,Dots Per Inch,DPI
+Compression,Size reduction,圧縮
+Format,File type,形式
+Extension,File suffix,拡張子
+Size,Dimension/Weight,サイズ
+Width,Horizontal size,幅
+Height,Vertical size,高さ
+Depth,Z-axis size,奥行き
+Dimension,Measurement,寸法
+Scale,Size ratio,スケール
+Ratio,Proportion,比率
+Aspect Ratio,Width/Height proportion,アスペクト比
+Crop,Cut image,切り抜き
+Resize,Change size,サイズ変更
+Rotate,Turn,回転
+Flip,Mirror,反転
+Invert,Reverse colors,色反転
+Grayscale,Black and white,グレースケール
+Sepia,Old photo look,セピア
+Blur,Unfocus,ぼかし
+Sharpen,Focus,シャープ
+Contrast,Light/Dark difference,コントラスト
+Brightness,Light level,明るさ
+Saturation,Color intensity,彩度
+Hue,Color tint,色相
+Opacity,Transparency,不透明度
+Transparency,See-through,透明度
+Alpha,Transparency channel,アルファ
+RGB,Red Green Blue,RGB
+CMYK,Cyan Magenta Yellow Key,CMYK
+Hex,Hexadecimal color,16進数カラー
+Palette,Color set,パレット
+Gradient,Color blend,グラデーション
+Shadow,Dark projection,影
+Border,Edge line,枠線
+Outline,Outer line,輪郭
+Background,Back layer,背景
+Foreground,Front layer,前景
+Overlay,Top layer,オーバーレイ
+Padding,Inner spacing,パディング
+Margin,Outer spacing,マージン
+Spacing,Gap,間隔
+Alignment,Positioning,配置
+Position,Location,位置
+Z-index,Stack order,Zインデックス
+Float,Side alignment,フロート
+Clear,Float break,クリア
+Display,Visibility mode,表示
+Visibility,Seen/Unseen,可視性
+Hidden,Not seen,非表示
+None,No display,なし
+Block,Box display,ブロック
+Inline,Line display,インライン
+Flexbox,Flexible layout,Flexbox
+Grid,Grid layout,Grid
+Table,Table layout,テーブル
+List-item,List display,リストアイテム
+Content,Information,コンテンツ
+Structure,Organization,構造
+Hierachy,Rank order,階層
+Navigation,Wayfinding,ナビゲーション
+Search,Find,検索
+Result,Found item,結果
+Query,Search term,クエリ
+Filter,Refine search,絞り込み
+Sort,Order validation,並べ替え
+Order,Sequence,順序
+Ascending,Low to High,昇順
+Descending,High to Low,降順
+Alphabetical,A-Z,アルファベット順
+Date,Time,日付
+Time,Clock,時間
+Author,Writer,作成者
+Relevance,Importance,関連性
+Popularity,Commonness,人気
+Status,State,ステータス
+New,Fresh,新規
+Old,Aged,古い
+Recent,Lately,最近
+Archive,History,アーカイブ
+Library,Collection,ライブラリ
+Trash,Bin,ゴミ箱
+Draft,Unpublished,下書き
+Pending,Waiting,承認待ち
+Private,Restricted,非公開
+Published,Public,公開済み
+Scheduled,Timed release,予約済み
+Password Protected,Locked,パスワード保護
+Sticky,Pinned,先頭固定
+Featured,Highlighted,おすすめ
+Promoted,Advertised,プロモーション
+Sponsored,Paid inclusion,スポンサー
+Ad,Advertisement,広告
+Campaign,Drive,キャンペーン
+Source,Origin,ソース
+Medium,Channel,メディア
+Term,Label,用語
+Definition,Meaning,定義
+Concept,Idea,概念
+Context,Setting,文脈
+Example,Instance,例
+Sample,Trial piece,サンプル
+Demo,Demonstration,デモ
+Tutorial,Lesson,チュートリアル
+Guide,Manual,ガイド
+Manual,Handbook,マニュアル
+Reference,Lookup source,リファレンス
+API,Interface,API
+Code,Program text,コード
+Snippet,Code piece,スニペット
+Function,Code action,関数
+Class,Code object,クラス
+Method,Object action,メソッド
+Variable,Data holder,変数
+Constant,Fixed data,定数
+Array,Data list,配列
+Object,Data structure,オブジェクト
+String,Text data,文字列
+Integer,Whole number,整数
+Float,Decimal number,浮動小数点数
+Boolean,True/False,真偽値
+Null,Empty,Null
+True,Yes,True (真)
+False,No,False (偽)
+Undefined,Not set,未定義
+Error,Mistake,エラー
+Exception,Special error,例外
+Debug,Fix,デバッグ
+Trace,Path follower,トレース
+Log,Record,ログ
+Print,Output,出力
+Echo,Output,表示 (Echo)
+Return,Send back,戻り値
+Break,Stop,中断
+Continue,Skip,続行
+Switch,Select,切り替え
+Case,Scenario,ケース
+If,Condition,もし (If)
+Else,Alternative,その他 (Else)
+Elseif,Other condition,その他のもし (Elseif)
+While,Loop while,間 (While)
+For,Loop count,繰り返し (For)
+Foreach,Loop list,それぞれ (Foreach)
+Try,Attempt,試行 (Try)
+Catch,Handle error,捕捉 (Catch)
+Finally,End,最終的に (Finally)
+Throw,Create error,スロー
+Namespace,Name area,名前空間
+Use,Import,使用 (Use)
+Require,Need,必須 (Require)
+Include,Add,追加 (Include)
+Global,Universal,グローバル
+Local,Specific,ローカル
+Public,Open,パブリック
+Private,Closed,プライベート
+Protected,Guarded,プロテクト
+Static,Fixed,静的 (Static)
+Abstract,Template,抽象 (Abstract)
+Interface,Contract,インターフェース
+Trait,Capability block,トレイト
+Extend,Inherit,継承 (Extend)
+Implements,Fulfills,実装 (Implements)
+Clone,Copy,複製 (Clone)
+Construct,Build,コンストラクタ
+Destruct,Destroy,デストラクタ
+Callback,Return call,コールバック
+Closure,Anonymous function,クロージャ
+Lambda,Anonymous function,ラムダ
+Recursion,Self-call,再帰
+Iteration,Live repeat,反復
+Algorithm,Logic steps,アルゴリズム
+Logic,Reasoning,ロジック
+Pattern,Design template,パターン
+Singleton,Single instance,シングルトン
+Factory,Object creator,ファクトリー
+Observer,Watcher,オブザーバー
+Strategy,Method swapper,ストラテジー
+Decorator,Wrapper,デコレーター
+Adapter,Connector,アダプター
+Facade,Front,ファサード
+Proxy,Substitute,プロキシ
+MVC,Model View Controller,MVC
+MVVM,Model View ViewModel,MVVM
+Architecture,Structure design,アーキテクチャ
+Framework,Code skeleton,フレームワーク
+Library,Code tool,ライブラリ
+Plugin,Add-on,プラグイン
+Module,Part,モジュール
+Component,Piece,コンポーネント
+Package,Bundle,パッケージ
+Dependency,Requirement,依存関係
+Manager,Controller,マネージャー
+Service,Provider,サービス
+Client,Requester,クライアント
+Server,Responder,サーバー
+Request,Ask,リクエスト
+Response,Reply,レスポンス
+Header,Meta info,ヘッダー
+Body,Main info,本文
+Payload,Data load,ペイロード
+Cookie,Browser data,Cookie
+Session,User visit,セッション
+Cache,Temp store,キャッシュ
+Buffer,Temp holder,バッファ
+Stream,Flow,ストリーム
+Socket,Connection,ソケット
+Port,Door,ポート
+Protocol,Rule,プロトコル
+IP,Address,IP
+DNS,Name system,DNS
+URL,Address,URL
+URI,Identifier,URI
+URN,Name,URN
+HTTP,Protocol,HTTP
+HTTPS,Secure protocol,HTTPS
+FTP,File protocol,FTP
+SFTP,Secure file protocol,SFTP
+SSH,Secure shell,SSH
+SSL,Secure layer,SSL
+TLS,Transport layer,TLS
+Certificate,Security ID,証明書
+Key,Lock opener,鍵
+Token,Pass,トークン
+Auth,Login check,認証
+Oauth,Open auth,OAuth
+JWT,JSON Web Token,JWT
+API Key,App pass,APIキー
+Secret,Hidden key,シークレット
+Password,Secret word,パスワード
+Username,ID name,ユーザー名
+Email,Mail address,メールアドレス
+Phone,Number,電話番号
+Address,Place,住所
+City,Town,市町村
+Country,Nation,国
+Region,Area,地域
+Locale,Language setting,ロケール
+Language,Speech,言語
+Translate,Convert lang,翻訳
+Localize,Adapt to locale,ローカライズ
+Internationalize,Prepare for locales,国際化
+i18n,Internationalization,i18n
+l10n,Localization,l10n
+RTL,Right to Left,RTL
+LTR,Left to Right,LTR
+Charset,Character set,文字セット
+Encoding,Data map,エンコーディング
+UTF-8,Unicode,UTF-8
+ASCII,Basic text,ASCII
+Binary,01 code,バイナリ
+Hex,16 base,Hex
+Base64,Text encoding,Base64
+Hash,Digest,ハッシュ
+MD5,Hash type,MD5
+SHA,Hash type,SHA
+Encryption,Secret code,暗号化
+Decryption,Reveal code,復号化
+Algorithm,Math rule,アルゴリズム
+Compression,Shrink,圧縮
+Zip,Archive,Zip
+Tar,Archive,Tar
+Gzip,Compress,Gzip
+Bzip2,Compress,Bzip2
+Image,Picture,画像
+JPEG,Image type,JPEG
+PNG,Image type,PNG
+GIF,Image type,GIF
+SVG,Vector type,SVG
+WebP,Image type,WebP
+Video,Movie,動画
+MP4,Video type,MP4
+WebM,Video type,WebM
+Audio,Sound,音声
+MP3,Audio type,MP3
+WAV,Audio type,WAV
+PDF,Doc type,PDF
+Doc,Word doc,Doc
+XLS,Excel sheet,XLS
+PPT,PowerPoint,PPT
+Text,Plain words,テキスト
+Font,Typeface,フォント
+Serif,With feet,明朝体 (Serif)
+Sans-serif,No feet,ゴシック体 (Sans-serif)
+Monospace,Equal width,等幅フォント
+Bold,Thick,太字
+Italic,Leaning,イタリック
+Underline,Line below,下線
+Strike,Line through,取り消し線
+Heading,Title,見出し
+Paragraph,Block text,段落
+List,Bullet points,リスト
+Quote,Citation,引用
+Link,Connection,リンク
+Table,Grid,表
+Image,Visual,画像
+Code,Script,コード
+Pre,Preformatted,整形済みテキスト
+Blockquote,Quote block,引用ブロック
+Hr,Line,水平線
+Br,Break,改行
+Div,Division,Div
+Span,Span,Span
+Nav,Navigation,Nav
+Header,Top,Header
+Footer,Bottom,Footer
+Main,Core,Main
+Section,Part,Section
+Article,Piece,Article
+Aside,Sidebar,Aside
+Figure,Image box,Figure
+Figcaption,Image caption,Figcaption
+Audio,Sound box,Audio
+Video,Movie box,Video
+Canvas,Draw box,Canvas
+Iframe,Window,Iframe
+Script,Code box,Script
+Style,Look box,Style
+Meta,Info box,Meta
+Link,Ref box,Link
+Title,Name box,Title
+Base,Root box,Base
+Head,Top info,Head
+Body,Content info,Body
+Html,Root,Html
+Doctype,Type def,Doctype
+Comment,Note,コメント
+Selector,Target,セレクタ
+Property,Attribute,プロパティ
+Value,Setting,値
+Unit,Measure,単位
+Px,Pixel,px
+Em,Relative size,em
+Rem,Root em,rem
+Vw,View width,vw
+Vh,View height,vh
+Percent,Ratio,パーセント (%)
+Color,Paint,色
+Background,Back,背景
+Border,Edge,枠線
+Margin,Out space,マージン
+Padding,In space,パディング
+Width,Wide,幅
+Height,High,高さ
+Display,Show,表示
+Position,Place,位置
+Top,Up,上
+Right,Starboard,右
+Bottom,Down,下
+Left,Port,左
+Float,Drift,フロート
+Clear,Reset,クリア
+Overflow,Spill,オーバーフロー
+Z-index,Depth,Z-index
+Flex,Flex,Flex
+Grid,Grid,Grid
+Align,Line up,整列
+Justify,Space out,ジャスティファイ
+Content,Stuff,コンテンツ
+Items,Things,アイテム
+Self,One,自身
+Direction,Way,方向
+Wrap,Fold,折り返し
+Grow,Big,拡大
+Shrink,Small,縮小
+Basis,Start,基準
+Template,Mold,テンプレート
+Area,Zone,エリア
+Gap,Space,ギャップ
+Radius,Curve,半径
+Shadow,Shade,影
+Transform,Change,変形
+Transition,Move,遷移
+Animation,Action,アニメーション
+Keyframe,Step,キーフレーム
+Media Query,Conditional style,メディアクエリ
+Responsive,Flexible,レスポンシブ
+Mobile First,Phone start,モバイルファースト
+Desktop First,PC start,デスクトップファースト
+Breakpoint,Change point,ブレークポイント
+Layout,Plan,レイアウト
+Design,Art,デザイン
+UI,Interface,UI
+UX,Experience,UX
+Theme,Skin,テーマ
+Template,Pattern,テンプレート
+Plugin,Tool,プラグイン
+Widget,Gadget,ウィジェット
+Menu,List,メニュー
+Sidebar,Bar,サイドバー
+Footer,Foot,フッター
+Header,Head,ヘッダー
+Content,Body,コンテンツ
+Post,Entry,投稿
+Page,Sheet,ページ
+Category,Group,カテゴリー
+Tag,Label,タグ
+Comment,Remark,コメント
+User,Person,ユーザー
+Admin,Boss,管理者
+Settings,Set,設定
+Tools,Utils,ツール
+Dashboard,Dash,ダッシュボード
+Update,Refresh,更新
+Install,Add,インストール
+Delete,Remove,削除
+Edit,Change,編集
+View,Look,表示
+Preview,Peek,プレビュー
+Draft,Rough,下書き
+Publish,Live,公開
+Trash,Bin,ゴミ箱
+Media,Files,メディア
+Library,Stock,ライブラリ
+Upload,Send,アップロード
+Insert,Put,挿入
+Gallery,Album,ギャラリー
+Caption,Text,キャプション
+Alt Text,Desc,代替テキスト
+Description,Details,説明
+Title,Name,タイトル
+Link,Url,リンク
+Alignment,Pos,配置
+Size,Dim,サイズ
+Thumbnail,Thumb,サムネイル
+Medium,Mid,中
+Large,Big,大
+Full Size,Max,フルサイズ
+Custom,Special,カスタム
+Shortcode,Code,ショートコード
+Embed,In,埋め込み
+Oembed,Auto in,oEmbed
+Feed,Stream,フィード
+RSS,Xml,RSS
+Atom,Xml,Atom
+Search,Seek,検索
+Form,Sheet,フォーム
+Input,Field,入力
+Button,Click,ボタン
+Checkbox,Check,チェックボックス
+Radio,Dot,ラジオボタン
+Select,Pick,選択
+Textarea,Box,テキストエリア
+Label,Tag,ラベル
+Submit,Send,送信
+Reset,Clear,リセット
+Hidden,Hide,隠し
+Password,Pass,パスワード
+Email,Mail,メール
+Url,Web,URL
+Tel,Phone,電話
+Number,Count,数値
+Date,Day,日付
+Time,Clock,時間
+Color,Hue,色
+File,Doc,ファイル
+Range,Span,範囲
+Search,Find,検索
+Image,Pic,画像
+Submit,Go,送信
+Fieldset,Group,フィールドセット
+Legend,Title,凡例
+Table,Grid,表
+Thead,Head,ヘッダー
+Tbody,Body,ボディ
+Tfoot,Foot,フッター
+Tr,Row,行
+Th,Head cell,見出しセル
+Td,Data cell,データセル
+Col,Column,列
+Colgroup,Col group,列グループ
+Caption,Title,キャプション
+Ul,List,非順序リスト
+Ol,Order list,順序リスト
+Li,Item,リスト項目
+Dl,Def list,定義リスト
+Dt,Term,用語
+Dd,Desc,説明
+Menu,Menu,メニュー
+Command,Cmd,コマンド
+Summary,Sum,要約
+Details,Info,詳細
+Meter,Gauge,メーター
+Progress,Bar,プログレス
+Dialog,Box,ダイアログ
+Address,Loc,連絡先
+Article,Post,記事
+Aside,Side,補足
+Blockquote,Quote,引用
+Canvas,Draw,キャンバス
+Dd,Desc,説明
+Div,Box,Div
+Dl,List,定義リスト
+Dt,Term,用語
+Fieldset,Set,フィールドセット
+Figcaption,Cap,図表キャプション
+Figure,Fig,図表
+Footer,End,フッター
+Form,Form,フォーム
+H1,Head 1,見出し1
+H2,Head 2,見出し2
+H3,Head 3,見出し3
+H4,Head 4,見出し4
+H5,Head 5,見出し5
+H6,Head 6,見出し6
+Header,Top,ヘッダー
+Hr,Line,区切り線
+Li,Item,項目
+Main,Core,メイン
+Nav,Nav,ナビゲーション
+Ol,List,順序付きリスト
+P,Text,段落
+Pre,Code,整形済み
+Section,Part,セクション
+Table,Grid,テーブル
+Tbody,Body,テーブルボディ
+Td,Cell,セル
+Tfoot,Foot,テーブルフッター
+Th,Head,テーブルヘッダー
+Thead,Head,テーブルヘッド
+Tr,Row,行
+Ul,List,箇条書き
+Video,Mov,動画
+Abbr,Short,略語
+B,Bold,太字
+Bdi,Iso,Bdi
+Bdo,Dir,Bdo
+Br,Break,改行
+Cite,Ref,引用元
+Code,Src,コード
+Data,Val,データ
+Dfn,Def,定義
+Em,Emphasize,強調
+G,Go,G
+I,Italic,イタリック
+Kbd,Input,キーボード入力
+Mark,Highlight,マーカー
+Q,Quote,引用
+Rp,Ruby P,Rp
+Rt,Ruby T,Rt
+Ruby,Ruby,ルビ
+S,Strike,取り消し線
+Samp,Sample,サンプル
+Small,Tiny,小文字
+Span,Span,Span
+Strong,Bold,強い強調
+Sub,Lower,下付き
+Sup,Upper,上付き
+Time,Date,日時
+U,Under,下線
+Var,Var,変数
+Wbr,Break,Wbr
+Area,Zone,領域
+Audio,Snd,音声
+Img,Pic,画像
+Map,Map,マップ
+Track,Sub,トラック
+Video,Vid,動画
+Embed,Obj,埋め込み
+Iframe,Win,Iframe
+Object,Obj,オブジェクト
+Param,Var,パラメータ
+Picture,Img,画像
+Portal,Gate,ポータル
+Source,Src,ソース
+Svg,Vec,SVG
+Math,Math,数式
+Noscript,No js,Noscript
+Script,Js,スクリプト
+Del,Del,削除
+Ins,Add,追加
+Caption,Cap,キャプション
+Col,Col,列
+Colgroup,Grp,列グループ
+Table,Tab,テーブル
+Tbody,Bod,ボディ
+Td,Dat,データ
+Tfoot,Fot,フッター
+Th,Hed,ヘッダー
+Thead,Hed,ヘッド
+Tr,Row,行
+Button,Btn,ボタン
+Datalist,List,データリスト
+Fieldset,Set,フィールドセット
+Form,Frm,フォーム
+Input,Inp,入力
+Label,lbl,ラベル
+Legend,Leg,凡例
+Meter,Met,メーター
+Optgroup,Grp,オプショングループ
+Option,Opt,オプション
+Output,Out,出力
+Progress,Prg,プログレス
+Select,Sel,選択
+Textarea,Txt,テキストエリア
+Details,Det,詳細
+Dialog,Dlg,ダイアログ
+Menu,Mnu,メニュー
+Summary,Sum,要約
+Slot,Slt,スロット
+Template,Tmp,テンプレート
+Acronym,Acr,頭字語
+Applet,App,アプレット
+Basefont,Fnt,基本フォント
+Big,Big,大文字
+Center,Cen,中央寄せ
+Dir,Dir,ディレクトリ
+Font,Fnt,フォント
+Frame,Frm,フレーム
+Frameset,Set,フレームセット
+Isindex,Idx,インデックス
+Noframes,No,ノーフレーム
+Strike,Str,取り消し線
+Tt,Typ,等幅
+Xmp,Ex,例
+Align,Alg,配置
+Alink,Lnk,リンク色
+Axis,Ax,軸
+Background,Bg,背景
+Bgcolor,Col,背景色
+Border,Bdr,枠線
+Cellpadding,Pad,セル内余白
+Cellspacing,Spc,セル間余白
+Char,Chr,文字
+Charoff,Off,文字オフセット
+Charset,Set,文字セット
+Classid,Id,クラスID
+Clear,Clr,クリア
+Codebase,Bas,コードベース
+Codetype,Typ,コードタイプ
+Color,Col,色
+Compact,Cpt,コンパクト
+Coords,Crd,座標
+Declare,Dec,宣言
+Face,Fce,フォント名
+Frame,Frm,フレーム枠
+Frameborder,Bdr,フレーム枠線
+Hspace,Hsp,水平余白
+Language,Lng,言語
+Link,Lnk,リンク
+Marginheight,Hgt,マージン高さ
+Marginwidth,Wdt,マージン幅
+Nohref,No,リンクなし
+Noresize,No,サイズ変更不可
+Noshade,No,影なし
+Nowrap,No,折り返しなし
+Profile,Pro,プロファイル
+Prompt,Prm,プロンプト
+Scrolling,Scr,スクロール
+Shapes,Shp,形状
+Standby,Std,待機
+Start,Str,開始
+Target,Tgt,ターゲット
+Text,Txt,テキスト
+Type,Typ,タイプ
+Valign,Val,垂直配置
+Valuetype,Typ,値タイプ
+Version,Ver,バージョン
+Vlink,Lnk,訪問済みリンク色
+Vspace,Vsp,垂直余白
+Width,Wdt,幅
+Border-color,Col,枠線色
+Border-style,Sty,枠線スタイル
+Border-width,Wdt,枠線幅
+Border-top,Top,上枠線
+Border-right,Rgt,右枠線
+Border-bottom,Btm,下枠線
+Border-left,Lft,左枠線
+Margin-top,Top,上マージン
+Margin-right,Rgt,右マージン
+Margin-bottom,Btm,下マージン
+Margin-left,Lft,左マージン
+Padding-top,Top,上パディング
+Padding-right,Rgt,右パディング
+Padding-bottom,Btm,下パディング
+Padding-left,Lft,左パディング
+Font-family,Fam,フォントファミリー
+Font-size,Siz,フォントサイズ
+Font-style,Sty,フォントスタイル
+Font-variant,Var,フォントバリアント
+Font-weight,Wgt,フォントの太さ
+Line-height,Hgt,行の高さ
+Text-align,Alg,テキスト配置
+Text-decoration,Dec,テキスト装飾
+Text-indent,Ind,テキストインデント
+Text-transform,Trn,テキスト変換
+Vertical-align,Val,垂直配置
+White-space,Spc,空白の扱い
+Word-spacing,Spc,単語間隔
+Letter-spacing,Spc,文字間隔
+List-style,Sty,リストスタイル
+List-style-image,Img,リスト画像
+List-style-position,Pos,リスト位置
+List-style-type,Typ,リストタイプ
+Display,Dsp,表示
+Position,Pos,位置
+Top,Top,上
+Right,Rgt,右
+Bottom,Btm,下
+Left,Lft,左
+Float,Flt,フロート
+Clear,Clr,クリア
+Z-index,Zdx,重なり順
+Overflow,Ovf,はみ出し
+Clip,Clp,切り抜き
+Visibility,Vis,可視性
+Cursor,Cur,カーソル
+Outline,Out,アウトライン
+Outline-color,Col,アウトライン色
+Outline-style,Sty,アウトラインスタイル
+Outline-width,Wdt,アウトライン幅
+Content,Cnt,コンテンツ
+Quotes,Qts,引用符
+Counter-reset,Rst,カウンタリセット
+Counter-increment,Inc,カウンタ加算
+Page-break-before,Bfr,改ページ前
+Page-break-after,Aft,改ページ後
+Page-break-inside,Ins,改ページ内
+Orphans,Orp,孤立行
+Widows,Wid,未亡人行
+Backface-visibility,Bfv,裏面の可視性
+Perspective,Per,遠近感
+Perspective-origin,Org,遠近感の原点
+Transform,Trn,変形
+Transform-origin,Org,変形の原点
+Transform-style,Sty,変形スタイル
+Transition,Trn,遷移
+Transition-property,Prp,遷移プロパティ
+Transition-duration,Dur,遷移時間
+Transition-timing-function,Fnc,遷移タイミング
+Transition-delay,Dly,遷移遅延
+Animation,Ani,アニメーション
+Animation-name,Nam,アニメーション名
+Animation-duration,Dur,アニメーション時間
+Animation-timing-function,Fnc,アニメーションタイミング
+Animation-delay,Dly,アニメーション遅延
+Animation-iteration-count,Cnt,アニメーション繰り返し
+Animation-direction,Dir,アニメーション方向
+Animation-fill-mode,Mod,アニメーションフィルモード
+Animation-play-state,Sta,アニメーション再生状態
+Box-shadow,Shd,ボックス影
+Text-shadow,Shd,テキスト影
+Border-radius,Rad,角丸
+Background-image,Img,背景画像
+Background-position,Pos,背景位置
+Background-size,Siz,背景サイズ
+Background-repeat,Rpt,背景繰り返し
+Background-attachment,Att,背景固定
+Background-color,Col,背景色
+Background-origin,Org,背景原点
+Background-clip,Clp,背景切り抜き
+Opacity,Opa,不透明度
+Box-sizing,Siz,ボックスサイズ
+Flex,Flx,Flex
+Flex-direction,Dir,Flex方向
+Flex-wrap,Wrp,Flex折り返し
+Flex-flow,Flo,Flexフロー
+Justify-content,Jst,コンテンツ配置
+Align-items,Alg,アイテム配置
+Align-content,Alg,コンテンツ整列
+Order,Ord,順序
+Flex-grow,Grw,Flex拡大
+Flex-shrink,Shr,Flex縮小
+Flex-basis,Bas,Flex基準
+Align-self,Alg,自己整列
+Grid,Grd,Grid
+Grid-template-columns,Col,Grid列
+Grid-template-rows,Row,Grid行
+Grid-template-areas,Are,Gridエリア
+Grid-template,Tmp,Gridテンプレート
+Grid-auto-columns,Col,Grid自動列
+Grid-auto-rows,Row,Grid自動行
+Grid-auto-flow,Flo,Grid自動フロー
+Grid-column-gap,Gap,Grid列間隔
+Grid-row-gap,Gap,Grid行間隔
+Grid-gap,Gap,Grid間隔
+Grid-column-start,Str,Grid列開始
+Grid-column-end,End,Grid列終了
+Grid-row-start,Str,Grid行開始
+Grid-row-end,End,Grid行終了
+Grid-column,Col,Grid列
+Grid-row,Row,Grid行
+Grid-area,Are,Gridエリア
+Place-content,Plc,コンテンツ配置
+Place-items,Plc,アイテム配置
+Place-self,Plc,自己配置
+Decoration,Dec,装飾
+Break,Brk,改行
+Wrap,Wrp,折り返し
+Image-rendering,Ren,画像レンダリング
+Object-fit,Fit,オブジェクト収まり
+Object-position,Pos,オブジェクト位置
+User-select,Sel,ユーザー選択
+Pointer-events,Ptr,ポインターイベント
+Resize,Res,サイズ変更
+Word-break,Brk,単語改行
+Word-wrap,Wrp,単語折り返し
+Text-overflow,Ovf,テキストはみ出し
+Hyphens,Hyp,ハイフン
+Tab-size,Tab,タブサイズ
+Column-count,Cnt,列数
+Column-width,Wdt,列幅
+Column-gap,Gap,列間隔
+Column-rule,Rul,列罫線
+Column-rule-color,Col,列罫線色
+Column-rule-style,Sty,列罫線スタイル
+Column-rule-width,Wdt,列罫線幅
+Column-span,Spn,列またぎ
+Column-fill,Fil,列埋め
+Columns,Col,列
+Filter,Flt,フィルター
+Backdrop-filter,Flt,背景フィルター
+Mix-blend-mode,Mix,ブレンドモード
+Isolation,Iso,分離

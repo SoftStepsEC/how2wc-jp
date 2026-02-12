@@ -55,6 +55,7 @@ pip install -r requirements.txt
 ### Google Cloud Translation API の設定
 
 このプロジェクトは Cloud Translation API (v3) を使用します。サービスアカウント認証を前提としています。
+また、用語集（Glossary）機能を使用するため、Google Cloud Storage のバケットも必要になる場合があります（用語集自動作成時）。
 
 1. Google Cloud プロジェクトを作成
 2. Cloud Translation API を有効化
@@ -70,11 +71,19 @@ export GOOGLE_CLOUD_PROJECT="your-gcp-project-id"
 
 # 任意: 既定は global
 export GOOGLE_CLOUD_LOCATION="global"
+
+# 用語集CSV保存用バケット (初回作成時のみ必要)
+export GOOGLE_CLOUD_GLOSSARY_BUCKET="your-glossary-bucket-name"
 ```
 
 `.env` を使う場合は、同じ内容をプロジェクト直下の `.env` に記載できます。
 
 `.env.example` を参考にして作成できます。
+
+### 用語集 (Glossary) について
+
+`glossary.csv` ファイルをプロジェクトルートに配置することで、特定の技術用語やWooCommerce固有の用語の翻訳を統一しています。
+初回実行時にこのCSVファイルが自動的にGoogle Cloud上にアップロードされ、用語集リソースが作成されます。
 
 ### GitHub Actions のシークレット設定
 
@@ -83,6 +92,7 @@ Actions で自動翻訳を実行する場合、以下のシークレットを設
 - `GCP_SA_KEY`: サービスアカウントJSONの内容（そのまま貼り付け）
 - `GOOGLE_CLOUD_PROJECT`: Google Cloud のプロジェクトID
 - `GOOGLE_CLOUD_LOCATION`: 任意（未設定なら `global` を使用）
+- `GOOGLE_CLOUD_GLOSSARY_BUCKET`: 用語集用バケット名
 
 ## 使用方法
 
@@ -94,10 +104,41 @@ Actions で自動翻訳を実行する場合、以下のシークレットを設
 python main.py
 ```
 
-個別にスクリプトを実行:
+### 翻訳ツールの詳細オプション
+
+`translator.py` は個別のファイルやディレクトリ単位での実行、およびコスト見積もりが可能です。
+
+#### 全体を翻訳
+```bash
+python translator.py
+```
+
+#### 特定のファイルのみ翻訳
+```bash
+python translator.py --file docs/en/getting-started.md
+```
+
+#### 特定のディレクトリ以下を翻訳
+```bash
+python translator.py --dir docs/en/products
+```
+
+#### 翻訳コストの見積もり (Dry Run)
+実際にAPIを呼び出さず、翻訳対象の文字数と推定コストを表示します。
+
+```bash
+# 全体の見積もり
+python translator.py --estimate-cost
+
+# 特定ディレクトリの見積もり
+python translator.py --dir docs/en/products --estimate-cost
+```
+
+スクリプトを個別に実行:
 
 ```bash
 # ドキュメントのスクレイピングのみ
+
 python scraper.py
 
 # 翻訳のみ

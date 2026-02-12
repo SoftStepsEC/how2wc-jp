@@ -9,8 +9,10 @@ import os
 import re
 import json
 import time
+import argparse
 from pathlib import Path
 from google.cloud import translate_v3 as translate
+from google.cloud import storage
 from dotenv import load_dotenv
 
 
@@ -22,14 +24,28 @@ class DocumentTranslator:
     METADATA_FILE = "metadata.json"
     TRANSLATED_METADATA_FILE = "translated_metadata.json"
     DEFAULT_LOCATION = "global"
+    GLOSSARY_ID = "woocommerce-glossary"
     
-    def __init__(self):
+    def __init__(self, estimate_mode=False):
         """Initialize the translator."""
         load_dotenv()
         self.project_id = os.getenv("GOOGLE_CLOUD_PROJECT")
         self.location = os.getenv("GOOGLE_CLOUD_LOCATION", self.DEFAULT_LOCATION)
-        self._validate_cloud_settings()
-        self.client = translate.TranslationServiceClient()
+        self.estimate_mode = estimate_mode
+        self.total_characters = 0
+        
+        # Optional: Bucket for glossary creation (only needed if creating a new glossary)
+        self.glossary_bucket = os.getenv("GOOGLE_CLOUD_GLOSSARY_BUCKET") 
+        
+        if not self.estimate_mode:
+            self._validate_cloud_settings()
+            self.client = translate.TranslationServiceClient()
+            self.glossary_config = None
+            self._setup_glossary()
+        else:
+             self.client = None
+             self.glossary_config = None
+             
         self.translated_metadata = {}
 
     def _validate_cloud_settings(self):
@@ -38,7 +54,86 @@ class DocumentTranslator:
             raise ValueError(
                 "Missing GOOGLE_CLOUD_PROJECT. Set the env var or add it to a .env file."
             )
+
+    def _setup_glossary(self):
+        """Check if glossary exists, create if not (if bucket is provided), and set config."""
+        glossary_name = self.client.glossary_path(
+            self.project_id, self.location, self.GLOSSARY_ID
+        )
+        try:
+            self.client.get_glossary(name=glossary_name)
+            print(f"Using existing glossary: {glossary_name}")
+            self.glossary_config = translate.TranslateTextGlossaryConfig(
+                glossary=glossary_name
+            )
+        except Exception:
+            print(f"Glossary {self.GLOSSARY_ID} not found.")
+            if self.glossary_bucket:
+                print("Attempting to create glossary...")
+                self._create_glossary(glossary_name)
+            else:
+                print("No GOOGLE_CLOUD_GLOSSARY_BUCKET provided. Skipping glossary creation.")
+                print("To use glossary, please upload glossary.csv to a bucket and set the env var.")
+
+    def _create_glossary(self, glossary_name):
+        """Create a glossary resource in Google Cloud."""
+        # Upload glossary.csv to GCS
+        if not self.glossary_bucket:
+             print("Error: GOOGLE_CLOUD_GLOSSARY_BUCKET not set. Cannot create glossary.")
+             return
+
+        print(f"Uploading glossary.csv to gs://{self.glossary_bucket}...")
+        try:
+            storage_client = storage.Client(project=self.project_id)
+            bucket = storage_client.bucket(self.glossary_bucket)
+            blob = bucket.blob("glossary.csv")
+            blob.upload_from_filename("glossary.csv")
+            print("Upload complete.")
+            
+            gcs_uri = f"gs://{self.glossary_bucket}/glossary.csv"
+            
+            print(f"Creating glossary resource from {gcs_uri}...")
+            
+            glossary = translate.Glossary(
+                name=glossary_name,
+                language_codes_set=translate.Glossary.LanguageCodesSet(
+                    language_codes=["en", "ja"]
+                ),
+                input_config=translate.GlossaryInputConfig(
+                    gcs_source=translate.GcsSource(input_uri=gcs_uri)
+                ),
+            )
+
+            operation = self.client.create_glossary(
+                parent=f"projects/{self.project_id}/locations/{self.location}",
+                glossary=glossary
+            )
+            result = operation.result(timeout=180)
+            print("Created glossary: {}".format(result.name))
+            self.glossary_config = translate.TranslateTextGlossaryConfig(
+                glossary=result.name
+            )
+        except Exception as e:
+            print(f"Failed to create glossary: {e}")
+
+    def resolve_target_path(self, source_path):
+        """Resolve target path ensuring it mirrors the source folder structure."""
+        source_path = Path(source_path).resolve()
+        source_root = Path(self.SOURCE_DIR).resolve()
         
+        try:
+            # Check if file is inside the source root
+            relative_path = source_path.relative_to(source_root)
+            target_path = Path(self.TARGET_DIR).resolve() / relative_path
+            return target_path
+        except ValueError:
+            # File is outside SOURCE_DIR, output with suffix in same dir
+            # Or handle arbitrary paths
+            print(f"Note: {source_path} is outside configured source dir {self.SOURCE_DIR}")
+            if source_path.is_dir():
+                return source_path.with_name(source_path.name + "_translated")
+            return source_path.with_name(source_path.stem + "_ja" + source_path.suffix)
+            
     def load_metadata(self):
         """Load metadata from JSON file."""
         metadata_path = Path(self.METADATA_FILE)
@@ -50,6 +145,10 @@ class DocumentTranslator:
     def translate_text(self, text, src='en', dest='ja'):
         """Translate text using Google Cloud Translation API."""
         if not text or not text.strip():
+            return text
+            
+        if self.estimate_mode:
+            self.total_characters += len(text)
             return text
         
         try:
@@ -71,22 +170,33 @@ class DocumentTranslator:
     def _translate_chunk(self, text, src, dest):
         """Translate a single chunk via Cloud Translation API."""
         parent = f"projects/{self.project_id}/locations/{self.location}"
-        response = self.client.translate_text(
-            request={
-                "parent": parent,
-                "contents": [text],
-                "mime_type": "text/plain",
-                "source_language_code": src,
-                "target_language_code": dest,
-            }
-        )
+        
+        # Use simple translation request, but add glossary if available
+        request = {
+            "parent": parent,
+            "contents": [text],
+            "mime_type": "text/plain",
+            "source_language_code": src,
+            "target_language_code": dest,
+            # Enable "Translation LLM" equivalent features by using NMT (default)
+            # which is now highly advanced. 
+        }
+        
+        if self.glossary_config:
+            request["glossary_config"] = self.glossary_config
+            
+        response = self.client.translate_text(request=request)
+        
         if not response.translations:
             return text
         return response.translations[0].translated_text
     
     def translate_markdown_file(self, source_path, target_path):
         """Translate a Markdown file from English to Japanese."""
-        print(f"Translating: {source_path}")
+        if self.estimate_mode:
+             print(f"Estimating: {source_path}")
+        else:
+             print(f"Translating: {source_path}")
         
         # Read source file
         with open(source_path, 'r', encoding='utf-8') as f:
@@ -116,6 +226,10 @@ class DocumentTranslator:
         # Translate body while preserving Markdown structure
         translated_body = self.translate_markdown_content(body)
         
+        if self.estimate_mode:
+            # Just calculating costs, don't write file
+            return
+
         # Reconstruct file
         if frontmatter:
             translated_content = f"---\n{frontmatter}\n---\n{translated_body}"
@@ -208,17 +322,38 @@ class DocumentTranslator:
                 self.translate_markdown_file(md_file, target_file)
                 
                 # Update metadata
-                self.translated_metadata[str(md_file)] = {
-                    'source': str(md_file),
-                    'target': str(target_file),
-                    'relative_path': str(relative_path)
-                }
+                if not self.estimate_mode:
+                    self.translated_metadata[str(md_file)] = {
+                        'source': str(md_file),
+                        'target': str(target_file),
+                        'relative_path': str(relative_path)
+                    }
                 
                 # Rate limiting
-                time.sleep(1)
+                if not self.estimate_mode:
+                    time.sleep(1)
                 
             except Exception as e:
                 print(f"Error translating {md_file}: {e}")
+                
+        if self.estimate_mode:
+            self._print_cost_estimate()
+
+    def _print_cost_estimate(self):
+        """Print the estimated translation cost."""
+        total_chars = self.total_characters
+        # Pricing assumption: $20.00 USD per million characters (approximate standard/advanced rate)
+        # Note: Actual pricing depends on volume, specific API version (Basic vs Advanced), and currency.
+        price_per_million = 20.00
+        cost_usd = (total_chars / 1_000_000) * price_per_million
+        
+        print("\n" + "=" * 40)
+        print(f"TRANSLATION COST ESTIMATE (Dry Run)")
+        print("=" * 40)
+        print(f"Total Characters to Translate: {total_chars:,}")
+        print(f"Estimated Cost (USD): ${cost_usd:,.2f}")
+        print(f"  (@ ${price_per_million:.2f} per 1M chars)")
+        print("=" * 40 + "\n")
     
     def save_translated_metadata(self):
         """Save translated file metadata."""
@@ -229,23 +364,75 @@ class DocumentTranslator:
     
     def run(self):
         """Run the translator."""
-        print("Starting document translation...")
+        if self.estimate_mode:
+             print("MODE: COST ESTIMATION ONLY (Dry Run)")
+        else:
+            print("Starting document translation...")
         print(f"Source: {self.SOURCE_DIR}")
         print(f"Target: {self.TARGET_DIR}")
         
         # Create target directory
-        Path(self.TARGET_DIR).mkdir(parents=True, exist_ok=True)
+        if not self.estimate_mode:
+            Path(self.TARGET_DIR).mkdir(parents=True, exist_ok=True)
         
         # Translate all files
         self.translate_directory(self.SOURCE_DIR, self.TARGET_DIR)
         
         # Save metadata
-        self.save_translated_metadata()
+        if not self.estimate_mode:
+            self.save_translated_metadata()
         
         print("\nTranslation complete!")
-        print(f"Translated files saved to: {self.TARGET_DIR}")
+        if not self.estimate_mode:
+            print(f"Translated files saved to: {self.TARGET_DIR}")
 
 
 if __name__ == "__main__":
-    translator = DocumentTranslator()
-    translator.run()
+    parser = argparse.ArgumentParser(description="Translate WooCommerce documentation.")
+    parser.add_argument("--file", help="Translate a specific file")
+    parser.add_argument("--dir", help="Translate a specific directory")
+    parser.add_argument("--estimate-cost", action="store_true", help="Calculate estimated translation cost without running translation")
+    
+    args = parser.parse_args()
+    
+    translator = DocumentTranslator(estimate_mode=args.estimate_cost)
+    
+    if args.file:
+        source_file = Path(args.file)
+        if not source_file.exists():
+            print(f"Error: File not found: {source_file}")
+            exit(1)
+            
+        target_file = translator.resolve_target_path(source_file)
+        if args.estimate_cost:
+            print(f"Estimating cost for single file: {source_file}")
+        else:
+            print(f"Translating single file: {source_file} -> {target_file}")
+            
+        translator.translate_markdown_file(source_file, target_file)
+        if args.estimate_cost:
+            translator._print_cost_estimate()
+        
+    elif args.dir:
+        source_dir = Path(args.dir)
+        if not source_dir.exists():
+            print(f"Error: Directory not found: {source_dir}")
+            exit(1)
+            
+        target_dir = translator.resolve_target_path(source_dir)
+        if args.estimate_cost:
+             print(f"Estimating cost for directory: {source_dir}")
+        else:
+            print(f"Translating directory: {source_dir} -> {target_dir}")
+            Path(target_dir).mkdir(parents=True, exist_ok=True)
+            
+        translator.translate_directory(source_dir, target_dir)
+        if not args.estimate_cost:
+            translator.save_translated_metadata()
+        
+    else:
+        # Default behavior: run full translation
+        if args.estimate_cost:
+            print(f"Estimating cost for ALL files in: {translator.SOURCE_DIR}")
+        
+        translator.run()
