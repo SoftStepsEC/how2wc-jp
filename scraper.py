@@ -11,6 +11,7 @@ import time
 import random
 import json
 import argparse
+import hashlib
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 import requests
@@ -22,6 +23,7 @@ class WooCommerceDocScraper:
     
     BASE_URL = "https://woocommerce.com/documentation/woocommerce/"
     DOCS_DIR = "docs/en"
+    IMAGES_DIR = "docs/images"
     METADATA_FILE = "metadata.json"
     WP_EXPORT_FILE = "wp_export.json"
     
@@ -39,6 +41,7 @@ class WooCommerceDocScraper:
         self.last_request_at = 0.0
         self.max_pages = max_pages
         self.pages_scraped = 0
+        self.images_metadata = {}  # Track downloaded images
         
     def sanitize_filename(self, text):
         """Convert text to a safe filename."""
@@ -56,6 +59,68 @@ class WooCommerceDocScraper:
             clean_path = f"{clean_path}/"
         return f"{parsed.scheme}://{parsed.netloc}{clean_path}"
 
+    def download_image(self, img_url, page_url, alt_text='', context=''):
+        """Download an image and return local path with metadata."""
+        try:
+            # Create images directory
+            images_dir = Path(self.IMAGES_DIR)
+            images_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Generate filename from URL hash to avoid duplicates
+            url_hash = hashlib.md5(img_url.encode()).hexdigest()
+            parsed = urlparse(img_url)
+            ext = Path(parsed.path).suffix or '.jpg'
+            filename = f"{url_hash}{ext}"
+            filepath = images_dir / filename
+            
+            # Check if image metadata already exists
+            if img_url in self.images_metadata:
+                existing = self.images_metadata[img_url]
+                # Add new context if different page
+                if page_url not in existing.get('used_on_pages', []):
+                    existing.setdefault('used_on_pages', []).append(page_url)
+                    existing.setdefault('contexts', []).append({'page': page_url, 'alt': alt_text, 'context': context})
+                return str(filepath), filename
+            
+            # Skip download if file exists
+            if not filepath.exists():
+                # Download image with throttling
+                elapsed = time.time() - self.last_request_at
+                min_wait = self.request_delay + random.uniform(0, self.request_jitter)
+                if elapsed < min_wait:
+                    time.sleep(min_wait - elapsed)
+                
+                print(f"Downloading image: {img_url}")
+                response = self.session.get(img_url, timeout=30, stream=True)
+                self.last_request_at = time.time()
+                response.raise_for_status()
+                
+                # Save image
+                with open(filepath, 'wb') as f:
+                    for chunk in response.iter_content(chunk_size=8192):
+                        f.write(chunk)
+                
+                print(f"Saved image: {filepath}")
+            
+            # Store metadata with context
+            self.images_metadata[img_url] = {
+                'local_path': str(filepath),
+                'filename': filename,
+                'source_url': img_url,
+                'used_on_pages': [page_url],
+                'contexts': [{
+                    'page': page_url,
+                    'alt': alt_text,
+                    'context': context  # Surrounding text for positioning
+                }]
+            }
+            
+            return str(filepath), filename
+            
+        except Exception as e:
+            print(f"Error downloading image {img_url}: {e}")
+            return None, None
+    
     def slug_from_url(self, url):
         """Derive a stable slug from a URL path."""
         path_parts = [p for p in urlparse(url).path.split('/') if p]
@@ -242,7 +307,16 @@ class WooCommerceDocScraper:
                 alt = child.get('alt', '')
                 if src:
                     full_src = urljoin(base_url, src)
-                    lines.append(f"![{alt}]({full_src})\n")
+                    # Get surrounding context for image positioning
+                    context = self._get_image_context(child)
+                    # Download image and get local path
+                    local_path, filename = self.download_image(full_src, base_url, alt, context)
+                    if local_path:
+                        # Use local path in Markdown with placeholder that includes source URL
+                        lines.append(f"![{alt}]({local_path} \"{full_src}\")\n")
+                    else:
+                        # Fallback to original URL if download fails
+                        lines.append(f"![{alt}]({full_src})\n")
             
             # Divs and other containers - recurse
             elif tag in ['div', 'section', 'article', 'aside']:
@@ -251,6 +325,35 @@ class WooCommerceDocScraper:
                     lines.append(container_content)
         
         return '\n'.join(lines)
+    
+    def _get_image_context(self, img_element):
+        """Get surrounding text context for an image."""
+        context_parts = []
+        
+        # Get parent element text before image
+        parent = img_element.parent
+        if parent:
+            for sibling in parent.children:
+                if sibling == img_element:
+                    break
+                if isinstance(sibling, str):
+                    text = re.sub(r'\s+', ' ', sibling).strip()
+                    if text:
+                        context_parts.append(text)
+                elif hasattr(sibling, 'get_text'):
+                    text = re.sub(r'\s+', ' ', sibling.get_text()).strip()
+                    if text:
+                        context_parts.append(text)
+        
+        # Get figcaption if exists
+        figure = img_element.find_parent('figure')
+        if figure:
+            figcaption = figure.find('figcaption')
+            if figcaption:
+                caption = re.sub(r'\s+', ' ', figcaption.get_text()).strip()
+                context_parts.append(f"[Caption: {caption}]")
+        
+        return ' '.join(context_parts[:200])  # Limit context length
     
     def _process_inline_elements(self, element, base_url):
         """Process inline elements within text."""
@@ -355,7 +458,7 @@ class WooCommerceDocScraper:
         return '\n'.join(lines) + '\n' if lines else ''
     
     def html_to_clean_html(self, element, base_url):
-        """Clean and prepare HTML for WordPress."""
+        """Clean and prepare HTML for WordPress with local image references."""
         # Clone element to avoid modifying original
         import copy
         cleaned = copy.copy(element)
@@ -364,17 +467,35 @@ class WooCommerceDocScraper:
         for tag in cleaned.find_all(['script', 'style', 'nav', 'footer', 'header']):
             tag.decompose()
         
-        # Remove unwanted classes and attributes
+        # Process images: download and update src to include metadata marker
+        for img in cleaned.find_all('img'):
+            src = img.get('src')
+            if src:
+                full_src = urljoin(base_url, src)
+                alt = img.get('alt', '')
+                context = self._get_image_context(img)
+                local_path, filename = self.download_image(full_src, base_url, alt, context)
+                if local_path:
+                    # Mark image with data attributes for WordPress migration
+                    img['data-original-src'] = full_src
+                    img['data-local-path'] = local_path
+                    img['data-filename'] = filename
+                    img['src'] = local_path  # Use local path in HTML
+        
+        # Remove unwanted classes and attributes (but keep data-* attributes for images)
         for tag in cleaned.find_all(True):
-            # Keep only essential attributes
             attrs_to_keep = {}
             if tag.name == 'a' and tag.get('href'):
                 attrs_to_keep['href'] = urljoin(base_url, tag['href'])
             if tag.name == 'img':
                 if tag.get('src'):
-                    attrs_to_keep['src'] = urljoin(base_url, tag['src'])
+                    attrs_to_keep['src'] = tag['src']
                 if tag.get('alt'):
                     attrs_to_keep['alt'] = tag['alt']
+                # Keep data attributes for migration
+                for attr in ['data-original-src', 'data-local-path', 'data-filename']:
+                    if tag.get(attr):
+                        attrs_to_keep[attr] = tag[attr]
             if tag.name in ['td', 'th'] and tag.get('colspan'):
                 attrs_to_keep['colspan'] = tag['colspan']
             if tag.name in ['td', 'th'] and tag.get('rowspan'):
@@ -641,6 +762,13 @@ url: {content_data['url']}
         with open(metadata_path, 'w', encoding='utf-8') as f:
             json.dump(self.metadata, f, indent=2, ensure_ascii=False)
         print(f"Metadata saved to {metadata_path}")
+        
+        # Save images metadata
+        if self.images_metadata:
+            images_metadata_path = Path('images_metadata.json')
+            with open(images_metadata_path, 'w', encoding='utf-8') as f:
+                json.dump(self.images_metadata, f, indent=2, ensure_ascii=False)
+            print(f"Images metadata saved to {images_metadata_path}")
 
     def save_wp_export(self):
         """Save WordPress REST API JSON export."""
@@ -649,25 +777,52 @@ url: {content_data['url']}
             md_content = self.read_markdown_content(item['path'])
             
             # Extract HTML content from metadata if available
-            # Otherwise use markdown
             html_content = item.get('html_content', md_content)
+            
+            # Collect images used in this page with full context
+            page_images = []
+            for img_url, img_data in self.images_metadata.items():
+                # Check if this image is used on this page
+                for ctx in img_data.get('contexts', []):
+                    if ctx.get('page') == url:
+                        page_images.append({
+                            'source_url': img_url,
+                            'local_path': img_data['local_path'],
+                            'filename': img_data['filename'],
+                            'alt': ctx.get('alt', ''),
+                            'context': ctx.get('context', ''),  # Surrounding text
+                            'position_hint': self._extract_position_from_content(html_content, img_url)
+                        })
+                        break
             
             export_items.append({
                 'title': item['title'],
                 'slug': item.get('slug') or self.slug_from_url(url),
                 'slug_path': item.get('slug_path', ''),
-                'content': html_content,  # HTML for WordPress
+                'content': html_content,  # HTML for WordPress (includes data-* attributes)
                 'content_markdown': md_content,  # Markdown backup
                 'status': 'draft',
                 'parent_url': item.get('parent_url'),
                 'categories': item.get('categories', []),
-                'source_url': url
+                'source_url': url,
+                'images': page_images  # Images with position context
             })
 
         export_path = Path(self.WP_EXPORT_FILE)
         with open(export_path, 'w', encoding='utf-8') as f:
             json.dump(export_items, f, indent=2, ensure_ascii=False)
         print(f"WordPress export saved to {export_path}")
+    
+    def _extract_position_from_content(self, html_content, img_url):
+        """Extract position hint from HTML content."""
+        # Find the approximate position of image in content
+        if img_url in html_content:
+            pos = html_content.find(img_url)
+            # Get surrounding context (50 chars before and after)
+            start = max(0, pos - 50)
+            end = min(len(html_content), pos + len(img_url) + 50)
+            return html_content[start:end]
+        return ''
 
     def read_markdown_content(self, path):
         """Read Markdown content from a saved file."""
