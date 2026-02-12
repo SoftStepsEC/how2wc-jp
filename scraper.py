@@ -305,10 +305,29 @@ class WooCommerceDocScraper:
             elif tag == 'img':
                 src = child.get('src', '')
                 alt = child.get('alt', '')
+                
+                # If alt is empty, try to get from title or aria-label
+                if not alt:
+                    alt = child.get('title', '') or child.get('aria-label', '')
+                
                 if src:
                     full_src = urljoin(base_url, src)
                     # Get surrounding context for image positioning
                     context = self._get_image_context(child)
+                    
+                    # If still no alt text, generate from context
+                    if not alt and context:
+                        # Extract text from context, removing markers like [Preceding:]
+                        clean_context = re.sub(r'\[.*?:\s*', '', context)
+                        clean_context = re.sub(r'\]', '', clean_context)
+                        # Use first meaningful sentence (up to 100 chars)
+                        alt = clean_context.split('.')[0].strip()[:100]
+                    
+                    # If still empty, use filename without extension
+                    if not alt:
+                        from pathlib import Path
+                        alt = Path(urlparse(full_src).path).stem
+                    
                     # Download image and get local path
                     local_path, filename = self.download_image(full_src, base_url, alt, context)
                     if local_path:
@@ -330,6 +349,14 @@ class WooCommerceDocScraper:
         """Get surrounding text context for an image."""
         context_parts = []
         
+        # Get figcaption if exists
+        figure = img_element.find_parent('figure')
+        if figure:
+            figcaption = figure.find('figcaption')
+            if figcaption:
+                caption = re.sub(r'\s+', ' ', figcaption.get_text()).strip()
+                context_parts.append(f"[Caption: {caption}]")
+        
         # Get parent element text before image
         parent = img_element.parent
         if parent:
@@ -345,15 +372,37 @@ class WooCommerceDocScraper:
                     if text:
                         context_parts.append(text)
         
-        # Get figcaption if exists
-        figure = img_element.find_parent('figure')
-        if figure:
-            figcaption = figure.find('figcaption')
-            if figcaption:
-                caption = re.sub(r'\s+', ' ', figcaption.get_text()).strip()
-                context_parts.append(f"[Caption: {caption}]")
+        # If no context found yet, walk up the tree to find preceding paragraph
+        if not context_parts:
+            current = img_element
+            for _ in range(5):  # Walk up max 5 levels
+                if current.parent:
+                    current = current.parent
+                    # Look for preceding sibling paragraph
+                    for sibling in current.previous_siblings:
+                        if hasattr(sibling, 'name'):
+                            if sibling.name in ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6']:
+                                text = re.sub(r'\s+', ' ', sibling.get_text()).strip()
+                                if text:
+                                    context_parts.append(f"[Preceding: {text}]")
+                                    break
+                        if context_parts:
+                            break
+                if context_parts:
+                    break
         
-        return ' '.join(context_parts[:200])  # Limit context length
+        # Wistia-specific: extract video description from class or data attributes
+        wistia_div = img_element.find_parent('div', class_=lambda x: x and 'wistia' in str(x).lower())
+        if wistia_div:
+            # Extract media ID from class
+            classes = wistia_div.get('class', [])
+            for cls in classes:
+                if 'wistia_async_' in cls:
+                    media_id = cls.replace('wistia_async_', '').split()[0]
+                    context_parts.append(f"[Wistia video: {media_id}]")
+                    break
+        
+        return ' '.join(context_parts[:500])  # Limit context length
     
     def _process_inline_elements(self, element, base_url):
         """Process inline elements within text."""
@@ -473,7 +522,26 @@ class WooCommerceDocScraper:
             if src:
                 full_src = urljoin(base_url, src)
                 alt = img.get('alt', '')
+                
+                # If alt is empty, try to get from title or aria-label
+                if not alt:
+                    alt = img.get('title', '') or img.get('aria-label', '')
+                
                 context = self._get_image_context(img)
+                
+                # If still no alt text, generate from context
+                if not alt and context:
+                    # Extract text from context, removing markers like [Preceding:]
+                    clean_context = re.sub(r'\[.*?:\s*', '', context)
+                    clean_context = re.sub(r'\]', '', clean_context)
+                    # Use first meaningful sentence (up to 100 chars)
+                    alt = clean_context.split('.')[0].strip()[:100]
+                
+                # If still empty, use filename without extension
+                if not alt:
+                    from pathlib import Path
+                    alt = Path(urlparse(full_src).path).stem
+                
                 local_path, filename = self.download_image(full_src, base_url, alt, context)
                 if local_path:
                     # Mark image with data attributes for WordPress migration
@@ -481,6 +549,8 @@ class WooCommerceDocScraper:
                     img['data-local-path'] = local_path
                     img['data-filename'] = filename
                     img['src'] = local_path  # Use local path in HTML
+                    if alt:
+                        img['alt'] = alt  # Update alt attribute
         
         # Remove unwanted classes and attributes (but keep data-* attributes for images)
         for tag in cleaned.find_all(True):
