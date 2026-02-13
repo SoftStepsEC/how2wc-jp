@@ -46,3 +46,20 @@ Thumbs.db
 tmp/
 temp/
 *.tmp
+
+# Environment variables
+.env
+
+# Google Cloud credentials
+shinobiashi-wc-plugins-*.json
+# Google Cloud credentials
+*.json
+!metadata.json
+!translated_metadata.json
+!images_metadata.json
+!wp_export.json
+!package.json
+
+# Local config
+.env
+
