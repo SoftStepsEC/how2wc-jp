@@ -1,0 +1,14 @@
+---
+title: Performance
+url: https://woocommerce.com/documentation/woocommerce/site-admin/performance/
+---
+
+## Documents
+
+- [High-Performance Order Storage](https://woocommerce.com/document/high-performance-order-storage/) High-Performance Order Storage (HPOS) (previously known as Custom Order Tables) is a solution specifically designed for ecommerce needs that provides a simple-to-understand, solid database structure. It uses Woo’s Create, Read, Update, Delete (CRUD) design to store order data in custom tables optimized for WooCommerce queries, with minimal impact on the store’s performance. What’s new with High-Performance Order […]
+- [Troubleshooting a slow site](https://woocommerce.com/document/troubleshooting-a-slow-site/) The first step for troubleshooting a slow WooCommerce site is to determine the root cause. Cache and CDN Using a caching plugin such as WP Super Cache is a good way to optimize site performance. You can also use a Content Delivery Network (CDN) such as Jetpack’s site accelerator or Cloudflare to speed your site up […]
+- [WP_options table and site speed](https://woocommerce.com/document/wp_options-table-and-site-speed/) When a WordPress site runs slowly, the wp_options table is often overlooked. This table stores key site data, like permalinks, site settings, scheduled posts, and widget details. If you have already tried the most common steps for troubleshooting a slow WooCommerce site, reviewing the wp_options table would be a good next step. Almost every page […]
+- [Problems with large amounts of data not saving (variations, rates etc)](https://woocommerce.com/document/problems-with-large-amounts-of-data-not-saving-variations-rates-etc/) If you notice product variations, tax rates and other large data sets not saving, Suhosin (a security module in PHP) may be preventing the POST data from being saved. This issue can also be caused by servers with version PHP 5.3.9+ and servers running mod_security. Configuring Suhosin If enabled, Suhosin may need to be configured […]
+- [Endless loading/spinner on the checkout page](https://woocommerce.com/document/endless-loadingspinner-on-the-checkout-page/) The ‘review order’ page loads the payment methods/totals via AJAX – this display a loading spinner briefly. If there are problems, this section may fail to load or the spinner may remain. First, you should check WooCommerce > Status for errors – often errors will be highlighted. Common causes and resolutions are listed below. AJAX […]
+- [jQuery.cookie.js/jQuery.cookie.min.js scripts fail to load](https://woocommerce.com/document/jquery-cookie-fails-to-load/) This is a problem with the server-setting, meaning that your hosting company will need to solve this on your behalf. The problem is outdated MOD_SECURITY core ruleset. Option 1: Get your host to update the rule set This is by far the best option as everything will then work as by design. Contact your hosting […]
+

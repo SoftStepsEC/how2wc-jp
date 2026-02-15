@@ -1,0 +1,16 @@
+---
+title: Privacy
+url: https://woocommerce.com/documentation/woocommerce/get-help/privacy/
+---
+
+Information about what customer data may be collected and shared when a store uses extensions sold on WooCommerce.com. For information about your privacy when making purchases on WooCommerce.com, visit [automattic.com/privacy](https://automattic.com/privacy/).
+
+## Documents
+
+- [Privacy considerations when using official shipping extensions](https://woocommerce.com/document/privacy-shipping/) To take advantage of real-time shipping rates, fulfill orders, and track shipments, certain shipping-related information about you and your customers — including shopping carts, orders, and the configuration of your site — will be passed to the respective service. We recommend that store owners disclose that they are sharing information with shipping providers in their […]
+- [Privacy considerations when using official payments extensions](https://woocommerce.com/document/privacy-payments/) If you choose to accept payments via a payment gateway like Stripe or PayPal, some of your — and your customers’ — data will be passed to the respective third party. This includes information required to process or support the payment, such as the purchase total and your customer’s billing information. We recommend that store […]
+- [Advisory: Phishing campaign targeting WooCommerce stores](https://woocommerce.com/document/advisory-phishing-campaign-targeting-woocommerce-stores/) In the past we have identified phishing campaigns targeting WooCommerce store owners. These emails have falsely claimed to be from WooCommerce and alert users about critical security vulnerabilities that do not exist. If you receive any emails such as these, always confirm that emails are arriving from official domains before taking any action, and always […]
+- [Privacy and the WooCommerce Marketplace](https://woocommerce.com/document/marketplace-privacy/) When a WooCommerce site uses an extension or theme offered in the WooCommerce.com Marketplace, they may be: This documentation describes which data from your customers may be collected and shared when you use extensions and themes sold on WooCommerce.com. This resource provides a general overview; if you have specific concerns about a particular product, we […]
+- [Change to Use Terms and Privacy Policy – December 2020](https://woocommerce.com/document/change-to-use-terms-and-privacy-policy-december-2020/) What has changed? As of January 1, 2021, your agreement (the WooCommerce Use Terms) will be merged into the WordPress.com Terms of Service, and the company responsible for your personal information (as mentioned in our Privacy Policy) will change. Also, as per the same date, agreements with Prospress (AutomateWoo) will be merged into the WordPress.com […]
+- [Change to Use Terms and Privacy Policy – July 2020](https://woocommerce.com/document/privacy-update-jul-2020/) What Has Changed? As of August 1, 2020, your agreement (the WooCommerce Use Terms) will no longer be with Bubblestorm Management (Pty) Ltd., and the company responsible for your personal information (as mentioned in our Privacy Policy) will change. If you reside in Australia, Canada, Japan, Mexico, New Zealand, Russia, and any countries located in […]
+

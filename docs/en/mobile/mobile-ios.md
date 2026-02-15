@@ -1,0 +1,16 @@
+---
+title: iOS
+url: https://woocommerce.com/documentation/woocommerce/mobile/mobile-ios/
+---
+
+## Documents
+
+- [Menu](https://woocommerce.com/document/menu-ios/) The Menu tab is home to admin tasks, including switching stores, setting up payments on the go, accessing your store’s WooCommerce Admin, your store view, reviews, and app settings. To access this view tap the Menu icon on the navigation bar at the bottom-right. Still experiencing issues? If you’re using the Jetpack plugin to connect […]
+- [My Store](https://woocommerce.com/document/my-store-ios/) The My Store tab provides sales and visitor data and gives insight into sales trends. It’s the default view when launching the app, but can be accessed from any other view by tapping the My Store icon next to the navigation bar at the bottom-left of the screen. Store Stats The top section of My Store displays Visitors (if your […]
+- [Orders](https://woocommerce.com/document/orders-ios/) To access the Orders tab in the WooCommerce Mobile App, tap the Orders icon on the bottom-left of the navigation bar. The Orders tab allows access to a list of orders, which you can filter by status or search for a specific order. Click on an order to view or manage it. To create an […]
+- [Products](https://woocommerce.com/document/products-ios/) The Products tab allows you to access a list of products that can be sorted or filtered by stock status, product type, or category, search for a specific product, view and manage, and add new ones. To access this view, tap the Products icon on the navigation bar at the bottom-right. Product Sort and Filter […]
+- [Settings](https://woocommerce.com/document/settings-ios/) Settings can be found by navigating to Menu and tapping the Settings button at the top of the screen. From here, you’ll find the following settings and their respective functions: Still experiencing issues? If you’re using the Jetpack plugin to connect the app to your site, make sure that the Jetpack connection is active and […]
+- [Widgets](https://woocommerce.com/document/widgets-ios/) You can add the Today widget to your iPhone’s home screen for quick access to your current day’s stats without opening the app. Still experiencing issues? If you’re using the Jetpack plugin to connect the app to your site, make sure that the Jetpack connection is active and working correctly. You can verify some known issues or try […]
+- [WooCommerce for iOS](https://woocommerce.com/document/woocommerce-ios/) The official WooCommerce iOS App is available for free from the Apple iTunes Store via WooCommerce.app. This guide walks you through setup, how to connect your store, and how to use the app. Requirements The official WooCommerce iOS App also can be used with the iPad. Installation Your store should be either: Jetpack is not required to use […]
+- [Tap to Pay on iPhone](https://woocommerce.com/document/tap-to-pay-iphone/) With Tap to Pay and the Woo Mobile App, merchants based in the United States and the United Kingdom can accept in-person contactless payments, right on their iPhone — no extra terminals, hardware, or readers needed. Requirements Tap to Pay on iPhone is supported for U.S. and UK merchants whose iPhone meets all of the following requirements: Limitations […]
+

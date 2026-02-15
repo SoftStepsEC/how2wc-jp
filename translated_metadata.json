@@ -1,0 +1,1937 @@
+{
+  "docs/en/taxes.md": {
+    "source": "docs/en/taxes.md",
+    "target": "docs/ja/taxes.md",
+    "relative_path": "taxes.md"
+  },
+  "docs/en/shipping.md": {
+    "source": "docs/en/shipping.md",
+    "target": "docs/ja/shipping.md",
+    "relative_path": "shipping.md"
+  },
+  "docs/en/migrating-to-woocommerce.md": {
+    "source": "docs/en/migrating-to-woocommerce.md",
+    "target": "docs/ja/migrating-to-woocommerce.md",
+    "relative_path": "migrating-to-woocommerce.md"
+  },
+  "docs/en/store-design.md": {
+    "source": "docs/en/store-design.md",
+    "target": "docs/ja/store-design.md",
+    "relative_path": "store-design.md"
+  },
+  "docs/en/core-products.md": {
+    "source": "docs/en/core-products.md",
+    "target": "docs/ja/core-products.md",
+    "relative_path": "core-products.md"
+  },
+  "docs/en/customers.md": {
+    "source": "docs/en/customers.md",
+    "target": "docs/ja/customers.md",
+    "relative_path": "customers.md"
+  },
+  "docs/en/getting-started.md": {
+    "source": "docs/en/getting-started.md",
+    "target": "docs/ja/getting-started.md",
+    "relative_path": "getting-started.md"
+  },
+  "docs/en/marketing.md": {
+    "source": "docs/en/marketing.md",
+    "target": "docs/ja/marketing.md",
+    "relative_path": "marketing.md"
+  },
+  "docs/en/payments.md": {
+    "source": "docs/en/payments.md",
+    "target": "docs/ja/payments.md",
+    "relative_path": "payments.md"
+  },
+  "docs/en/get-help.md": {
+    "source": "docs/en/get-help.md",
+    "target": "docs/ja/get-help.md",
+    "relative_path": "get-help.md"
+  },
+  "docs/en/orders.md": {
+    "source": "docs/en/orders.md",
+    "target": "docs/ja/orders.md",
+    "relative_path": "orders.md"
+  },
+  "docs/en/data-reporting.md": {
+    "source": "docs/en/data-reporting.md",
+    "target": "docs/ja/data-reporting.md",
+    "relative_path": "data-reporting.md"
+  },
+  "docs/en/woocommerce.md": {
+    "source": "docs/en/woocommerce.md",
+    "target": "docs/ja/woocommerce.md",
+    "relative_path": "woocommerce.md"
+  },
+  "docs/en/mobile.md": {
+    "source": "docs/en/mobile.md",
+    "target": "docs/ja/mobile.md",
+    "relative_path": "mobile.md"
+  },
+  "docs/en/site-admin.md": {
+    "source": "docs/en/site-admin.md",
+    "target": "docs/ja/site-admin.md",
+    "relative_path": "site-admin.md"
+  },
+  "docs/en/core-products/adding-and-managing-products.md": {
+    "source": "docs/en/core-products/adding-and-managing-products.md",
+    "target": "docs/ja/core-products/adding-and-managing-products.md",
+    "relative_path": "core-products/adding-and-managing-products.md"
+  },
+  "docs/en/core-products/page/1.md": {
+    "source": "docs/en/core-products/page/1.md",
+    "target": "docs/ja/core-products/page/1.md",
+    "relative_path": "core-products/page/1.md"
+  },
+  "docs/en/core-products/page/3.md": {
+    "source": "docs/en/core-products/page/3.md",
+    "target": "docs/ja/core-products/page/3.md",
+    "relative_path": "core-products/page/3.md"
+  },
+  "docs/en/core-products/page/2.md": {
+    "source": "docs/en/core-products/page/2.md",
+    "target": "docs/ja/core-products/page/2.md",
+    "relative_path": "core-products/page/2.md"
+  },
+  "docs/en/get-help/privacy.md": {
+    "source": "docs/en/get-help/privacy.md",
+    "target": "docs/ja/get-help/privacy.md",
+    "relative_path": "get-help/privacy.md"
+  },
+  "docs/en/get-help/troubleshooting-get-help.md": {
+    "source": "docs/en/get-help/troubleshooting-get-help.md",
+    "target": "docs/ja/get-help/troubleshooting-get-help.md",
+    "relative_path": "get-help/troubleshooting-get-help.md"
+  },
+  "docs/en/get-help/frequently-asked-questions.md": {
+    "source": "docs/en/get-help/frequently-asked-questions.md",
+    "target": "docs/ja/get-help/frequently-asked-questions.md",
+    "relative_path": "get-help/frequently-asked-questions.md"
+  },
+  "docs/en/get-help/troubleshooting-get-help/page/1.md": {
+    "source": "docs/en/get-help/troubleshooting-get-help/page/1.md",
+    "target": "docs/ja/get-help/troubleshooting-get-help/page/1.md",
+    "relative_path": "get-help/troubleshooting-get-help/page/1.md"
+  },
+  "docs/en/get-help/troubleshooting-get-help/page/4.md": {
+    "source": "docs/en/get-help/troubleshooting-get-help/page/4.md",
+    "target": "docs/ja/get-help/troubleshooting-get-help/page/4.md",
+    "relative_path": "get-help/troubleshooting-get-help/page/4.md"
+  },
+  "docs/en/get-help/troubleshooting-get-help/page/3.md": {
+    "source": "docs/en/get-help/troubleshooting-get-help/page/3.md",
+    "target": "docs/ja/get-help/troubleshooting-get-help/page/3.md",
+    "relative_path": "get-help/troubleshooting-get-help/page/3.md"
+  },
+  "docs/en/get-help/troubleshooting-get-help/page/2.md": {
+    "source": "docs/en/get-help/troubleshooting-get-help/page/2.md",
+    "target": "docs/ja/get-help/troubleshooting-get-help/page/2.md",
+    "relative_path": "get-help/troubleshooting-get-help/page/2.md"
+  },
+  "docs/en/get-help/frequently-asked-questions/page/1.md": {
+    "source": "docs/en/get-help/frequently-asked-questions/page/1.md",
+    "target": "docs/ja/get-help/frequently-asked-questions/page/1.md",
+    "relative_path": "get-help/frequently-asked-questions/page/1.md"
+  },
+  "docs/en/get-help/frequently-asked-questions/page/2.md": {
+    "source": "docs/en/get-help/frequently-asked-questions/page/2.md",
+    "target": "docs/ja/get-help/frequently-asked-questions/page/2.md",
+    "relative_path": "get-help/frequently-asked-questions/page/2.md"
+  },
+  "docs/en/document/change-number-of-related-products-output.md": {
+    "source": "docs/en/document/change-number-of-related-products-output.md",
+    "target": "docs/ja/document/change-number-of-related-products-output.md",
+    "relative_path": "document/change-number-of-related-products-output.md"
+  },
+  "docs/en/document/woo-mobile-app-point-of-sale-mode.md": {
+    "source": "docs/en/document/woo-mobile-app-point-of-sale-mode.md",
+    "target": "docs/ja/document/woo-mobile-app-point-of-sale-mode.md",
+    "relative_path": "document/woo-mobile-app-point-of-sale-mode.md"
+  },
+  "docs/en/document/products-ios.md": {
+    "source": "docs/en/document/products-ios.md",
+    "target": "docs/ja/document/products-ios.md",
+    "relative_path": "document/products-ios.md"
+  },
+  "docs/en/document/android-products.md": {
+    "source": "docs/en/document/android-products.md",
+    "target": "docs/ja/document/android-products.md",
+    "relative_path": "document/android-products.md"
+  },
+  "docs/en/document/woocommerce-widgets.md": {
+    "source": "docs/en/document/woocommerce-widgets.md",
+    "target": "docs/ja/document/woocommerce-widgets.md",
+    "relative_path": "document/woocommerce-widgets.md"
+  },
+  "docs/en/document/hide-other-shipping-methods-when-free-shipping-is-available.md": {
+    "source": "docs/en/document/hide-other-shipping-methods-when-free-shipping-is-available.md",
+    "target": "docs/ja/document/hide-other-shipping-methods-when-free-shipping-is-available.md",
+    "relative_path": "document/hide-other-shipping-methods-when-free-shipping-is-available.md"
+  },
+  "docs/en/document/privacy-update-jul-2020.md": {
+    "source": "docs/en/document/privacy-update-jul-2020.md",
+    "target": "docs/ja/document/privacy-update-jul-2020.md",
+    "relative_path": "document/privacy-update-jul-2020.md"
+  },
+  "docs/en/document/digital-downloadable-product-handling.md": {
+    "source": "docs/en/document/digital-downloadable-product-handling.md",
+    "target": "docs/ja/document/digital-downloadable-product-handling.md",
+    "relative_path": "document/digital-downloadable-product-handling.md"
+  },
+  "docs/en/document/cheque.md": {
+    "source": "docs/en/document/cheque.md",
+    "target": "docs/ja/document/cheque.md",
+    "relative_path": "document/cheque.md"
+  },
+  "docs/en/document/configuring-woocommerce-settings.md": {
+    "source": "docs/en/document/configuring-woocommerce-settings.md",
+    "target": "docs/ja/document/configuring-woocommerce-settings.md",
+    "relative_path": "document/configuring-woocommerce-settings.md"
+  },
+  "docs/en/document/woocommerce-setup-wizard.md": {
+    "source": "docs/en/document/woocommerce-setup-wizard.md",
+    "target": "docs/ja/document/woocommerce-setup-wizard.md",
+    "relative_path": "document/woocommerce-setup-wizard.md"
+  },
+  "docs/en/document/managing-product-taxonomies.md": {
+    "source": "docs/en/document/managing-product-taxonomies.md",
+    "target": "docs/ja/document/managing-product-taxonomies.md",
+    "relative_path": "document/managing-product-taxonomies.md"
+  },
+  "docs/en/document/what-is-a-wordpress-com-account.md": {
+    "source": "docs/en/document/what-is-a-wordpress-com-account.md",
+    "target": "docs/ja/document/what-is-a-wordpress-com-account.md",
+    "relative_path": "document/what-is-a-wordpress-com-account.md"
+  },
+  "docs/en/document/creating-sharable-checkout-urls-in-woocommerce.md": {
+    "source": "docs/en/document/creating-sharable-checkout-urls-in-woocommerce.md",
+    "target": "docs/ja/document/creating-sharable-checkout-urls-in-woocommerce.md",
+    "relative_path": "document/creating-sharable-checkout-urls-in-woocommerce.md"
+  },
+  "docs/en/document/cart-checkout-blocks-status.md": {
+    "source": "docs/en/document/cart-checkout-blocks-status.md",
+    "target": "docs/ja/document/cart-checkout-blocks-status.md",
+    "relative_path": "document/cart-checkout-blocks-status.md"
+  },
+  "docs/en/document/how-timezones-work-in-the-woo-mobile-app.md": {
+    "source": "docs/en/document/how-timezones-work-in-the-woo-mobile-app.md",
+    "target": "docs/ja/document/how-timezones-work-in-the-woo-mobile-app.md",
+    "relative_path": "document/how-timezones-work-in-the-woo-mobile-app.md"
+  },
+  "docs/en/document/advisory-phishing-campaign-targeting-woocommerce-stores.md": {
+    "source": "docs/en/document/advisory-phishing-campaign-targeting-woocommerce-stores.md",
+    "target": "docs/ja/document/advisory-phishing-campaign-targeting-woocommerce-stores.md",
+    "relative_path": "document/advisory-phishing-campaign-targeting-woocommerce-stores.md"
+  },
+  "docs/en/document/app-language-settings.md": {
+    "source": "docs/en/document/app-language-settings.md",
+    "target": "docs/ja/document/app-language-settings.md",
+    "relative_path": "document/app-language-settings.md"
+  },
+  "docs/en/document/creating-shipping-labels-in-the-mobile-apps.md": {
+    "source": "docs/en/document/creating-shipping-labels-in-the-mobile-apps.md",
+    "target": "docs/ja/document/creating-shipping-labels-in-the-mobile-apps.md",
+    "relative_path": "document/creating-shipping-labels-in-the-mobile-apps.md"
+  },
+  "docs/en/document/marketplace-privacy.md": {
+    "source": "docs/en/document/marketplace-privacy.md",
+    "target": "docs/ja/document/marketplace-privacy.md",
+    "relative_path": "document/marketplace-privacy.md"
+  },
+  "docs/en/document/custom-product-fields.md": {
+    "source": "docs/en/document/custom-product-fields.md",
+    "target": "docs/ja/document/custom-product-fields.md",
+    "relative_path": "document/custom-product-fields.md"
+  },
+  "docs/en/document/android-ios-apps-login-help-faq.md": {
+    "source": "docs/en/document/android-ios-apps-login-help-faq.md",
+    "target": "docs/ja/document/android-ios-apps-login-help-faq.md",
+    "relative_path": "document/android-ios-apps-login-help-faq.md"
+  },
+  "docs/en/document/managing-products.md": {
+    "source": "docs/en/document/managing-products.md",
+    "target": "docs/ja/document/managing-products.md",
+    "relative_path": "document/managing-products.md"
+  },
+  "docs/en/document/disable-plugins-without-admin-access.md": {
+    "source": "docs/en/document/disable-plugins-without-admin-access.md",
+    "target": "docs/ja/document/disable-plugins-without-admin-access.md",
+    "relative_path": "document/disable-plugins-without-admin-access.md"
+  },
+  "docs/en/document/woocommerce-blocks-local-pickup.md": {
+    "source": "docs/en/document/woocommerce-blocks-local-pickup.md",
+    "target": "docs/ja/document/woocommerce-blocks-local-pickup.md",
+    "relative_path": "document/woocommerce-blocks-local-pickup.md"
+  },
+  "docs/en/document/share-payment-link.md": {
+    "source": "docs/en/document/share-payment-link.md",
+    "target": "docs/ja/document/share-payment-link.md",
+    "relative_path": "document/share-payment-link.md"
+  },
+  "docs/en/document/offer-shipping-insurance.md": {
+    "source": "docs/en/document/offer-shipping-insurance.md",
+    "target": "docs/ja/document/offer-shipping-insurance.md",
+    "relative_path": "document/offer-shipping-insurance.md"
+  },
+  "docs/en/document/server-requirements.md": {
+    "source": "docs/en/document/server-requirements.md",
+    "target": "docs/ja/document/server-requirements.md",
+    "relative_path": "document/server-requirements.md"
+  },
+  "docs/en/document/built-with-woocommerce.md": {
+    "source": "docs/en/document/built-with-woocommerce.md",
+    "target": "docs/ja/document/built-with-woocommerce.md",
+    "relative_path": "document/built-with-woocommerce.md"
+  },
+  "docs/en/document/troubleshooting-core-taxes.md": {
+    "source": "docs/en/document/troubleshooting-core-taxes.md",
+    "target": "docs/ja/document/troubleshooting-core-taxes.md",
+    "relative_path": "document/troubleshooting-core-taxes.md"
+  },
+  "docs/en/document/new-product-editor-beta.md": {
+    "source": "docs/en/document/new-product-editor-beta.md",
+    "target": "docs/ja/document/new-product-editor-beta.md",
+    "relative_path": "document/new-product-editor-beta.md"
+  },
+  "docs/en/document/home-screen.md": {
+    "source": "docs/en/document/home-screen.md",
+    "target": "docs/ja/document/home-screen.md",
+    "relative_path": "document/home-screen.md"
+  },
+  "docs/en/document/reports.md": {
+    "source": "docs/en/document/reports.md",
+    "target": "docs/ja/document/reports.md",
+    "relative_path": "document/reports.md"
+  },
+  "docs/en/document/migrating-products-between-sites.md": {
+    "source": "docs/en/document/migrating-products-between-sites.md",
+    "target": "docs/ja/document/migrating-products-between-sites.md",
+    "relative_path": "document/migrating-products-between-sites.md"
+  },
+  "docs/en/document/maxmind-geolocation-integration.md": {
+    "source": "docs/en/document/maxmind-geolocation-integration.md",
+    "target": "docs/ja/document/maxmind-geolocation-integration.md",
+    "relative_path": "document/maxmind-geolocation-integration.md"
+  },
+  "docs/en/document/understanding-wordpress-wp-config-php-file.md": {
+    "source": "docs/en/document/understanding-wordpress-wp-config-php-file.md",
+    "target": "docs/ja/document/understanding-wordpress-wp-config-php-file.md",
+    "relative_path": "document/understanding-wordpress-wp-config-php-file.md"
+  },
+  "docs/en/document/handle-multiple-regions-currencies-woocommerce.md": {
+    "source": "docs/en/document/handle-multiple-regions-currencies-woocommerce.md",
+    "target": "docs/ja/document/handle-multiple-regions-currencies-woocommerce.md",
+    "relative_path": "document/handle-multiple-regions-currencies-woocommerce.md"
+  },
+  "docs/en/document/shipping-method-api.md": {
+    "source": "docs/en/document/shipping-method-api.md",
+    "target": "docs/ja/document/shipping-method-api.md",
+    "relative_path": "document/shipping-method-api.md"
+  },
+  "docs/en/document/find-product-category-ids.md": {
+    "source": "docs/en/document/find-product-category-ids.md",
+    "target": "docs/ja/document/find-product-category-ids.md",
+    "relative_path": "document/find-product-category-ids.md"
+  },
+  "docs/en/document/free-trial-extensions.md": {
+    "source": "docs/en/document/free-trial-extensions.md",
+    "target": "docs/ja/document/free-trial-extensions.md",
+    "relative_path": "document/free-trial-extensions.md"
+  },
+  "docs/en/document/troubleshoot-javascript-errors.md": {
+    "source": "docs/en/document/troubleshoot-javascript-errors.md",
+    "target": "docs/ja/document/troubleshoot-javascript-errors.md",
+    "relative_path": "document/troubleshoot-javascript-errors.md"
+  },
+  "docs/en/document/troubleshooting-using-health-check.md": {
+    "source": "docs/en/document/troubleshooting-using-health-check.md",
+    "target": "docs/ja/document/troubleshooting-using-health-check.md",
+    "relative_path": "document/troubleshooting-using-health-check.md"
+  },
+  "docs/en/document/my-store.md": {
+    "source": "docs/en/document/my-store.md",
+    "target": "docs/ja/document/my-store.md",
+    "relative_path": "document/my-store.md"
+  },
+  "docs/en/document/premium-payment-gateway-extensions.md": {
+    "source": "docs/en/document/premium-payment-gateway-extensions.md",
+    "target": "docs/ja/document/premium-payment-gateway-extensions.md",
+    "relative_path": "document/premium-payment-gateway-extensions.md"
+  },
+  "docs/en/document/in-person-payments-stripe.md": {
+    "source": "docs/en/document/in-person-payments-stripe.md",
+    "target": "docs/ja/document/in-person-payments-stripe.md",
+    "relative_path": "document/in-person-payments-stripe.md"
+  },
+  "docs/en/document/customizing-woocommerce-best-practices.md": {
+    "source": "docs/en/document/customizing-woocommerce-best-practices.md",
+    "target": "docs/ja/document/customizing-woocommerce-best-practices.md",
+    "relative_path": "document/customizing-woocommerce-best-practices.md"
+  },
+  "docs/en/document/woocommerce-tax.md": {
+    "source": "docs/en/document/woocommerce-tax.md",
+    "target": "docs/ja/document/woocommerce-tax.md",
+    "relative_path": "document/woocommerce-tax.md"
+  },
+  "docs/en/document/bacs.md": {
+    "source": "docs/en/document/bacs.md",
+    "target": "docs/ja/document/bacs.md",
+    "relative_path": "document/bacs.md"
+  },
+  "docs/en/document/using-the-appropriate-product-image-dimensions.md": {
+    "source": "docs/en/document/using-the-appropriate-product-image-dimensions.md",
+    "target": "docs/ja/document/using-the-appropriate-product-image-dimensions.md",
+    "relative_path": "document/using-the-appropriate-product-image-dimensions.md"
+  },
+  "docs/en/document/coupon-management.md": {
+    "source": "docs/en/document/coupon-management.md",
+    "target": "docs/ja/document/coupon-management.md",
+    "relative_path": "document/coupon-management.md"
+  },
+  "docs/en/document/troubleshoot-my-site-is-down.md": {
+    "source": "docs/en/document/troubleshoot-my-site-is-down.md",
+    "target": "docs/ja/document/troubleshoot-my-site-is-down.md",
+    "relative_path": "document/troubleshoot-my-site-is-down.md"
+  },
+  "docs/en/document/roles-capabilities.md": {
+    "source": "docs/en/document/roles-capabilities.md",
+    "target": "docs/ja/document/roles-capabilities.md",
+    "relative_path": "document/roles-capabilities.md"
+  },
+  "docs/en/document/woocommerce-ios.md": {
+    "source": "docs/en/document/woocommerce-ios.md",
+    "target": "docs/ja/document/woocommerce-ios.md",
+    "relative_path": "document/woocommerce-ios.md"
+  },
+  "docs/en/document/how-to-test-for-conflicts.md": {
+    "source": "docs/en/document/how-to-test-for-conflicts.md",
+    "target": "docs/ja/document/how-to-test-for-conflicts.md",
+    "relative_path": "document/how-to-test-for-conflicts.md"
+  },
+  "docs/en/document/start-with-woocommerce-in-5-steps.md": {
+    "source": "docs/en/document/start-with-woocommerce-in-5-steps.md",
+    "target": "docs/ja/document/start-with-woocommerce-in-5-steps.md",
+    "relative_path": "document/start-with-woocommerce-in-5-steps.md"
+  },
+  "docs/en/document/android.md": {
+    "source": "docs/en/document/android.md",
+    "target": "docs/ja/document/android.md",
+    "relative_path": "document/android.md"
+  },
+  "docs/en/document/remove-related-posts-output.md": {
+    "source": "docs/en/document/remove-related-posts-output.md",
+    "target": "docs/ja/document/remove-related-posts-output.md",
+    "relative_path": "document/remove-related-posts-output.md"
+  },
+  "docs/en/document/configuring-specific-tax-setups-in-woocommerce.md": {
+    "source": "docs/en/document/configuring-specific-tax-setups-in-woocommerce.md",
+    "target": "docs/ja/document/configuring-specific-tax-setups-in-woocommerce.md",
+    "relative_path": "document/configuring-specific-tax-setups-in-woocommerce.md"
+  },
+  "docs/en/document/backup-wordpress-content.md": {
+    "source": "docs/en/document/backup-wordpress-content.md",
+    "target": "docs/ja/document/backup-wordpress-content.md",
+    "relative_path": "document/backup-wordpress-content.md"
+  },
+  "docs/en/document/customizing-theme-best-practices.md": {
+    "source": "docs/en/document/customizing-theme-best-practices.md",
+    "target": "docs/ja/document/customizing-theme-best-practices.md",
+    "relative_path": "document/customizing-theme-best-practices.md"
+  },
+  "docs/en/document/troubleshoot-ajax-issues.md": {
+    "source": "docs/en/document/troubleshoot-ajax-issues.md",
+    "target": "docs/ja/document/troubleshoot-ajax-issues.md",
+    "relative_path": "document/troubleshoot-ajax-issues.md"
+  },
+  "docs/en/document/android-ios-apps-troubleshooting-error-fetching-orders.md": {
+    "source": "docs/en/document/android-ios-apps-troubleshooting-error-fetching-orders.md",
+    "target": "docs/ja/document/android-ios-apps-troubleshooting-error-fetching-orders.md",
+    "relative_path": "document/android-ios-apps-troubleshooting-error-fetching-orders.md"
+  },
+  "docs/en/document/importing-woocommerce-sample-data.md": {
+    "source": "docs/en/document/importing-woocommerce-sample-data.md",
+    "target": "docs/ja/document/importing-woocommerce-sample-data.md",
+    "relative_path": "document/importing-woocommerce-sample-data.md"
+  },
+  "docs/en/document/quick-guide-to-woocommerce-add-to-cart-urls.md": {
+    "source": "docs/en/document/quick-guide-to-woocommerce-add-to-cart-urls.md",
+    "target": "docs/ja/document/quick-guide-to-woocommerce-add-to-cart-urls.md",
+    "relative_path": "document/quick-guide-to-woocommerce-add-to-cart-urls.md"
+  },
+  "docs/en/document/additional-users.md": {
+    "source": "docs/en/document/additional-users.md",
+    "target": "docs/ja/document/additional-users.md",
+    "relative_path": "document/additional-users.md"
+  },
+  "docs/en/document/actions-and-filters.md": {
+    "source": "docs/en/document/actions-and-filters.md",
+    "target": "docs/ja/document/actions-and-filters.md",
+    "relative_path": "document/actions-and-filters.md"
+  },
+  "docs/en/document/woo-mobile-app-logs.md": {
+    "source": "docs/en/document/woo-mobile-app-logs.md",
+    "target": "docs/ja/document/woo-mobile-app-logs.md",
+    "relative_path": "document/woo-mobile-app-logs.md"
+  },
+  "docs/en/document/marketplace-overview.md": {
+    "source": "docs/en/document/marketplace-overview.md",
+    "target": "docs/ja/document/marketplace-overview.md",
+    "relative_path": "document/marketplace-overview.md"
+  },
+  "docs/en/document/fixing-blurry-product-images.md": {
+    "source": "docs/en/document/fixing-blurry-product-images.md",
+    "target": "docs/ja/document/fixing-blurry-product-images.md",
+    "relative_path": "document/fixing-blurry-product-images.md"
+  },
+  "docs/en/document/how-to-get-help.md": {
+    "source": "docs/en/document/how-to-get-help.md",
+    "target": "docs/ja/document/how-to-get-help.md",
+    "relative_path": "document/how-to-get-help.md"
+  },
+  "docs/en/document/adding-collaborators.md": {
+    "source": "docs/en/document/adding-collaborators.md",
+    "target": "docs/ja/document/adding-collaborators.md",
+    "relative_path": "document/adding-collaborators.md"
+  },
+  "docs/en/document/woocommerce-customizer.md": {
+    "source": "docs/en/document/woocommerce-customizer.md",
+    "target": "docs/ja/document/woocommerce-customizer.md",
+    "relative_path": "document/woocommerce-customizer.md"
+  },
+  "docs/en/document/high-performance-order-storage.md": {
+    "source": "docs/en/document/high-performance-order-storage.md",
+    "target": "docs/ja/document/high-performance-order-storage.md",
+    "relative_path": "document/high-performance-order-storage.md"
+  },
+  "docs/en/document/wordpress-functions.md": {
+    "source": "docs/en/document/wordpress-functions.md",
+    "target": "docs/ja/document/wordpress-functions.md",
+    "relative_path": "document/wordpress-functions.md"
+  },
+  "docs/en/document/add-a-custom-currency-symbol.md": {
+    "source": "docs/en/document/add-a-custom-currency-symbol.md",
+    "target": "docs/ja/document/add-a-custom-currency-symbol.md",
+    "relative_path": "document/add-a-custom-currency-symbol.md"
+  },
+  "docs/en/document/get-help-woo-support-ai-assistant.md": {
+    "source": "docs/en/document/get-help-woo-support-ai-assistant.md",
+    "target": "docs/ja/document/get-help-woo-support-ai-assistant.md",
+    "relative_path": "document/get-help-woo-support-ai-assistant.md"
+  },
+  "docs/en/document/dashboard-widgets.md": {
+    "source": "docs/en/document/dashboard-widgets.md",
+    "target": "docs/ja/document/dashboard-widgets.md",
+    "relative_path": "document/dashboard-widgets.md"
+  },
+  "docs/en/document/supported-extensions.md": {
+    "source": "docs/en/document/supported-extensions.md",
+    "target": "docs/ja/document/supported-extensions.md",
+    "relative_path": "document/supported-extensions.md"
+  },
+  "docs/en/document/privacy-payments.md": {
+    "source": "docs/en/document/privacy-payments.md",
+    "target": "docs/ja/document/privacy-payments.md",
+    "relative_path": "document/privacy-payments.md"
+  },
+  "docs/en/document/woocommerce-analytics.md": {
+    "source": "docs/en/document/woocommerce-analytics.md",
+    "target": "docs/ja/document/woocommerce-analytics.md",
+    "relative_path": "document/woocommerce-analytics.md"
+  },
+  "docs/en/document/debug-info-internal-server-500-error.md": {
+    "source": "docs/en/document/debug-info-internal-server-500-error.md",
+    "target": "docs/ja/document/debug-info-internal-server-500-error.md",
+    "relative_path": "document/debug-info-internal-server-500-error.md"
+  },
+  "docs/en/document/translate-woocommerce-extensions.md": {
+    "source": "docs/en/document/translate-woocommerce-extensions.md",
+    "target": "docs/ja/document/translate-woocommerce-extensions.md",
+    "relative_path": "document/translate-woocommerce-extensions.md"
+  },
+  "docs/en/document/quick-start-guide-wisepad-3.md": {
+    "source": "docs/en/document/quick-start-guide-wisepad-3.md",
+    "target": "docs/ja/document/quick-start-guide-wisepad-3.md",
+    "relative_path": "document/quick-start-guide-wisepad-3.md"
+  },
+  "docs/en/document/how-taxes-work-in-woocommerce.md": {
+    "source": "docs/en/document/how-taxes-work-in-woocommerce.md",
+    "target": "docs/ja/document/how-taxes-work-in-woocommerce.md",
+    "relative_path": "document/how-taxes-work-in-woocommerce.md"
+  },
+  "docs/en/document/conflicting-plugins-with-woocommerce-mobile-apps.md": {
+    "source": "docs/en/document/conflicting-plugins-with-woocommerce-mobile-apps.md",
+    "target": "docs/ja/document/conflicting-plugins-with-woocommerce-mobile-apps.md",
+    "relative_path": "document/conflicting-plugins-with-woocommerce-mobile-apps.md"
+  },
+  "docs/en/document/permalinks.md": {
+    "source": "docs/en/document/permalinks.md",
+    "target": "docs/ja/document/permalinks.md",
+    "relative_path": "document/permalinks.md"
+  },
+  "docs/en/document/tap-to-pay-android.md": {
+    "source": "docs/en/document/tap-to-pay-android.md",
+    "target": "docs/ja/document/tap-to-pay-android.md",
+    "relative_path": "document/tap-to-pay-android.md"
+  },
+  "docs/en/document/completed-order-email-doesnt-contain-download-links.md": {
+    "source": "docs/en/document/completed-order-email-doesnt-contain-download-links.md",
+    "target": "docs/ja/document/completed-order-email-doesnt-contain-download-links.md",
+    "relative_path": "document/completed-order-email-doesnt-contain-download-links.md"
+  },
+  "docs/en/document/bulk-editing-products.md": {
+    "source": "docs/en/document/bulk-editing-products.md",
+    "target": "docs/ja/document/bulk-editing-products.md",
+    "relative_path": "document/bulk-editing-products.md"
+  },
+  "docs/en/document/change-limit-on-number-of-variations-for-dynamic-variable-product-dropdowns.md": {
+    "source": "docs/en/document/change-limit-on-number-of-variations-for-dynamic-variable-product-dropdowns.md",
+    "target": "docs/ja/document/change-limit-on-number-of-variations-for-dynamic-variable-product-dropdowns.md",
+    "relative_path": "document/change-limit-on-number-of-variations-for-dynamic-variable-product-dropdowns.md"
+  },
+  "docs/en/document/flat-rate-shipping.md": {
+    "source": "docs/en/document/flat-rate-shipping.md",
+    "target": "docs/ja/document/flat-rate-shipping.md",
+    "relative_path": "document/flat-rate-shipping.md"
+  },
+  "docs/en/document/marketplace-content-style-guide.md": {
+    "source": "docs/en/document/marketplace-content-style-guide.md",
+    "target": "docs/ja/document/marketplace-content-style-guide.md",
+    "relative_path": "document/marketplace-content-style-guide.md"
+  },
+  "docs/en/document/local-pickup-2.md": {
+    "source": "docs/en/document/local-pickup-2.md",
+    "target": "docs/ja/document/local-pickup-2.md",
+    "relative_path": "document/local-pickup-2.md"
+  },
+  "docs/en/document/woocommerce-cost-of-goods-sold-cogs.md": {
+    "source": "docs/en/document/woocommerce-cost-of-goods-sold-cogs.md",
+    "target": "docs/ja/document/woocommerce-cost-of-goods-sold-cogs.md",
+    "relative_path": "document/woocommerce-cost-of-goods-sold-cogs.md"
+  },
+  "docs/en/document/woocommerce-store-editing.md": {
+    "source": "docs/en/document/woocommerce-store-editing.md",
+    "target": "docs/ja/document/woocommerce-store-editing.md",
+    "relative_path": "document/woocommerce-store-editing.md"
+  },
+  "docs/en/document/troubleshooting-payment-errors.md": {
+    "source": "docs/en/document/troubleshooting-payment-errors.md",
+    "target": "docs/ja/document/troubleshooting-payment-errors.md",
+    "relative_path": "document/troubleshooting-payment-errors.md"
+  },
+  "docs/en/document/transferring-woocommerce-com-subscriptions.md": {
+    "source": "docs/en/document/transferring-woocommerce-com-subscriptions.md",
+    "target": "docs/ja/document/transferring-woocommerce-com-subscriptions.md",
+    "relative_path": "document/transferring-woocommerce-com-subscriptions.md"
+  },
+  "docs/en/document/approved-download-directories.md": {
+    "source": "docs/en/document/approved-download-directories.md",
+    "target": "docs/ja/document/approved-download-directories.md",
+    "relative_path": "document/approved-download-directories.md"
+  },
+  "docs/en/document/problems-with-large-amounts-of-data-not-saving-variations-rates-etc.md": {
+    "source": "docs/en/document/problems-with-large-amounts-of-data-not-saving-variations-rates-etc.md",
+    "target": "docs/ja/document/problems-with-large-amounts-of-data-not-saving-variations-rates-etc.md",
+    "relative_path": "document/problems-with-large-amounts-of-data-not-saving-variations-rates-etc.md"
+  },
+  "docs/en/document/webhooks.md": {
+    "source": "docs/en/document/webhooks.md",
+    "target": "docs/ja/document/webhooks.md",
+    "relative_path": "document/webhooks.md"
+  },
+  "docs/en/document/how-to-chmod-the-cache-folder.md": {
+    "source": "docs/en/document/how-to-chmod-the-cache-folder.md",
+    "target": "docs/ja/document/how-to-chmod-the-cache-folder.md",
+    "relative_path": "document/how-to-chmod-the-cache-folder.md"
+  },
+  "docs/en/document/multiple-installs-on-one-domain-sessions-conflictsession-sharing-workaround.md": {
+    "source": "docs/en/document/multiple-installs-on-one-domain-sessions-conflictsession-sharing-workaround.md",
+    "target": "docs/ja/document/multiple-installs-on-one-domain-sessions-conflictsession-sharing-workaround.md",
+    "relative_path": "document/multiple-installs-on-one-domain-sessions-conflictsession-sharing-workaround.md"
+  },
+  "docs/en/document/card-readers-return-policy.md": {
+    "source": "docs/en/document/card-readers-return-policy.md",
+    "target": "docs/ja/document/card-readers-return-policy.md",
+    "relative_path": "document/card-readers-return-policy.md"
+  },
+  "docs/en/document/single-product-block.md": {
+    "source": "docs/en/document/single-product-block.md",
+    "target": "docs/ja/document/single-product-block.md",
+    "relative_path": "document/single-product-block.md"
+  },
+  "docs/en/document/extension-translations.md": {
+    "source": "docs/en/document/extension-translations.md",
+    "target": "docs/ja/document/extension-translations.md",
+    "relative_path": "document/extension-translations.md"
+  },
+  "docs/en/document/marketplace-developers-customer-overview.md": {
+    "source": "docs/en/document/marketplace-developers-customer-overview.md",
+    "target": "docs/ja/document/marketplace-developers-customer-overview.md",
+    "relative_path": "document/marketplace-developers-customer-overview.md"
+  },
+  "docs/en/document/accessibility-tips-for-store-owners.md": {
+    "source": "docs/en/document/accessibility-tips-for-store-owners.md",
+    "target": "docs/ja/document/accessibility-tips-for-store-owners.md",
+    "relative_path": "document/accessibility-tips-for-store-owners.md"
+  },
+  "docs/en/document/woocommerce-blocks-configuration.md": {
+    "source": "docs/en/document/woocommerce-blocks-configuration.md",
+    "target": "docs/ja/document/woocommerce-blocks-configuration.md",
+    "relative_path": "document/woocommerce-blocks-configuration.md"
+  },
+  "docs/en/document/import-and-export-a-site-database.md": {
+    "source": "docs/en/document/import-and-export-a-site-database.md",
+    "target": "docs/ja/document/import-and-export-a-site-database.md",
+    "relative_path": "document/import-and-export-a-site-database.md"
+  },
+  "docs/en/document/log-into-woocommerce-com-with-wordpress-com.md": {
+    "source": "docs/en/document/log-into-woocommerce-com-with-wordpress-com.md",
+    "target": "docs/ja/document/log-into-woocommerce-com-with-wordpress-com.md",
+    "relative_path": "document/log-into-woocommerce-com-with-wordpress-com.md"
+  },
+  "docs/en/document/paypal-standard.md": {
+    "source": "docs/en/document/paypal-standard.md",
+    "target": "docs/ja/document/paypal-standard.md",
+    "relative_path": "document/paypal-standard.md"
+  },
+  "docs/en/document/billing-api-for-saas-products.md": {
+    "source": "docs/en/document/billing-api-for-saas-products.md",
+    "target": "docs/ja/document/billing-api-for-saas-products.md",
+    "relative_path": "document/billing-api-for-saas-products.md"
+  },
+  "docs/en/document/update-php-wordpress.md": {
+    "source": "docs/en/document/update-php-wordpress.md",
+    "target": "docs/ja/document/update-php-wordpress.md",
+    "relative_path": "document/update-php-wordpress.md"
+  },
+  "docs/en/document/email-authentication.md": {
+    "source": "docs/en/document/email-authentication.md",
+    "target": "docs/ja/document/email-authentication.md",
+    "relative_path": "document/email-authentication.md"
+  },
+  "docs/en/document/advisory-increased-suspicious-card-activity-reported-by-paypal.md": {
+    "source": "docs/en/document/advisory-increased-suspicious-card-activity-reported-by-paypal.md",
+    "target": "docs/ja/document/advisory-increased-suspicious-card-activity-reported-by-paypal.md",
+    "relative_path": "document/advisory-increased-suspicious-card-activity-reported-by-paypal.md"
+  },
+  "docs/en/document/setting-up-taxes-in-woocommerce.md": {
+    "source": "docs/en/document/setting-up-taxes-in-woocommerce.md",
+    "target": "docs/ja/document/setting-up-taxes-in-woocommerce.md",
+    "relative_path": "document/setting-up-taxes-in-woocommerce.md"
+  },
+  "docs/en/document/related-products-up-sells-and-cross-sells.md": {
+    "source": "docs/en/document/related-products-up-sells-and-cross-sells.md",
+    "target": "docs/ja/document/related-products-up-sells-and-cross-sells.md",
+    "relative_path": "document/related-products-up-sells-and-cross-sells.md"
+  },
+  "docs/en/document/before-you-start.md": {
+    "source": "docs/en/document/before-you-start.md",
+    "target": "docs/ja/document/before-you-start.md",
+    "relative_path": "document/before-you-start.md"
+  },
+  "docs/en/document/increasing-the-wordpress-memory-limit.md": {
+    "source": "docs/en/document/increasing-the-wordpress-memory-limit.md",
+    "target": "docs/ja/document/increasing-the-wordpress-memory-limit.md",
+    "relative_path": "document/increasing-the-wordpress-memory-limit.md"
+  },
+  "docs/en/document/importing-products-from-etsy.md": {
+    "source": "docs/en/document/importing-products-from-etsy.md",
+    "target": "docs/ja/document/importing-products-from-etsy.md",
+    "relative_path": "document/importing-products-from-etsy.md"
+  },
+  "docs/en/document/support-guide-mobile.md": {
+    "source": "docs/en/document/support-guide-mobile.md",
+    "target": "docs/ja/document/support-guide-mobile.md",
+    "relative_path": "document/support-guide-mobile.md"
+  },
+  "docs/en/document/tap-to-pay-iphone.md": {
+    "source": "docs/en/document/tap-to-pay-iphone.md",
+    "target": "docs/ja/document/tap-to-pay-iphone.md",
+    "relative_path": "document/tap-to-pay-iphone.md"
+  },
+  "docs/en/document/product-reviews.md": {
+    "source": "docs/en/document/product-reviews.md",
+    "target": "docs/ja/document/product-reviews.md",
+    "relative_path": "document/product-reviews.md"
+  },
+  "docs/en/document/refund-policy-page-guidelines.md": {
+    "source": "docs/en/document/refund-policy-page-guidelines.md",
+    "target": "docs/ja/document/refund-policy-page-guidelines.md",
+    "relative_path": "document/refund-policy-page-guidelines.md"
+  },
+  "docs/en/document/online-shipping-calculators-debug-mode.md": {
+    "source": "docs/en/document/online-shipping-calculators-debug-mode.md",
+    "target": "docs/ja/document/online-shipping-calculators-debug-mode.md",
+    "relative_path": "document/online-shipping-calculators-debug-mode.md"
+  },
+  "docs/en/document/managing-payment-disputes.md": {
+    "source": "docs/en/document/managing-payment-disputes.md",
+    "target": "docs/ja/document/managing-payment-disputes.md",
+    "relative_path": "document/managing-payment-disputes.md"
+  },
+  "docs/en/document/adding-dimensions-and-weights-to-products-for-shipping.md": {
+    "source": "docs/en/document/adding-dimensions-and-weights-to-products-for-shipping.md",
+    "target": "docs/ja/document/adding-dimensions-and-weights-to-products-for-shipping.md",
+    "relative_path": "document/adding-dimensions-and-weights-to-products-for-shipping.md"
+  },
+  "docs/en/document/managing-orders.md": {
+    "source": "docs/en/document/managing-orders.md",
+    "target": "docs/ja/document/managing-orders.md",
+    "relative_path": "document/managing-orders.md"
+  },
+  "docs/en/document/point-of-sale-mode-barcode-scanning.md": {
+    "source": "docs/en/document/point-of-sale-mode-barcode-scanning.md",
+    "target": "docs/ja/document/point-of-sale-mode-barcode-scanning.md",
+    "relative_path": "document/point-of-sale-mode-barcode-scanning.md"
+  },
+  "docs/en/document/orders-ios.md": {
+    "source": "docs/en/document/orders-ios.md",
+    "target": "docs/ja/document/orders-ios.md",
+    "relative_path": "document/orders-ios.md"
+  },
+  "docs/en/document/woocommerce-cookies.md": {
+    "source": "docs/en/document/woocommerce-cookies.md",
+    "target": "docs/ja/document/woocommerce-cookies.md",
+    "relative_path": "document/woocommerce-cookies.md"
+  },
+  "docs/en/document/woocommerce-onboarding-wizard.md": {
+    "source": "docs/en/document/woocommerce-onboarding-wizard.md",
+    "target": "docs/ja/document/woocommerce-onboarding-wizard.md",
+    "relative_path": "document/woocommerce-onboarding-wizard.md"
+  },
+  "docs/en/document/pci-dss-compliance-and-woocommerce.md": {
+    "source": "docs/en/document/pci-dss-compliance-and-woocommerce.md",
+    "target": "docs/ja/document/pci-dss-compliance-and-woocommerce.md",
+    "relative_path": "document/pci-dss-compliance-and-woocommerce.md"
+  },
+  "docs/en/document/adding-product-images-and-galleries.md": {
+    "source": "docs/en/document/adding-product-images-and-galleries.md",
+    "target": "docs/ja/document/adding-product-images-and-galleries.md",
+    "relative_path": "document/adding-product-images-and-galleries.md"
+  },
+  "docs/en/document/retired-themes.md": {
+    "source": "docs/en/document/retired-themes.md",
+    "target": "docs/ja/document/retired-themes.md",
+    "relative_path": "document/retired-themes.md"
+  },
+  "docs/en/document/woocommerce-marketplace-suggestions-settings.md": {
+    "source": "docs/en/document/woocommerce-marketplace-suggestions-settings.md",
+    "target": "docs/ja/document/woocommerce-marketplace-suggestions-settings.md",
+    "relative_path": "document/woocommerce-marketplace-suggestions-settings.md"
+  },
+  "docs/en/document/product-csv-importer-exporter.md": {
+    "source": "docs/en/document/product-csv-importer-exporter.md",
+    "target": "docs/ja/document/product-csv-importer-exporter.md",
+    "relative_path": "document/product-csv-importer-exporter.md"
+  },
+  "docs/en/document/group-bundle-products-woocommerce.md": {
+    "source": "docs/en/document/group-bundle-products-woocommerce.md",
+    "target": "docs/ja/document/group-bundle-products-woocommerce.md",
+    "relative_path": "document/group-bundle-products-woocommerce.md"
+  },
+  "docs/en/document/updating-woocommerce.md": {
+    "source": "docs/en/document/updating-woocommerce.md",
+    "target": "docs/ja/document/updating-woocommerce.md",
+    "relative_path": "document/updating-woocommerce.md"
+  },
+  "docs/en/document/troubleshooting-core-shipping.md": {
+    "source": "docs/en/document/troubleshooting-core-shipping.md",
+    "target": "docs/ja/document/troubleshooting-core-shipping.md",
+    "relative_path": "document/troubleshooting-core-shipping.md"
+  },
+  "docs/en/document/monetization-expectations-for-marketplace-plugins.md": {
+    "source": "docs/en/document/monetization-expectations-for-marketplace-plugins.md",
+    "target": "docs/ja/document/monetization-expectations-for-marketplace-plugins.md",
+    "relative_path": "document/monetization-expectations-for-marketplace-plugins.md"
+  },
+  "docs/en/document/woo-mobile-notifications.md": {
+    "source": "docs/en/document/woo-mobile-notifications.md",
+    "target": "docs/ja/document/woo-mobile-notifications.md",
+    "relative_path": "document/woo-mobile-notifications.md"
+  },
+  "docs/en/document/search-your-woocommerce-site-database.md": {
+    "source": "docs/en/document/search-your-woocommerce-site-database.md",
+    "target": "docs/ja/document/search-your-woocommerce-site-database.md",
+    "relative_path": "document/search-your-woocommerce-site-database.md"
+  },
+  "docs/en/document/understanding-the-woocommerce-system-status-report.md": {
+    "source": "docs/en/document/understanding-the-woocommerce-system-status-report.md",
+    "target": "docs/ja/document/understanding-the-woocommerce-system-status-report.md",
+    "relative_path": "document/understanding-the-woocommerce-system-status-report.md"
+  },
+  "docs/en/document/installing-and-activating-woocommerce-extensions.md": {
+    "source": "docs/en/document/installing-and-activating-woocommerce-extensions.md",
+    "target": "docs/ja/document/installing-and-activating-woocommerce-extensions.md",
+    "relative_path": "document/installing-and-activating-woocommerce-extensions.md"
+  },
+  "docs/en/document/the-htaccess-file.md": {
+    "source": "docs/en/document/the-htaccess-file.md",
+    "target": "docs/ja/document/the-htaccess-file.md",
+    "relative_path": "document/the-htaccess-file.md"
+  },
+  "docs/en/document/cross-browser-testing-your-site.md": {
+    "source": "docs/en/document/cross-browser-testing-your-site.md",
+    "target": "docs/ja/document/cross-browser-testing-your-site.md",
+    "relative_path": "document/cross-browser-testing-your-site.md"
+  },
+  "docs/en/document/troubleshooting-a-slow-site.md": {
+    "source": "docs/en/document/troubleshooting-a-slow-site.md",
+    "target": "docs/ja/document/troubleshooting-a-slow-site.md",
+    "relative_path": "document/troubleshooting-a-slow-site.md"
+  },
+  "docs/en/document/order-attribution-tracking.md": {
+    "source": "docs/en/document/order-attribution-tracking.md",
+    "target": "docs/ja/document/order-attribution-tracking.md",
+    "relative_path": "document/order-attribution-tracking.md"
+  },
+  "docs/en/document/installing-a-woo-theme.md": {
+    "source": "docs/en/document/installing-a-woo-theme.md",
+    "target": "docs/ja/document/installing-a-woo-theme.md",
+    "relative_path": "document/installing-a-woo-theme.md"
+  },
+  "docs/en/document/abusive-content-on-a-store-built-with-woocommerce.md": {
+    "source": "docs/en/document/abusive-content-on-a-store-built-with-woocommerce.md",
+    "target": "docs/ja/document/abusive-content-on-a-store-built-with-woocommerce.md",
+    "relative_path": "document/abusive-content-on-a-store-built-with-woocommerce.md"
+  },
+  "docs/en/document/product-page-content-and-assets.md": {
+    "source": "docs/en/document/product-page-content-and-assets.md",
+    "target": "docs/ja/document/product-page-content-and-assets.md",
+    "relative_path": "document/product-page-content-and-assets.md"
+  },
+  "docs/en/document/pages-not-displaying.md": {
+    "source": "docs/en/document/pages-not-displaying.md",
+    "target": "docs/ja/document/pages-not-displaying.md",
+    "relative_path": "document/pages-not-displaying.md"
+  },
+  "docs/en/document/accordion-group-block.md": {
+    "source": "docs/en/document/accordion-group-block.md",
+    "target": "docs/ja/document/accordion-group-block.md",
+    "relative_path": "document/accordion-group-block.md"
+  },
+  "docs/en/document/woocommerce-shipping-and-tax.md": {
+    "source": "docs/en/document/woocommerce-shipping-and-tax.md",
+    "target": "docs/ja/document/woocommerce-shipping-and-tax.md",
+    "relative_path": "document/woocommerce-shipping-and-tax.md"
+  },
+  "docs/en/document/accessibility-features-in-woocommerce.md": {
+    "source": "docs/en/document/accessibility-features-in-woocommerce.md",
+    "target": "docs/ja/document/accessibility-features-in-woocommerce.md",
+    "relative_path": "document/accessibility-features-in-woocommerce.md"
+  },
+  "docs/en/document/woocommerce-self-service-guide.md": {
+    "source": "docs/en/document/woocommerce-self-service-guide.md",
+    "target": "docs/ja/document/woocommerce-self-service-guide.md",
+    "relative_path": "document/woocommerce-self-service-guide.md"
+  },
+  "docs/en/document/how-to-update-your-site.md": {
+    "source": "docs/en/document/how-to-update-your-site.md",
+    "target": "docs/ja/document/how-to-update-your-site.md",
+    "relative_path": "document/how-to-update-your-site.md"
+  },
+  "docs/en/document/getting-started-with-in-person-payments-with-woocommerce-payments.md": {
+    "source": "docs/en/document/getting-started-with-in-person-payments-with-woocommerce-payments.md",
+    "target": "docs/ja/document/getting-started-with-in-person-payments-with-woocommerce-payments.md",
+    "relative_path": "document/getting-started-with-in-person-payments-with-woocommerce-payments.md"
+  },
+  "docs/en/document/use-ftp-to-manage-your-woocommerce-site.md": {
+    "source": "docs/en/document/use-ftp-to-manage-your-woocommerce-site.md",
+    "target": "docs/ja/document/use-ftp-to-manage-your-woocommerce-site.md",
+    "relative_path": "document/use-ftp-to-manage-your-woocommerce-site.md"
+  },
+  "docs/en/document/setting-up-eu-vat-rates-for-digital-products.md": {
+    "source": "docs/en/document/setting-up-eu-vat-rates-for-digital-products.md",
+    "target": "docs/ja/document/setting-up-eu-vat-rates-for-digital-products.md",
+    "relative_path": "document/setting-up-eu-vat-rates-for-digital-products.md"
+  },
+  "docs/en/document/help-woocommerce-store-dashboard.md": {
+    "source": "docs/en/document/help-woocommerce-store-dashboard.md",
+    "target": "docs/ja/document/help-woocommerce-store-dashboard.md",
+    "relative_path": "document/help-woocommerce-store-dashboard.md"
+  },
+  "docs/en/document/understanding-box-packing-calculations.md": {
+    "source": "docs/en/document/understanding-box-packing-calculations.md",
+    "target": "docs/ja/document/understanding-box-packing-calculations.md",
+    "relative_path": "document/understanding-box-packing-calculations.md"
+  },
+  "docs/en/document/how-to-migrate-from-shopify.md": {
+    "source": "docs/en/document/how-to-migrate-from-shopify.md",
+    "target": "docs/ja/document/how-to-migrate-from-shopify.md",
+    "relative_path": "document/how-to-migrate-from-shopify.md"
+  },
+  "docs/en/document/flat-rate-shipping-2.md": {
+    "source": "docs/en/document/flat-rate-shipping-2.md",
+    "target": "docs/ja/document/flat-rate-shipping-2.md",
+    "relative_path": "document/flat-rate-shipping-2.md"
+  },
+  "docs/en/document/menu-ios.md": {
+    "source": "docs/en/document/menu-ios.md",
+    "target": "docs/ja/document/menu-ios.md",
+    "relative_path": "document/menu-ios.md"
+  },
+  "docs/en/document/android-orders.md": {
+    "source": "docs/en/document/android-orders.md",
+    "target": "docs/ja/document/android-orders.md",
+    "relative_path": "document/android-orders.md"
+  },
+  "docs/en/document/settings-ios.md": {
+    "source": "docs/en/document/settings-ios.md",
+    "target": "docs/ja/document/settings-ios.md",
+    "relative_path": "document/settings-ios.md"
+  },
+  "docs/en/document/getting-started-with-in-person-payments-woopayments.md": {
+    "source": "docs/en/document/getting-started-with-in-person-payments-woopayments.md",
+    "target": "docs/ja/document/getting-started-with-in-person-payments-woopayments.md",
+    "relative_path": "document/getting-started-with-in-person-payments-woopayments.md"
+  },
+  "docs/en/document/wordpress-nonces.md": {
+    "source": "docs/en/document/wordpress-nonces.md",
+    "target": "docs/ja/document/wordpress-nonces.md",
+    "relative_path": "document/wordpress-nonces.md"
+  },
+  "docs/en/document/woocommerce-pages.md": {
+    "source": "docs/en/document/woocommerce-pages.md",
+    "target": "docs/ja/document/woocommerce-pages.md",
+    "relative_path": "document/woocommerce-pages.md"
+  },
+  "docs/en/document/jetpack-setup-instructions-for-the-woocommerce-mobile-app.md": {
+    "source": "docs/en/document/jetpack-setup-instructions-for-the-woocommerce-mobile-app.md",
+    "target": "docs/ja/document/jetpack-setup-instructions-for-the-woocommerce-mobile-app.md",
+    "relative_path": "document/jetpack-setup-instructions-for-the-woocommerce-mobile-app.md"
+  },
+  "docs/en/document/managing-woocommerce-com-subscriptions.md": {
+    "source": "docs/en/document/managing-woocommerce-com-subscriptions.md",
+    "target": "docs/ja/document/managing-woocommerce-com-subscriptions.md",
+    "relative_path": "document/managing-woocommerce-com-subscriptions.md"
+  },
+  "docs/en/document/session_start-warnings.md": {
+    "source": "docs/en/document/session_start-warnings.md",
+    "target": "docs/ja/document/session_start-warnings.md",
+    "relative_path": "document/session_start-warnings.md"
+  },
+  "docs/en/document/woocommerce-rest-api.md": {
+    "source": "docs/en/document/woocommerce-rest-api.md",
+    "target": "docs/ja/document/woocommerce-rest-api.md",
+    "relative_path": "document/woocommerce-rest-api.md"
+  },
+  "docs/en/document/android-menu.md": {
+    "source": "docs/en/document/android-menu.md",
+    "target": "docs/ja/document/android-menu.md",
+    "relative_path": "document/android-menu.md"
+  },
+  "docs/en/document/ssl_error_rx_record_too_long.md": {
+    "source": "docs/en/document/ssl_error_rx_record_too_long.md",
+    "target": "docs/ja/document/ssl_error_rx_record_too_long.md",
+    "relative_path": "document/ssl_error_rx_record_too_long.md"
+  },
+  "docs/en/document/fatal-error-call-to-undefined-function-is_woocommerce_active.md": {
+    "source": "docs/en/document/fatal-error-call-to-undefined-function-is_woocommerce_active.md",
+    "target": "docs/ja/document/fatal-error-call-to-undefined-function-is_woocommerce_active.md",
+    "relative_path": "document/fatal-error-call-to-undefined-function-is_woocommerce_active.md"
+  },
+  "docs/en/document/http-and-response-codes.md": {
+    "source": "docs/en/document/http-and-response-codes.md",
+    "target": "docs/ja/document/http-and-response-codes.md",
+    "relative_path": "document/http-and-response-codes.md"
+  },
+  "docs/en/document/creating-orders-on-the-mobile-app.md": {
+    "source": "docs/en/document/creating-orders-on-the-mobile-app.md",
+    "target": "docs/ja/document/creating-orders-on-the-mobile-app.md",
+    "relative_path": "document/creating-orders-on-the-mobile-app.md"
+  },
+  "docs/en/document/troubleshoot-php-errors.md": {
+    "source": "docs/en/document/troubleshoot-php-errors.md",
+    "target": "docs/ja/document/troubleshoot-php-errors.md",
+    "relative_path": "document/troubleshoot-php-errors.md"
+  },
+  "docs/en/document/how-do-i-prevent-and-respond-to-card-testing-attacks.md": {
+    "source": "docs/en/document/how-do-i-prevent-and-respond-to-card-testing-attacks.md",
+    "target": "docs/ja/document/how-do-i-prevent-and-respond-to-card-testing-attacks.md",
+    "relative_path": "document/how-do-i-prevent-and-respond-to-card-testing-attacks.md"
+  },
+  "docs/en/document/woocommerce-menu-items.md": {
+    "source": "docs/en/document/woocommerce-menu-items.md",
+    "target": "docs/ja/document/woocommerce-menu-items.md",
+    "relative_path": "document/woocommerce-menu-items.md"
+  },
+  "docs/en/document/barcode-and-qr-code-scanner.md": {
+    "source": "docs/en/document/barcode-and-qr-code-scanner.md",
+    "target": "docs/ja/document/barcode-and-qr-code-scanner.md",
+    "relative_path": "document/barcode-and-qr-code-scanner.md"
+  },
+  "docs/en/document/updating-free-woocommerce-plugins.md": {
+    "source": "docs/en/document/updating-free-woocommerce-plugins.md",
+    "target": "docs/ja/document/updating-free-woocommerce-plugins.md",
+    "relative_path": "document/updating-free-woocommerce-plugins.md"
+  },
+  "docs/en/document/cash-on-delivery.md": {
+    "source": "docs/en/document/cash-on-delivery.md",
+    "target": "docs/ja/document/cash-on-delivery.md",
+    "relative_path": "document/cash-on-delivery.md"
+  },
+  "docs/en/document/installed-taxonomies-post-types.md": {
+    "source": "docs/en/document/installed-taxonomies-post-types.md",
+    "target": "docs/ja/document/installed-taxonomies-post-types.md",
+    "relative_path": "document/installed-taxonomies-post-types.md"
+  },
+  "docs/en/document/wp_options-table-and-site-speed.md": {
+    "source": "docs/en/document/wp_options-table-and-site-speed.md",
+    "target": "docs/ja/document/wp_options-table-and-site-speed.md",
+    "relative_path": "document/wp_options-table-and-site-speed.md"
+  },
+  "docs/en/document/woocommerce-refunds.md": {
+    "source": "docs/en/document/woocommerce-refunds.md",
+    "target": "docs/ja/document/woocommerce-refunds.md",
+    "relative_path": "document/woocommerce-refunds.md"
+  },
+  "docs/en/document/submitting-your-product-to-the-woo-marketplace.md": {
+    "source": "docs/en/document/submitting-your-product-to-the-woo-marketplace.md",
+    "target": "docs/ja/document/submitting-your-product-to-the-woo-marketplace.md",
+    "relative_path": "document/submitting-your-product-to-the-woo-marketplace.md"
+  },
+  "docs/en/document/woocommerce-highly-regulated-products.md": {
+    "source": "docs/en/document/woocommerce-highly-regulated-products.md",
+    "target": "docs/ja/document/woocommerce-highly-regulated-products.md",
+    "relative_path": "document/woocommerce-highly-regulated-products.md"
+  },
+  "docs/en/document/product-gallery-block.md": {
+    "source": "docs/en/document/product-gallery-block.md",
+    "target": "docs/ja/document/product-gallery-block.md",
+    "relative_path": "document/product-gallery-block.md"
+  },
+  "docs/en/document/advanced-payment-gateway-features.md": {
+    "source": "docs/en/document/advanced-payment-gateway-features.md",
+    "target": "docs/ja/document/advanced-payment-gateway-features.md",
+    "relative_path": "document/advanced-payment-gateway-features.md"
+  },
+  "docs/en/document/create-new-admin-account-wordpress.md": {
+    "source": "docs/en/document/create-new-admin-account-wordpress.md",
+    "target": "docs/ja/document/create-new-admin-account-wordpress.md",
+    "relative_path": "document/create-new-admin-account-wordpress.md"
+  },
+  "docs/en/document/woocommerce-security-faq.md": {
+    "source": "docs/en/document/woocommerce-security-faq.md",
+    "target": "docs/ja/document/woocommerce-security-faq.md",
+    "relative_path": "document/woocommerce-security-faq.md"
+  },
+  "docs/en/document/how-to-create-a-blaze-campaign-mobile.md": {
+    "source": "docs/en/document/how-to-create-a-blaze-campaign-mobile.md",
+    "target": "docs/ja/document/how-to-create-a-blaze-campaign-mobile.md",
+    "relative_path": "document/how-to-create-a-blaze-campaign-mobile.md"
+  },
+  "docs/en/document/troubleshooting-image-upload-issues-in-the-woo-mobile-apps.md": {
+    "source": "docs/en/document/troubleshooting-image-upload-issues-in-the-woo-mobile-apps.md",
+    "target": "docs/ja/document/troubleshooting-image-upload-issues-in-the-woo-mobile-apps.md",
+    "relative_path": "document/troubleshooting-image-upload-issues-in-the-woo-mobile-apps.md"
+  },
+  "docs/en/document/quick-start-guide-m2-reader.md": {
+    "source": "docs/en/document/quick-start-guide-m2-reader.md",
+    "target": "docs/ja/document/quick-start-guide-m2-reader.md",
+    "relative_path": "document/quick-start-guide-m2-reader.md"
+  },
+  "docs/en/document/installing-uninstalling-woocommerce.md": {
+    "source": "docs/en/document/installing-uninstalling-woocommerce.md",
+    "target": "docs/ja/document/installing-uninstalling-woocommerce.md",
+    "relative_path": "document/installing-uninstalling-woocommerce.md"
+  },
+  "docs/en/document/woocommerce-localization.md": {
+    "source": "docs/en/document/woocommerce-localization.md",
+    "target": "docs/ja/document/woocommerce-localization.md",
+    "relative_path": "document/woocommerce-localization.md"
+  },
+  "docs/en/document/check-if-payment-gateway-supports-refunds-subscriptions-preorders.md": {
+    "source": "docs/en/document/check-if-payment-gateway-supports-refunds-subscriptions-preorders.md",
+    "target": "docs/ja/document/check-if-payment-gateway-supports-refunds-subscriptions-preorders.md",
+    "relative_path": "document/check-if-payment-gateway-supports-refunds-subscriptions-preorders.md"
+  },
+  "docs/en/document/ssl-and-https.md": {
+    "source": "docs/en/document/ssl-and-https.md",
+    "target": "docs/ja/document/ssl-and-https.md",
+    "relative_path": "document/ssl-and-https.md"
+  },
+  "docs/en/document/ssl-by-proxy-problems-network-solutions.md": {
+    "source": "docs/en/document/ssl-by-proxy-problems-network-solutions.md",
+    "target": "docs/ja/document/ssl-by-proxy-problems-network-solutions.md",
+    "relative_path": "document/ssl-by-proxy-problems-network-solutions.md"
+  },
+  "docs/en/document/the-my-account-page.md": {
+    "source": "docs/en/document/the-my-account-page.md",
+    "target": "docs/ja/document/the-my-account-page.md",
+    "relative_path": "document/the-my-account-page.md"
+  },
+  "docs/en/document/privacy-shipping.md": {
+    "source": "docs/en/document/privacy-shipping.md",
+    "target": "docs/ja/document/privacy-shipping.md",
+    "relative_path": "document/privacy-shipping.md"
+  },
+  "docs/en/document/android-settings.md": {
+    "source": "docs/en/document/android-settings.md",
+    "target": "docs/ja/document/android-settings.md",
+    "relative_path": "document/android-settings.md"
+  },
+  "docs/en/document/mobile-receipts.md": {
+    "source": "docs/en/document/mobile-receipts.md",
+    "target": "docs/ja/document/mobile-receipts.md",
+    "relative_path": "document/mobile-receipts.md"
+  },
+  "docs/en/document/shop-currency.md": {
+    "source": "docs/en/document/shop-currency.md",
+    "target": "docs/ja/document/shop-currency.md",
+    "relative_path": "document/shop-currency.md"
+  },
+  "docs/en/document/widgets-ios.md": {
+    "source": "docs/en/document/widgets-ios.md",
+    "target": "docs/ja/document/widgets-ios.md",
+    "relative_path": "document/widgets-ios.md"
+  },
+  "docs/en/document/build-online-store.md": {
+    "source": "docs/en/document/build-online-store.md",
+    "target": "docs/ja/document/build-online-store.md",
+    "relative_path": "document/build-online-store.md"
+  },
+  "docs/en/document/android-widgets.md": {
+    "source": "docs/en/document/android-widgets.md",
+    "target": "docs/ja/document/android-widgets.md",
+    "relative_path": "document/android-widgets.md"
+  },
+  "docs/en/document/installed-database-tables.md": {
+    "source": "docs/en/document/installed-database-tables.md",
+    "target": "docs/ja/document/installed-database-tables.md",
+    "relative_path": "document/installed-database-tables.md"
+  },
+  "docs/en/document/frequently-asked-questions.md": {
+    "source": "docs/en/document/frequently-asked-questions.md",
+    "target": "docs/ja/document/frequently-asked-questions.md",
+    "relative_path": "document/frequently-asked-questions.md"
+  },
+  "docs/en/document/woocommerce-cbd.md": {
+    "source": "docs/en/document/woocommerce-cbd.md",
+    "target": "docs/ja/document/woocommerce-cbd.md",
+    "relative_path": "document/woocommerce-cbd.md"
+  },
+  "docs/en/document/end-of-us-de-minimis-what-to-do.md": {
+    "source": "docs/en/document/end-of-us-de-minimis-what-to-do.md",
+    "target": "docs/ja/document/end-of-us-de-minimis-what-to-do.md",
+    "relative_path": "document/end-of-us-de-minimis-what-to-do.md"
+  },
+  "docs/en/document/eu-vat-july-2021-changes-ecommerce-and-woocommerce.md": {
+    "source": "docs/en/document/eu-vat-july-2021-changes-ecommerce-and-woocommerce.md",
+    "target": "docs/ja/document/eu-vat-july-2021-changes-ecommerce-and-woocommerce.md",
+    "relative_path": "document/eu-vat-july-2021-changes-ecommerce-and-woocommerce.md"
+  },
+  "docs/en/document/email-smtp-providers.md": {
+    "source": "docs/en/document/email-smtp-providers.md",
+    "target": "docs/ja/document/email-smtp-providers.md",
+    "relative_path": "document/email-smtp-providers.md"
+  },
+  "docs/en/document/cash-payments.md": {
+    "source": "docs/en/document/cash-payments.md",
+    "target": "docs/ja/document/cash-payments.md",
+    "relative_path": "document/cash-payments.md"
+  },
+  "docs/en/document/how-to-update-woocommerce.md": {
+    "source": "docs/en/document/how-to-update-woocommerce.md",
+    "target": "docs/ja/document/how-to-update-woocommerce.md",
+    "relative_path": "document/how-to-update-woocommerce.md"
+  },
+  "docs/en/document/woocommerce-blocks.md": {
+    "source": "docs/en/document/woocommerce-blocks.md",
+    "target": "docs/ja/document/woocommerce-blocks.md",
+    "relative_path": "document/woocommerce-blocks.md"
+  },
+  "docs/en/document/free-shipping.md": {
+    "source": "docs/en/document/free-shipping.md",
+    "target": "docs/ja/document/free-shipping.md",
+    "relative_path": "document/free-shipping.md"
+  },
+  "docs/en/document/premium-shipping-extension-options.md": {
+    "source": "docs/en/document/premium-shipping-extension-options.md",
+    "target": "docs/ja/document/premium-shipping-extension-options.md",
+    "relative_path": "document/premium-shipping-extension-options.md"
+  },
+  "docs/en/document/connect-your-store-to-a-wordpress-com-account.md": {
+    "source": "docs/en/document/connect-your-store-to-a-wordpress-com-account.md",
+    "target": "docs/ja/document/connect-your-store-to-a-wordpress-com-account.md",
+    "relative_path": "document/connect-your-store-to-a-wordpress-com-account.md"
+  },
+  "docs/en/document/add-to-cart-options-block.md": {
+    "source": "docs/en/document/add-to-cart-options-block.md",
+    "target": "docs/ja/document/add-to-cart-options-block.md",
+    "relative_path": "document/add-to-cart-options-block.md"
+  },
+  "docs/en/document/finding-php-error-logs.md": {
+    "source": "docs/en/document/finding-php-error-logs.md",
+    "target": "docs/ja/document/finding-php-error-logs.md",
+    "relative_path": "document/finding-php-error-logs.md"
+  },
+  "docs/en/document/how-to-hide-sites-from-store-picker.md": {
+    "source": "docs/en/document/how-to-hide-sites-from-store-picker.md",
+    "target": "docs/ja/document/how-to-hide-sites-from-store-picker.md",
+    "relative_path": "document/how-to-hide-sites-from-store-picker.md"
+  },
+  "docs/en/document/woocommerce-blueprints.md": {
+    "source": "docs/en/document/woocommerce-blueprints.md",
+    "target": "docs/ja/document/woocommerce-blueprints.md",
+    "relative_path": "document/woocommerce-blueprints.md"
+  },
+  "docs/en/document/local-pickup.md": {
+    "source": "docs/en/document/local-pickup.md",
+    "target": "docs/ja/document/local-pickup.md",
+    "relative_path": "document/local-pickup.md"
+  },
+  "docs/en/document/ssl-faq.md": {
+    "source": "docs/en/document/ssl-faq.md",
+    "target": "docs/ja/document/ssl-faq.md",
+    "relative_path": "document/ssl-faq.md"
+  },
+  "docs/en/document/setting-up-shipping-zones.md": {
+    "source": "docs/en/document/setting-up-shipping-zones.md",
+    "target": "docs/ja/document/setting-up-shipping-zones.md",
+    "relative_path": "document/setting-up-shipping-zones.md"
+  },
+  "docs/en/document/variable-product.md": {
+    "source": "docs/en/document/variable-product.md",
+    "target": "docs/ja/document/variable-product.md",
+    "relative_path": "document/variable-product.md"
+  },
+  "docs/en/document/change-to-use-terms-and-privacy-policy-december-2020.md": {
+    "source": "docs/en/document/change-to-use-terms-and-privacy-policy-december-2020.md",
+    "target": "docs/ja/document/change-to-use-terms-and-privacy-policy-december-2020.md",
+    "relative_path": "document/change-to-use-terms-and-privacy-policy-december-2020.md"
+  },
+  "docs/en/document/my-store-ios.md": {
+    "source": "docs/en/document/my-store-ios.md",
+    "target": "docs/ja/document/my-store-ios.md",
+    "relative_path": "document/my-store-ios.md"
+  },
+  "docs/en/document/product-shipping-classes.md": {
+    "source": "docs/en/document/product-shipping-classes.md",
+    "target": "docs/ja/document/product-shipping-classes.md",
+    "relative_path": "document/product-shipping-classes.md"
+  },
+  "docs/en/document/woo-mobile-log-out-from-all-devices.md": {
+    "source": "docs/en/document/woo-mobile-log-out-from-all-devices.md",
+    "target": "docs/ja/document/woo-mobile-log-out-from-all-devices.md",
+    "relative_path": "document/woo-mobile-log-out-from-all-devices.md"
+  },
+  "docs/en/document/choosing-the-right-theme.md": {
+    "source": "docs/en/document/choosing-the-right-theme.md",
+    "target": "docs/ja/document/choosing-the-right-theme.md",
+    "relative_path": "document/choosing-the-right-theme.md"
+  },
+  "docs/en/document/woocommerce-shortcodes.md": {
+    "source": "docs/en/document/woocommerce-shortcodes.md",
+    "target": "docs/ja/document/woocommerce-shortcodes.md",
+    "relative_path": "document/woocommerce-shortcodes.md"
+  },
+  "docs/en/document/paypal-update-for-sha-256.md": {
+    "source": "docs/en/document/paypal-update-for-sha-256.md",
+    "target": "docs/ja/document/paypal-update-for-sha-256.md",
+    "relative_path": "document/paypal-update-for-sha-256.md"
+  },
+  "docs/en/document/remove-designed-by-woothemes-from-footer.md": {
+    "source": "docs/en/document/remove-designed-by-woothemes-from-footer.md",
+    "target": "docs/ja/document/remove-designed-by-woothemes-from-footer.md",
+    "relative_path": "document/remove-designed-by-woothemes-from-footer.md"
+  },
+  "docs/en/document/jquery-cookie-fails-to-load.md": {
+    "source": "docs/en/document/jquery-cookie-fails-to-load.md",
+    "target": "docs/ja/document/jquery-cookie-fails-to-load.md",
+    "relative_path": "document/jquery-cookie-fails-to-load.md"
+  },
+  "docs/en/document/endless-loadingspinner-on-the-checkout-page.md": {
+    "source": "docs/en/document/endless-loadingspinner-on-the-checkout-page.md",
+    "target": "docs/ja/document/endless-loadingspinner-on-the-checkout-page.md",
+    "relative_path": "document/endless-loadingspinner-on-the-checkout-page.md"
+  },
+  "docs/en/document/how-to-update-your-php-version.md": {
+    "source": "docs/en/document/how-to-update-your-php-version.md",
+    "target": "docs/ja/document/how-to-update-your-php-version.md",
+    "relative_path": "document/how-to-update-your-php-version.md"
+  },
+  "docs/en/document/woo-mobile-coupons.md": {
+    "source": "docs/en/document/woo-mobile-coupons.md",
+    "target": "docs/ja/document/woo-mobile-coupons.md",
+    "relative_path": "document/woo-mobile-coupons.md"
+  },
+  "docs/en/document/woopayments/fraud-and-disputes.md": {
+    "source": "docs/en/document/woopayments/fraud-and-disputes.md",
+    "target": "docs/ja/document/woopayments/fraud-and-disputes.md",
+    "relative_path": "document/woopayments/fraud-and-disputes.md"
+  },
+  "docs/en/document/woopayments/testing-and-troubleshooting.md": {
+    "source": "docs/en/document/woopayments/testing-and-troubleshooting.md",
+    "target": "docs/ja/document/woopayments/testing-and-troubleshooting.md",
+    "relative_path": "document/woopayments/testing-and-troubleshooting.md"
+  },
+  "docs/en/document/woopayments/subscriptions.md": {
+    "source": "docs/en/document/woopayments/subscriptions.md",
+    "target": "docs/ja/document/woopayments/subscriptions.md",
+    "relative_path": "document/woopayments/subscriptions.md"
+  },
+  "docs/en/document/woopayments/in-person-payments/quick-start-guide.md": {
+    "source": "docs/en/document/woopayments/in-person-payments/quick-start-guide.md",
+    "target": "docs/ja/document/woopayments/in-person-payments/quick-start-guide.md",
+    "relative_path": "document/woopayments/in-person-payments/quick-start-guide.md"
+  },
+  "docs/en/document/woopayments/in-person-payments/tap-to-pay-android.md": {
+    "source": "docs/en/document/woopayments/in-person-payments/tap-to-pay-android.md",
+    "target": "docs/ja/document/woopayments/in-person-payments/tap-to-pay-android.md",
+    "relative_path": "document/woopayments/in-person-payments/tap-to-pay-android.md"
+  },
+  "docs/en/document/woopayments/in-person-payments/card-reader-return-policy.md": {
+    "source": "docs/en/document/woopayments/in-person-payments/card-reader-return-policy.md",
+    "target": "docs/ja/document/woopayments/in-person-payments/card-reader-return-policy.md",
+    "relative_path": "document/woopayments/in-person-payments/card-reader-return-policy.md"
+  },
+  "docs/en/document/woopayments/in-person-payments/tap-to-pay-iphone.md": {
+    "source": "docs/en/document/woopayments/in-person-payments/tap-to-pay-iphone.md",
+    "target": "docs/ja/document/woopayments/in-person-payments/tap-to-pay-iphone.md",
+    "relative_path": "document/woopayments/in-person-payments/tap-to-pay-iphone.md"
+  },
+  "docs/en/document/woopayments/in-person-payments/getting-started-with-in-person-payments.md": {
+    "source": "docs/en/document/woopayments/in-person-payments/getting-started-with-in-person-payments.md",
+    "target": "docs/ja/document/woopayments/in-person-payments/getting-started-with-in-person-payments.md",
+    "relative_path": "document/woopayments/in-person-payments/getting-started-with-in-person-payments.md"
+  },
+  "docs/en/document/woopayments/subscriptions/stripe-billing.md": {
+    "source": "docs/en/document/woopayments/subscriptions/stripe-billing.md",
+    "target": "docs/ja/document/woopayments/subscriptions/stripe-billing.md",
+    "relative_path": "document/woopayments/subscriptions/stripe-billing.md"
+  },
+  "docs/en/document/woopayments/fees-and-debits/fees.md": {
+    "source": "docs/en/document/woopayments/fees-and-debits/fees.md",
+    "target": "docs/ja/document/woopayments/fees-and-debits/fees.md",
+    "relative_path": "document/woopayments/fees-and-debits/fees.md"
+  },
+  "docs/en/document/woopayments/fraud-and-disputes/fraud-prevention.md": {
+    "source": "docs/en/document/woopayments/fraud-and-disputes/fraud-prevention.md",
+    "target": "docs/ja/document/woopayments/fraud-and-disputes/fraud-prevention.md",
+    "relative_path": "document/woopayments/fraud-and-disputes/fraud-prevention.md"
+  },
+  "docs/en/document/woopayments/fraud-and-disputes/fraud-protection.md": {
+    "source": "docs/en/document/woopayments/fraud-and-disputes/fraud-protection.md",
+    "target": "docs/ja/document/woopayments/fraud-and-disputes/fraud-protection.md",
+    "relative_path": "document/woopayments/fraud-and-disputes/fraud-protection.md"
+  },
+  "docs/en/document/configuring-woocommerce-settings/coming-soon-mode.md": {
+    "source": "docs/en/document/configuring-woocommerce-settings/coming-soon-mode.md",
+    "target": "docs/ja/document/configuring-woocommerce-settings/coming-soon-mode.md",
+    "relative_path": "document/configuring-woocommerce-settings/coming-soon-mode.md"
+  },
+  "docs/en/document/configuring-woocommerce-settings/general.md": {
+    "source": "docs/en/document/configuring-woocommerce-settings/general.md",
+    "target": "docs/ja/document/configuring-woocommerce-settings/general.md",
+    "relative_path": "document/configuring-woocommerce-settings/general.md"
+  },
+  "docs/en/document/configuring-woocommerce-settings/advanced.md": {
+    "source": "docs/en/document/configuring-woocommerce-settings/advanced.md",
+    "target": "docs/ja/document/configuring-woocommerce-settings/advanced.md",
+    "relative_path": "document/configuring-woocommerce-settings/advanced.md"
+  },
+  "docs/en/document/configuring-woocommerce-settings/email-settings.md": {
+    "source": "docs/en/document/configuring-woocommerce-settings/email-settings.md",
+    "target": "docs/ja/document/configuring-woocommerce-settings/email-settings.md",
+    "relative_path": "document/configuring-woocommerce-settings/email-settings.md"
+  },
+  "docs/en/document/configuring-woocommerce-settings/products.md": {
+    "source": "docs/en/document/configuring-woocommerce-settings/products.md",
+    "target": "docs/ja/document/configuring-woocommerce-settings/products.md",
+    "relative_path": "document/configuring-woocommerce-settings/products.md"
+  },
+  "docs/en/document/configuring-woocommerce-settings/emails.md": {
+    "source": "docs/en/document/configuring-woocommerce-settings/emails.md",
+    "target": "docs/ja/document/configuring-woocommerce-settings/emails.md",
+    "relative_path": "document/configuring-woocommerce-settings/emails.md"
+  },
+  "docs/en/document/configuring-woocommerce-settings/coming-soon-mode/customising-coming-soon-template.md": {
+    "source": "docs/en/document/configuring-woocommerce-settings/coming-soon-mode/customising-coming-soon-template.md",
+    "target": "docs/ja/document/configuring-woocommerce-settings/coming-soon-mode/customising-coming-soon-template.md",
+    "relative_path": "document/configuring-woocommerce-settings/coming-soon-mode/customising-coming-soon-template.md"
+  },
+  "docs/en/document/setting-up-taxes-in-woocommerce/configuring-specific-tax-setups-in-woocommerce.md": {
+    "source": "docs/en/document/setting-up-taxes-in-woocommerce/configuring-specific-tax-setups-in-woocommerce.md",
+    "target": "docs/ja/document/setting-up-taxes-in-woocommerce/configuring-specific-tax-setups-in-woocommerce.md",
+    "relative_path": "document/setting-up-taxes-in-woocommerce/configuring-specific-tax-setups-in-woocommerce.md"
+  },
+  "docs/en/document/setting-up-taxes-in-woocommerce/how-taxes-work-in-woocommerce.md": {
+    "source": "docs/en/document/setting-up-taxes-in-woocommerce/how-taxes-work-in-woocommerce.md",
+    "target": "docs/ja/document/setting-up-taxes-in-woocommerce/how-taxes-work-in-woocommerce.md",
+    "relative_path": "document/setting-up-taxes-in-woocommerce/how-taxes-work-in-woocommerce.md"
+  },
+  "docs/en/document/setting-up-taxes-in-woocommerce/configuring-specific-tax-setups-in-woocommerce/setting-up-eu-vat-rates-for-digital-products.md": {
+    "source": "docs/en/document/setting-up-taxes-in-woocommerce/configuring-specific-tax-setups-in-woocommerce/setting-up-eu-vat-rates-for-digital-products.md",
+    "target": "docs/ja/document/setting-up-taxes-in-woocommerce/configuring-specific-tax-setups-in-woocommerce/setting-up-eu-vat-rates-for-digital-products.md",
+    "relative_path": "document/setting-up-taxes-in-woocommerce/configuring-specific-tax-setups-in-woocommerce/setting-up-eu-vat-rates-for-digital-products.md"
+  },
+  "docs/en/document/managing-product-taxonomies/product-brands.md": {
+    "source": "docs/en/document/managing-product-taxonomies/product-brands.md",
+    "target": "docs/ja/document/managing-product-taxonomies/product-brands.md",
+    "relative_path": "document/managing-product-taxonomies/product-brands.md"
+  },
+  "docs/en/document/woocommerce-customizer/checkout.md": {
+    "source": "docs/en/document/woocommerce-customizer/checkout.md",
+    "target": "docs/ja/document/woocommerce-customizer/checkout.md",
+    "relative_path": "document/woocommerce-customizer/checkout.md"
+  },
+  "docs/en/document/woocommerce-customizer/product-catalog.md": {
+    "source": "docs/en/document/woocommerce-customizer/product-catalog.md",
+    "target": "docs/ja/document/woocommerce-customizer/product-catalog.md",
+    "relative_path": "document/woocommerce-customizer/product-catalog.md"
+  },
+  "docs/en/document/woocommerce-customizer/store-notice.md": {
+    "source": "docs/en/document/woocommerce-customizer/store-notice.md",
+    "target": "docs/ja/document/woocommerce-customizer/store-notice.md",
+    "relative_path": "document/woocommerce-customizer/store-notice.md"
+  },
+  "docs/en/document/woocommerce-customizer/product-page-and-images.md": {
+    "source": "docs/en/document/woocommerce-customizer/product-page-and-images.md",
+    "target": "docs/ja/document/woocommerce-customizer/product-page-and-images.md",
+    "relative_path": "document/woocommerce-customizer/product-page-and-images.md"
+  },
+  "docs/en/document/woocommerce-analytics/variations-report.md": {
+    "source": "docs/en/document/woocommerce-analytics/variations-report.md",
+    "target": "docs/ja/document/woocommerce-analytics/variations-report.md",
+    "relative_path": "document/woocommerce-analytics/variations-report.md"
+  },
+  "docs/en/document/woocommerce-analytics/revenue-report.md": {
+    "source": "docs/en/document/woocommerce-analytics/revenue-report.md",
+    "target": "docs/ja/document/woocommerce-analytics/revenue-report.md",
+    "relative_path": "document/woocommerce-analytics/revenue-report.md"
+  },
+  "docs/en/document/woocommerce-analytics/orders-report.md": {
+    "source": "docs/en/document/woocommerce-analytics/orders-report.md",
+    "target": "docs/ja/document/woocommerce-analytics/orders-report.md",
+    "relative_path": "document/woocommerce-analytics/orders-report.md"
+  },
+  "docs/en/document/woocommerce-analytics/stock-report.md": {
+    "source": "docs/en/document/woocommerce-analytics/stock-report.md",
+    "target": "docs/ja/document/woocommerce-analytics/stock-report.md",
+    "relative_path": "document/woocommerce-analytics/stock-report.md"
+  },
+  "docs/en/document/woocommerce-analytics/taxes-report.md": {
+    "source": "docs/en/document/woocommerce-analytics/taxes-report.md",
+    "target": "docs/ja/document/woocommerce-analytics/taxes-report.md",
+    "relative_path": "document/woocommerce-analytics/taxes-report.md"
+  },
+  "docs/en/document/woocommerce-analytics/downloads-report.md": {
+    "source": "docs/en/document/woocommerce-analytics/downloads-report.md",
+    "target": "docs/ja/document/woocommerce-analytics/downloads-report.md",
+    "relative_path": "document/woocommerce-analytics/downloads-report.md"
+  },
+  "docs/en/document/woocommerce-analytics/customers-report.md": {
+    "source": "docs/en/document/woocommerce-analytics/customers-report.md",
+    "target": "docs/ja/document/woocommerce-analytics/customers-report.md",
+    "relative_path": "document/woocommerce-analytics/customers-report.md"
+  },
+  "docs/en/document/woocommerce-analytics/products-report.md": {
+    "source": "docs/en/document/woocommerce-analytics/products-report.md",
+    "target": "docs/ja/document/woocommerce-analytics/products-report.md",
+    "relative_path": "document/woocommerce-analytics/products-report.md"
+  },
+  "docs/en/document/woocommerce-analytics/coupons-report.md": {
+    "source": "docs/en/document/woocommerce-analytics/coupons-report.md",
+    "target": "docs/ja/document/woocommerce-analytics/coupons-report.md",
+    "relative_path": "document/woocommerce-analytics/coupons-report.md"
+  },
+  "docs/en/document/woocommerce-analytics/categories-report.md": {
+    "source": "docs/en/document/woocommerce-analytics/categories-report.md",
+    "target": "docs/ja/document/woocommerce-analytics/categories-report.md",
+    "relative_path": "document/woocommerce-analytics/categories-report.md"
+  },
+  "docs/en/document/woocommerce-shipping-and-tax/woocommerce-tax.md": {
+    "source": "docs/en/document/woocommerce-shipping-and-tax/woocommerce-tax.md",
+    "target": "docs/ja/document/woocommerce-shipping-and-tax/woocommerce-tax.md",
+    "relative_path": "document/woocommerce-shipping-and-tax/woocommerce-tax.md"
+  },
+  "docs/en/document/woocommerce-store-editing/templates.md": {
+    "source": "docs/en/document/woocommerce-store-editing/templates.md",
+    "target": "docs/ja/document/woocommerce-store-editing/templates.md",
+    "relative_path": "document/woocommerce-store-editing/templates.md"
+  },
+  "docs/en/document/woocommerce-store-editing/the-editor.md": {
+    "source": "docs/en/document/woocommerce-store-editing/the-editor.md",
+    "target": "docs/ja/document/woocommerce-store-editing/the-editor.md",
+    "relative_path": "document/woocommerce-store-editing/the-editor.md"
+  },
+  "docs/en/document/woocommerce-store-editing/blocks.md": {
+    "source": "docs/en/document/woocommerce-store-editing/blocks.md",
+    "target": "docs/ja/document/woocommerce-store-editing/blocks.md",
+    "relative_path": "document/woocommerce-store-editing/blocks.md"
+  },
+  "docs/en/document/woocommerce-store-editing/patterns-template-parts.md": {
+    "source": "docs/en/document/woocommerce-store-editing/patterns-template-parts.md",
+    "target": "docs/ja/document/woocommerce-store-editing/patterns-template-parts.md",
+    "relative_path": "document/woocommerce-store-editing/patterns-template-parts.md"
+  },
+  "docs/en/document/woocommerce-store-editing/customizing-order-confirmation-page.md": {
+    "source": "docs/en/document/woocommerce-store-editing/customizing-order-confirmation-page.md",
+    "target": "docs/ja/document/woocommerce-store-editing/customizing-order-confirmation-page.md",
+    "relative_path": "document/woocommerce-store-editing/customizing-order-confirmation-page.md"
+  },
+  "docs/en/document/woocommerce-store-editing/customizing-product-pages.md": {
+    "source": "docs/en/document/woocommerce-store-editing/customizing-product-pages.md",
+    "target": "docs/ja/document/woocommerce-store-editing/customizing-product-pages.md",
+    "relative_path": "document/woocommerce-store-editing/customizing-product-pages.md"
+  },
+  "docs/en/document/woocommerce-store-editing/customizing-cart-and-checkout.md": {
+    "source": "docs/en/document/woocommerce-store-editing/customizing-cart-and-checkout.md",
+    "target": "docs/ja/document/woocommerce-store-editing/customizing-cart-and-checkout.md",
+    "relative_path": "document/woocommerce-store-editing/customizing-cart-and-checkout.md"
+  },
+  "docs/en/document/woocommerce-store-editing/customizing-shop-page-catalog.md": {
+    "source": "docs/en/document/woocommerce-store-editing/customizing-shop-page-catalog.md",
+    "target": "docs/ja/document/woocommerce-store-editing/customizing-shop-page-catalog.md",
+    "relative_path": "document/woocommerce-store-editing/customizing-shop-page-catalog.md"
+  },
+  "docs/en/document/woocommerce-store-editing/customizing-cart-and-checkout/cart-block.md": {
+    "source": "docs/en/document/woocommerce-store-editing/customizing-cart-and-checkout/cart-block.md",
+    "target": "docs/ja/document/woocommerce-store-editing/customizing-cart-and-checkout/cart-block.md",
+    "relative_path": "document/woocommerce-store-editing/customizing-cart-and-checkout/cart-block.md"
+  },
+  "docs/en/document/woocommerce-store-editing/customizing-cart-and-checkout/mini-cart.md": {
+    "source": "docs/en/document/woocommerce-store-editing/customizing-cart-and-checkout/mini-cart.md",
+    "target": "docs/ja/document/woocommerce-store-editing/customizing-cart-and-checkout/mini-cart.md",
+    "relative_path": "document/woocommerce-store-editing/customizing-cart-and-checkout/mini-cart.md"
+  },
+  "docs/en/document/woocommerce-store-editing/customizing-cart-and-checkout/checkout-block.md": {
+    "source": "docs/en/document/woocommerce-store-editing/customizing-cart-and-checkout/checkout-block.md",
+    "target": "docs/ja/document/woocommerce-store-editing/customizing-cart-and-checkout/checkout-block.md",
+    "relative_path": "document/woocommerce-store-editing/customizing-cart-and-checkout/checkout-block.md"
+  },
+  "docs/en/document/woocommerce-store-editing/customizing-cart-and-checkout/checkout-block/woocommerce-blocks-local-pickup.md": {
+    "source": "docs/en/document/woocommerce-store-editing/customizing-cart-and-checkout/checkout-block/woocommerce-blocks-local-pickup.md",
+    "target": "docs/ja/document/woocommerce-store-editing/customizing-cart-and-checkout/checkout-block/woocommerce-blocks-local-pickup.md",
+    "relative_path": "document/woocommerce-store-editing/customizing-cart-and-checkout/checkout-block/woocommerce-blocks-local-pickup.md"
+  },
+  "docs/en/document/woocommerce-store-editing/customizing-shop-page-catalog/filter-products.md": {
+    "source": "docs/en/document/woocommerce-store-editing/customizing-shop-page-catalog/filter-products.md",
+    "target": "docs/ja/document/woocommerce-store-editing/customizing-shop-page-catalog/filter-products.md",
+    "relative_path": "document/woocommerce-store-editing/customizing-shop-page-catalog/filter-products.md"
+  },
+  "docs/en/document/woocommerce-store-editing/customizing-shop-page-catalog/product-collection-block.md": {
+    "source": "docs/en/document/woocommerce-store-editing/customizing-shop-page-catalog/product-collection-block.md",
+    "target": "docs/ja/document/woocommerce-store-editing/customizing-shop-page-catalog/product-collection-block.md",
+    "relative_path": "document/woocommerce-store-editing/customizing-shop-page-catalog/product-collection-block.md"
+  },
+  "docs/en/document/android/android-simulator.md": {
+    "source": "docs/en/document/android/android-simulator.md",
+    "target": "docs/ja/document/android/android-simulator.md",
+    "relative_path": "document/android/android-simulator.md"
+  },
+  "docs/en/document/understanding-the-woocommerce-system-status-report/scheduled-actions.md": {
+    "source": "docs/en/document/understanding-the-woocommerce-system-status-report/scheduled-actions.md",
+    "target": "docs/ja/document/understanding-the-woocommerce-system-status-report/scheduled-actions.md",
+    "relative_path": "document/understanding-the-woocommerce-system-status-report/scheduled-actions.md"
+  },
+  "docs/en/document/understanding-the-woocommerce-system-status-report/tools.md": {
+    "source": "docs/en/document/understanding-the-woocommerce-system-status-report/tools.md",
+    "target": "docs/ja/document/understanding-the-woocommerce-system-status-report/tools.md",
+    "relative_path": "document/understanding-the-woocommerce-system-status-report/tools.md"
+  },
+  "docs/en/document/woocommerce-shortcodes/page-shortcodes.md": {
+    "source": "docs/en/document/woocommerce-shortcodes/page-shortcodes.md",
+    "target": "docs/ja/document/woocommerce-shortcodes/page-shortcodes.md",
+    "relative_path": "document/woocommerce-shortcodes/page-shortcodes.md"
+  },
+  "docs/en/document/woocommerce-shortcodes/product-category.md": {
+    "source": "docs/en/document/woocommerce-shortcodes/product-category.md",
+    "target": "docs/ja/document/woocommerce-shortcodes/product-category.md",
+    "relative_path": "document/woocommerce-shortcodes/product-category.md"
+  },
+  "docs/en/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes.md": {
+    "source": "docs/en/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes.md",
+    "target": "docs/ja/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes.md",
+    "relative_path": "document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes.md"
+  },
+  "docs/en/document/woocommerce-shortcodes/troubleshooting-shortcodes.md": {
+    "source": "docs/en/document/woocommerce-shortcodes/troubleshooting-shortcodes.md",
+    "target": "docs/ja/document/woocommerce-shortcodes/troubleshooting-shortcodes.md",
+    "relative_path": "document/woocommerce-shortcodes/troubleshooting-shortcodes.md"
+  },
+  "docs/en/document/woocommerce-shortcodes/products.md": {
+    "source": "docs/en/document/woocommerce-shortcodes/products.md",
+    "target": "docs/ja/document/woocommerce-shortcodes/products.md",
+    "relative_path": "document/woocommerce-shortcodes/products.md"
+  },
+  "docs/en/document/mobile-receipts/troubleshoot-receipt-issues.md": {
+    "source": "docs/en/document/mobile-receipts/troubleshoot-receipt-issues.md",
+    "target": "docs/ja/document/mobile-receipts/troubleshoot-receipt-issues.md",
+    "relative_path": "document/mobile-receipts/troubleshoot-receipt-issues.md"
+  },
+  "docs/en/document/managing-products/product-editor-settings.md": {
+    "source": "docs/en/document/managing-products/product-editor-settings.md",
+    "target": "docs/ja/document/managing-products/product-editor-settings.md",
+    "relative_path": "document/managing-products/product-editor-settings.md"
+  },
+  "docs/en/document/managing-products/duplicate-or-delete-product.md": {
+    "source": "docs/en/document/managing-products/duplicate-or-delete-product.md",
+    "target": "docs/ja/document/managing-products/duplicate-or-delete-product.md",
+    "relative_path": "document/managing-products/duplicate-or-delete-product.md"
+  },
+  "docs/en/document/managing-products/feature-filter-and-sort-products.md": {
+    "source": "docs/en/document/managing-products/feature-filter-and-sort-products.md",
+    "target": "docs/ja/document/managing-products/feature-filter-and-sort-products.md",
+    "relative_path": "document/managing-products/feature-filter-and-sort-products.md"
+  },
+  "docs/en/document/managing-products/virtual-downloadable.md": {
+    "source": "docs/en/document/managing-products/virtual-downloadable.md",
+    "target": "docs/ja/document/managing-products/virtual-downloadable.md",
+    "relative_path": "document/managing-products/virtual-downloadable.md"
+  },
+  "docs/en/document/managing-products/add-product.md": {
+    "source": "docs/en/document/managing-products/add-product.md",
+    "target": "docs/ja/document/managing-products/add-product.md",
+    "relative_path": "document/managing-products/add-product.md"
+  },
+  "docs/en/document/managing-orders/view-edit-or-add-an-order.md": {
+    "source": "docs/en/document/managing-orders/view-edit-or-add-an-order.md",
+    "target": "docs/ja/document/managing-orders/view-edit-or-add-an-order.md",
+    "relative_path": "document/managing-orders/view-edit-or-add-an-order.md"
+  },
+  "docs/en/document/managing-orders/troubleshooting-orders.md": {
+    "source": "docs/en/document/managing-orders/troubleshooting-orders.md",
+    "target": "docs/ja/document/managing-orders/troubleshooting-orders.md",
+    "relative_path": "document/managing-orders/troubleshooting-orders.md"
+  },
+  "docs/en/document/managing-orders/removing-personal-data-from-orders.md": {
+    "source": "docs/en/document/managing-orders/removing-personal-data-from-orders.md",
+    "target": "docs/ja/document/managing-orders/removing-personal-data-from-orders.md",
+    "relative_path": "document/managing-orders/removing-personal-data-from-orders.md"
+  },
+  "docs/en/document/managing-orders/overview-and-bulk-management.md": {
+    "source": "docs/en/document/managing-orders/overview-and-bulk-management.md",
+    "target": "docs/ja/document/managing-orders/overview-and-bulk-management.md",
+    "relative_path": "document/managing-orders/overview-and-bulk-management.md"
+  },
+  "docs/en/document/managing-orders/testing-orders.md": {
+    "source": "docs/en/document/managing-orders/testing-orders.md",
+    "target": "docs/ja/document/managing-orders/testing-orders.md",
+    "relative_path": "document/managing-orders/testing-orders.md"
+  },
+  "docs/en/document/managing-orders/order-statuses.md": {
+    "source": "docs/en/document/managing-orders/order-statuses.md",
+    "target": "docs/ja/document/managing-orders/order-statuses.md",
+    "relative_path": "document/managing-orders/order-statuses.md"
+  },
+  "docs/en/document/managing-orders/paying-for-orders.md": {
+    "source": "docs/en/document/managing-orders/paying-for-orders.md",
+    "target": "docs/ja/document/managing-orders/paying-for-orders.md",
+    "relative_path": "document/managing-orders/paying-for-orders.md"
+  },
+  "docs/en/document/all-products-for-woocommerce-subscriptions/use-case-offering-subscription-boxes.md": {
+    "source": "docs/en/document/all-products-for-woocommerce-subscriptions/use-case-offering-subscription-boxes.md",
+    "target": "docs/ja/document/all-products-for-woocommerce-subscriptions/use-case-offering-subscription-boxes.md",
+    "relative_path": "document/all-products-for-woocommerce-subscriptions/use-case-offering-subscription-boxes.md"
+  },
+  "docs/en/document/bundles/bundles-functions-reference.md": {
+    "source": "docs/en/document/bundles/bundles-functions-reference.md",
+    "target": "docs/ja/document/bundles/bundles-functions-reference.md",
+    "relative_path": "document/bundles/bundles-functions-reference.md"
+  },
+  "docs/en/document/bundles/bundles-snippets.md": {
+    "source": "docs/en/document/bundles/bundles-snippets.md",
+    "target": "docs/ja/document/bundles/bundles-snippets.md",
+    "relative_path": "document/bundles/bundles-snippets.md"
+  },
+  "docs/en/document/bundles/bundles-data-structures-storage.md": {
+    "source": "docs/en/document/bundles/bundles-data-structures-storage.md",
+    "target": "docs/ja/document/bundles/bundles-data-structures-storage.md",
+    "relative_path": "document/bundles/bundles-data-structures-storage.md"
+  },
+  "docs/en/document/bundles/bundles-filters-reference.md": {
+    "source": "docs/en/document/bundles/bundles-filters-reference.md",
+    "target": "docs/ja/document/bundles/bundles-filters-reference.md",
+    "relative_path": "document/bundles/bundles-filters-reference.md"
+  },
+  "docs/en/document/bundles/bundles-configuration.md": {
+    "source": "docs/en/document/bundles/bundles-configuration.md",
+    "target": "docs/ja/document/bundles/bundles-configuration.md",
+    "relative_path": "document/bundles/bundles-configuration.md"
+  },
+  "docs/en/document/stripe/admin-experience/in-person-payments.md": {
+    "source": "docs/en/document/stripe/admin-experience/in-person-payments.md",
+    "target": "docs/ja/document/stripe/admin-experience/in-person-payments.md",
+    "relative_path": "document/stripe/admin-experience/in-person-payments.md"
+  },
+  "docs/en/shipping/core-shipping-options.md": {
+    "source": "docs/en/shipping/core-shipping-options.md",
+    "target": "docs/ja/shipping/core-shipping-options.md",
+    "relative_path": "shipping/core-shipping-options.md"
+  },
+  "docs/en/site-admin/how-to.md": {
+    "source": "docs/en/site-admin/how-to.md",
+    "target": "docs/ja/site-admin/how-to.md",
+    "relative_path": "site-admin/how-to.md"
+  },
+  "docs/en/site-admin/localization.md": {
+    "source": "docs/en/site-admin/localization.md",
+    "target": "docs/ja/site-admin/localization.md",
+    "relative_path": "site-admin/localization.md"
+  },
+  "docs/en/site-admin/store-settings.md": {
+    "source": "docs/en/site-admin/store-settings.md",
+    "target": "docs/ja/site-admin/store-settings.md",
+    "relative_path": "site-admin/store-settings.md"
+  },
+  "docs/en/site-admin/performance.md": {
+    "source": "docs/en/site-admin/performance.md",
+    "target": "docs/ja/site-admin/performance.md",
+    "relative_path": "site-admin/performance.md"
+  },
+  "docs/en/site-admin/security.md": {
+    "source": "docs/en/site-admin/security.md",
+    "target": "docs/ja/site-admin/security.md",
+    "relative_path": "site-admin/security.md"
+  },
+  "docs/en/site-admin/automation.md": {
+    "source": "docs/en/site-admin/automation.md",
+    "target": "docs/ja/site-admin/automation.md",
+    "relative_path": "site-admin/automation.md"
+  },
+  "docs/en/site-admin/page/1.md": {
+    "source": "docs/en/site-admin/page/1.md",
+    "target": "docs/ja/site-admin/page/1.md",
+    "relative_path": "site-admin/page/1.md"
+  },
+  "docs/en/site-admin/page/2.md": {
+    "source": "docs/en/site-admin/page/2.md",
+    "target": "docs/ja/site-admin/page/2.md",
+    "relative_path": "site-admin/page/2.md"
+  },
+  "docs/en/site-admin/store-settings/page/1.md": {
+    "source": "docs/en/site-admin/store-settings/page/1.md",
+    "target": "docs/ja/site-admin/store-settings/page/1.md",
+    "relative_path": "site-admin/store-settings/page/1.md"
+  },
+  "docs/en/site-admin/store-settings/page/2.md": {
+    "source": "docs/en/site-admin/store-settings/page/2.md",
+    "target": "docs/ja/site-admin/store-settings/page/2.md",
+    "relative_path": "site-admin/store-settings/page/2.md"
+  },
+  "docs/en/site-admin/how-to/page/1.md": {
+    "source": "docs/en/site-admin/how-to/page/1.md",
+    "target": "docs/ja/site-admin/how-to/page/1.md",
+    "relative_path": "site-admin/how-to/page/1.md"
+  },
+  "docs/en/site-admin/how-to/page/3.md": {
+    "source": "docs/en/site-admin/how-to/page/3.md",
+    "target": "docs/ja/site-admin/how-to/page/3.md",
+    "relative_path": "site-admin/how-to/page/3.md"
+  },
+  "docs/en/site-admin/how-to/page/2.md": {
+    "source": "docs/en/site-admin/how-to/page/2.md",
+    "target": "docs/ja/site-admin/how-to/page/2.md",
+    "relative_path": "site-admin/how-to/page/2.md"
+  },
+  "docs/en/theming/classic-theme-development/set-up-and-use-a-child-theme.md": {
+    "source": "docs/en/theming/classic-theme-development/set-up-and-use-a-child-theme.md",
+    "target": "docs/ja/theming/classic-theme-development/set-up-and-use-a-child-theme.md",
+    "relative_path": "theming/classic-theme-development/set-up-and-use-a-child-theme.md"
+  },
+  "docs/en/theming/classic-theme-development/fix-outdated-templates-woocommerce.md": {
+    "source": "docs/en/theming/classic-theme-development/fix-outdated-templates-woocommerce.md",
+    "target": "docs/ja/theming/classic-theme-development/fix-outdated-templates-woocommerce.md",
+    "relative_path": "theming/classic-theme-development/fix-outdated-templates-woocommerce.md"
+  },
+  "docs/en/theming/classic-theme-development/template-structure.md": {
+    "source": "docs/en/theming/classic-theme-development/template-structure.md",
+    "target": "docs/ja/theming/classic-theme-development/template-structure.md",
+    "relative_path": "theming/classic-theme-development/template-structure.md"
+  },
+  "docs/en/getting-started/settings.md": {
+    "source": "docs/en/getting-started/settings.md",
+    "target": "docs/ja/getting-started/settings.md",
+    "relative_path": "getting-started/settings.md"
+  },
+  "docs/en/getting-started/migrating-to-woocommerce.md": {
+    "source": "docs/en/getting-started/migrating-to-woocommerce.md",
+    "target": "docs/ja/getting-started/migrating-to-woocommerce.md",
+    "relative_path": "getting-started/migrating-to-woocommerce.md"
+  },
+  "docs/en/getting-started/page/1.md": {
+    "source": "docs/en/getting-started/page/1.md",
+    "target": "docs/ja/getting-started/page/1.md",
+    "relative_path": "getting-started/page/1.md"
+  },
+  "docs/en/getting-started/page/3.md": {
+    "source": "docs/en/getting-started/page/3.md",
+    "target": "docs/ja/getting-started/page/3.md",
+    "relative_path": "getting-started/page/3.md"
+  },
+  "docs/en/getting-started/page/2.md": {
+    "source": "docs/en/getting-started/page/2.md",
+    "target": "docs/ja/getting-started/page/2.md",
+    "relative_path": "getting-started/page/2.md"
+  },
+  "docs/en/mobile/mobile-ios.md": {
+    "source": "docs/en/mobile/mobile-ios.md",
+    "target": "docs/ja/mobile/mobile-ios.md",
+    "relative_path": "mobile/mobile-ios.md"
+  },
+  "docs/en/mobile/mobile-android.md": {
+    "source": "docs/en/mobile/mobile-android.md",
+    "target": "docs/ja/mobile/mobile-android.md",
+    "relative_path": "mobile/mobile-android.md"
+  },
+  "docs/en/mobile/page/1.md": {
+    "source": "docs/en/mobile/page/1.md",
+    "target": "docs/ja/mobile/page/1.md",
+    "relative_path": "mobile/page/1.md"
+  },
+  "docs/en/mobile/page/4.md": {
+    "source": "docs/en/mobile/page/4.md",
+    "target": "docs/ja/mobile/page/4.md",
+    "relative_path": "mobile/page/4.md"
+  },
+  "docs/en/mobile/page/3.md": {
+    "source": "docs/en/mobile/page/3.md",
+    "target": "docs/ja/mobile/page/3.md",
+    "relative_path": "mobile/page/3.md"
+  },
+  "docs/en/mobile/page/2.md": {
+    "source": "docs/en/mobile/page/2.md",
+    "target": "docs/ja/mobile/page/2.md",
+    "relative_path": "mobile/page/2.md"
+  },
+  "docs/en/orders/page/1.md": {
+    "source": "docs/en/orders/page/1.md",
+    "target": "docs/ja/orders/page/1.md",
+    "relative_path": "orders/page/1.md"
+  },
+  "docs/en/orders/page/2.md": {
+    "source": "docs/en/orders/page/2.md",
+    "target": "docs/ja/orders/page/2.md",
+    "relative_path": "orders/page/2.md"
+  },
+  "docs/en/best-practices/performance/configuring-caching-plugins.md": {
+    "source": "docs/en/best-practices/performance/configuring-caching-plugins.md",
+    "target": "docs/ja/best-practices/performance/configuring-caching-plugins.md",
+    "relative_path": "best-practices/performance/configuring-caching-plugins.md"
+  },
+  "docs/en/store-design/block-themes-store-editing.md": {
+    "source": "docs/en/store-design/block-themes-store-editing.md",
+    "target": "docs/ja/store-design/block-themes-store-editing.md",
+    "relative_path": "store-design/block-themes-store-editing.md"
+  },
+  "docs/en/store-design/classic-themes.md": {
+    "source": "docs/en/store-design/classic-themes.md",
+    "target": "docs/ja/store-design/classic-themes.md",
+    "relative_path": "store-design/classic-themes.md"
+  },
+  "docs/en/store-design/block-themes-store-editing/customize-your-store.md": {
+    "source": "docs/en/store-design/block-themes-store-editing/customize-your-store.md",
+    "target": "docs/ja/store-design/block-themes-store-editing/customize-your-store.md",
+    "relative_path": "store-design/block-themes-store-editing/customize-your-store.md"
+  },
+  "docs/en/store-design/block-themes-store-editing/page/1.md": {
+    "source": "docs/en/store-design/block-themes-store-editing/page/1.md",
+    "target": "docs/ja/store-design/block-themes-store-editing/page/1.md",
+    "relative_path": "store-design/block-themes-store-editing/page/1.md"
+  },
+  "docs/en/store-design/block-themes-store-editing/page/2.md": {
+    "source": "docs/en/store-design/block-themes-store-editing/page/2.md",
+    "target": "docs/ja/store-design/block-themes-store-editing/page/2.md",
+    "relative_path": "store-design/block-themes-store-editing/page/2.md"
+  }
+}
