@@ -682,11 +682,24 @@ class WooCommerceDocScraper:
         lines.append("</ul>\n")
         return "\n".join(lines)
 
-    def unique_filepath(self, directory, filename):
-        """Avoid overwriting files when multiple pages share the same title."""
+    def unique_filepath(self, directory, filename, current_url=None):
+        """Avoid overwriting files unless it's the same page content."""
         filepath = directory / filename
         if not filepath.exists():
             return filepath
+            
+        # Check if existing file belongs to the same URL (allow overwrite for updates)
+        if current_url:
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    # Read header to find frontmatter
+                    head = f.read(1024)
+                    # Check if the url line matches current url
+                    # Frontmatter format: url: https://...
+                    if f"url: {current_url}" in head:
+                        return filepath
+            except Exception:
+                pass
 
         stem = filepath.stem
         suffix = filepath.suffix
@@ -717,7 +730,7 @@ class WooCommerceDocScraper:
         if not filename:
             filename = self.sanitize_filename(content_data['title']) or "index"
 
-        filepath = self.unique_filepath(save_dir, f"{filename}.md")
+        filepath = self.unique_filepath(save_dir, f"{filename}.md", content_data['url'])
         
         categories = self.extract_categories(breadcrumb)
         categories_html = self.render_categories_html(categories)
@@ -733,11 +746,38 @@ url: {content_data['url']}
         # Clean up multiple consecutive blank lines (MD012)
         markdown = re.sub(r'\n{3,}', '\n\n', markdown)
         
-        # Save file
-        with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(markdown)
+        # Calculate content hash for change detection
+        content_hash = hashlib.md5(markdown.encode('utf-8')).hexdigest()
         
-        print(f"Saved: {filepath}")
+        # Check if file exists and content is identical
+        file_saved = False
+        if filepath.exists():
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    existing_content = f.read()
+                existing_hash = hashlib.md5(existing_content.encode('utf-8')).hexdigest()
+                
+                if existing_hash == content_hash:
+                    # Content is identical, skip writing
+                    pass
+                else:
+                    # Content changed, write update
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        f.write(markdown)
+                    file_saved = True
+                    print(f"Updated: {filepath}")
+            except Exception:
+                # Error reading existing file, just overwrite
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(markdown)
+                file_saved = True
+                print(f"Saved: {filepath}")
+        else:
+            # New file
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(markdown)
+            file_saved = True
+            print(f"Saved: {filepath}")
         
         # Update metadata
         breadcrumb_titles = [item['title'] for item in breadcrumb]
@@ -759,7 +799,8 @@ url: {content_data['url']}
             'categories': categories,
             'slug': slug,
             'slug_path': slug_path,
-            'html_content': content_data.get('html_content', '')
+            'html_content': content_data.get('html_content', ''),
+            'content_hash': content_hash
         }
     
     def find_doc_links(self, soup, base_url):

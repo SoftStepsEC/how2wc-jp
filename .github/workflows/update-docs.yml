@@ -53,7 +53,11 @@ jobs:
       - name: Translate updated documentation
         if: steps.check_updates.outputs.has_changes == 'true'
         run: |
-          python translator.py
+          if [ -f changed_files.txt ]; then
+            python translator.py --file-list changed_files.txt
+          else
+            echo "No changed_files.txt found, skipping translation"
+          fi
       
       - name: Configure Git
         if: steps.check_updates.outputs.has_changes == 'true'

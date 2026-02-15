@@ -35,17 +35,6 @@ class UpdateChecker:
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(metadata, f, indent=2, ensure_ascii=False)
     
-    def calculate_file_hash(self, filepath):
-        """Calculate MD5 hash of a file."""
-        if not os.path.exists(filepath):
-            return None
-        
-        md5_hash = hashlib.md5()
-        with open(filepath, 'rb') as f:
-            for chunk in iter(lambda: f.read(4096), b""):
-                md5_hash.update(chunk)
-        return md5_hash.hexdigest()
-    
     def compare_metadata(self, old_metadata, new_metadata):
         """Compare old and new metadata to find changes."""
         changes = {
@@ -63,17 +52,25 @@ class UpdateChecker:
         # Find deleted pages
         changes['deleted'] = list(old_urls - new_urls)
         
-        # Find updated pages (by comparing file hashes)
+        # Find updated pages (by comparing content hashes)
         for url in old_urls & new_urls:
-            old_path = old_metadata[url].get('path')
-            new_path = new_metadata[url].get('path')
+            old_info = old_metadata[url]
+            new_info = new_metadata[url]
             
-            if old_path and new_path:
-                old_hash = self.calculate_file_hash(old_path)
-                new_hash = self.calculate_file_hash(new_path)
-                
+            # Use content_hash from metadata if available (added in recent scraper update)
+            # If not available in old metadata, we assume it might have changed if we strictly want to be safe,
+            # or skip. For now, if key is missing, we can't compare, so we assume no change 
+            # OR we could fallback to file hash if we hadn't overwritten. 
+            # Since we overwrite, missing hash in old metadata means we can't detect update this run.
+            
+            old_hash = old_info.get('content_hash')
+            new_hash = new_info.get('content_hash')
+            
+            if old_hash and new_hash:
                 if old_hash != new_hash:
                     changes['updated'].append(url)
+            # Fallback for old scraping style (calculate_file_hash on path) is removed
+            # because files are overwritten by scraper.run() before this check.
         
         return changes
     
@@ -131,6 +128,17 @@ if __name__ == "__main__":
     checker = UpdateChecker()
     changes = checker.check_for_updates()
     
+    # Save list of changed files for the translator
+    changed_files = checker.get_changed_files(changes)
+    if changed_files:
+        with open('changed_files.txt', 'w', encoding='utf-8') as f:
+            for file_path in changed_files:
+                f.write(f"{file_path}\n")
+        print(f"\nSaved {len(changed_files)} changed files to changed_files.txt")
+    elif os.path.exists('changed_files.txt'):
+        # Clean up if no changes
+        os.remove('changed_files.txt')
+
     if changes['new'] or changes['updated']:
         print("\n✓ Changes detected - translation needed")
     else:

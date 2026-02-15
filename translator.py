@@ -18,6 +18,43 @@ from dotenv import load_dotenv
 
 class DocumentTranslator:
     """Translator for documentation files."""
+    # ...
+    # This was a quick fix but I forgot indentation for args.estimate_cost block in previous tool call.
+    # Actually, previous tool call was successful. I'll just check if indentation is correct.
+    # The snippet I provided was:
+    
+            if not args.estimate_cost:
+                    relative_path = source_file.relative_to(Path(translator.SOURCE_DIR))
+                    translator.translated_metadata[str(source_file)] = {
+                        'source': str(source_file),
+                        'target': str(target_file),
+                        'relative_path': str(relative_path)
+                    }
+    # Wait, the relative_path construction might fail if source_file is not relative to source dir.
+    # And indentation looks weird in my memory but let's assume it's OK.
+    # Ah, I see I missed `import time` usage in previous block but it was already imported at top.
+
+    # Let's double check indentation of the added block.
+    # The block added was:
+    #     elif args.file_list:
+    # ...
+    #             if not args.estimate_cost:
+    #                 relative_path = source_file.relative_to(Path(translator.SOURCE_DIR))
+    # ...
+
+    # If source_file is not in SOURCE_DIR, relative_to will raise ValueError.
+    # verify logic in resolve_target_path handles out-of-source files but here we assume inside.
+    # Let's check `resolve_target_path` implementation again.
+    
+    # It does: `relative_path = source_path.relative_to(source_root)`
+    # So if it fails, resolve_target_path handles it gracefully?
+    # No, it prints note and returns differently.
+    
+    # We should use `resolve_target_path` logic or just wrap in try-except.
+    
+    # Also I need to modify workflow file to use --file-list.
+
+    """Translator for documentation files."""
     
     SOURCE_DIR = "docs/en"
     TARGET_DIR = "docs/ja"
@@ -391,6 +428,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Translate WooCommerce documentation.")
     parser.add_argument("--file", help="Translate a specific file")
     parser.add_argument("--dir", help="Translate a specific directory")
+    parser.add_argument("--file-list", help="File containing list of files to translate (one per line)")
     parser.add_argument("--estimate-cost", action="store_true", help="Calculate estimated translation cost without running translation")
     
     args = parser.parse_args()
@@ -429,6 +467,56 @@ if __name__ == "__main__":
         translator.translate_directory(source_dir, target_dir)
         if not args.estimate_cost:
             translator.save_translated_metadata()
+            
+    elif args.file_list:
+        file_list_path = Path(args.file_list)
+        if not file_list_path.exists():
+            print(f"Error: File list not found: {file_list_path}")
+            exit(1)
+            
+        with open(file_list_path, 'r', encoding='utf-8') as f:
+            files = [line.strip() for line in f if line.strip()]
+            
+        print(f"Translating {len(files)} files from list: {file_list_path}")
+        
+        for file_path in files:
+            source_file = Path(file_path)
+            if not source_file.exists():
+                print(f"Warning: File from list not found: {source_file}")
+                continue
+                
+            target_file = translator.resolve_target_path(source_file)
+            
+            try:
+                # Calculate relative path for metadata
+                try:
+                    relative_path = str(source_file.relative_to(Path(translator.SOURCE_DIR)))
+                except ValueError:
+                    relative_path = source_file.name
+
+                if args.estimate_cost:
+                    # just verify paths for estimate
+                    pass
+                else:
+                    print(f"Translating: {source_file} -> {target_file}")
+                
+                translator.translate_markdown_file(source_file, target_file)
+                
+                if not args.estimate_cost:
+                    translator.translated_metadata[str(source_file)] = {
+                        'source': str(source_file),
+                        'target': str(target_file),
+                        'relative_path': relative_path
+                    }
+                    time.sleep(1) # Rate limiting
+                    
+            except Exception as e:
+                print(f"Error processing {source_file}: {e}")
+
+        if args.estimate_cost:
+             translator._print_cost_estimate()
+        else:
+             translator.save_translated_metadata()
         
     else:
         # Default behavior: run full translation

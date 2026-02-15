@@ -85,14 +85,25 @@ export GOOGLE_CLOUD_GLOSSARY_BUCKET="your-glossary-bucket-name"
 `glossary.csv` ファイルをプロジェクトルートに配置することで、特定の技術用語やWooCommerce固有の用語の翻訳を統一しています。
 初回実行時にこのCSVファイルが自動的にGoogle Cloud上にアップロードされ、用語集リソースが作成されます。
 
-### GitHub Actions のシークレット設定
+### Github Actionsでの自動翻訳設定
 
-Actions で自動翻訳を実行する場合、以下のシークレットを設定してください。
+GitHub Actionsで正常に翻訳が実行されるために、リポジトリの「Settings」→「Secrets and variables」→「Actions」にて、以下のシークレットを設定してください。
 
-- `GCP_SA_KEY`: サービスアカウントJSONの内容（そのまま貼り付け）
-- `GOOGLE_CLOUD_PROJECT`: Google Cloud のプロジェクトID
-- `GOOGLE_CLOUD_LOCATION`: 任意（未設定なら `global` を使用）
-- `GOOGLE_CLOUD_GLOSSARY_BUCKET`: 用語集用バケット名
+#### Required Secrets
+
+| Secret Name | Description |
+|---|---|
+| `GCP_SA_KEY` | Google Cloud サービスアカウントのJSONキーファイルの中身をそのまま貼り付けてください。改行が含まれていても問題ありません。 |
+| `GOOGLE_CLOUD_PROJECT` | Google Cloud のプロジェクトID (例: `my-project-12345`) |
+
+#### Optional Secrets
+
+| Secret Name | Default Value | Description |
+|---|---|---|
+| `GOOGLE_CLOUD_LOCATION` | `global` | Cloud Translation API のロケーション。通常は `global` で問題ありません。 |
+| `GOOGLE_CLOUD_GLOSSARY_BUCKET` | (なし) | 用語集(Glossary)を使用する場合、CSVがアップロードされているGoogle Cloud Storageバケット名を指定します。 |
+
+> **注意:** サービスアカウントには `Cloud Translation API User` および `Storage Object Admin` (用語集作成時) の権限が必要です。
 
 ## 使用方法
 
